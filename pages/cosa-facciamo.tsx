@@ -2,15 +2,15 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import React from "react";
 
-const HomePage = () => {
+const CosaFacciamoPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Ex Allievi Esperia - Home</title>
+        <title>Cosa facciamo - Ex Allievi Esperia</title>
       </Head>
-      <main className="">Hello World!</main>
+      <main className="">Cosa facciamo</main>
     </Layout>
   );
 };
 
-export default HomePage;
+export default CosaFacciamoPage;

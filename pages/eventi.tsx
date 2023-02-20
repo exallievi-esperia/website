@@ -2,15 +2,15 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import React from "react";
 
-const HomePage = () => {
+const EventiPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Ex Allievi Esperia - Home</title>
+        <title>Eventi - Ex Allievi Esperia</title>
       </Head>
-      <main className="">Hello World!</main>
+      <main className="">Eventi</main>
     </Layout>
   );
 };
 
-export default HomePage;
+export default EventiPage;
