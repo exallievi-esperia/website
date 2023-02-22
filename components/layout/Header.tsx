@@ -30,11 +30,11 @@ const menuItems = [
   { label: "Contatti", href: "/contatti" },
 ];
 
-function classNames(...classes: string[]) {
+const classNames = (...classes: string[]) => {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -205,4 +205,6 @@ export default function Header() {
       </Dialog>
     </header>
   );
-}
+};
+
+export default Header;
