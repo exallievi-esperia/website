@@ -8,7 +8,7 @@ const HomePage = () => {
       <Head>
         <title>Ex Allievi Esperia - Home</title>
       </Head>
-      <main className="">Hello World!</main>
+      <main className="">Home Page</main>
     </Layout>
   );
 };
