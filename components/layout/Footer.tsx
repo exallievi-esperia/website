@@ -297,7 +297,7 @@ const Footer: React.FC = () => {
                       />
                     </svg>
 
-                    <span className="text-gray-700">
+                    <span className="text-gray-700 transition hover:text-gray-700/75">
                       exallievi@itispaleocapa.it
                     </span>
                   </Link>
@@ -323,15 +323,18 @@ const Footer: React.FC = () => {
                       />
                     </svg>
 
-                    <span className="text-gray-700">035 319388</span>
+                    <span className="text-gray-700 transition hover:text-gray-700/75">
+                      035 319388
+                    </span>
                   </Link>
                 </li>
 
-                <li className="flex items-start justify-center gap-1.5 sm:justify-start">
+                <li>
                   <Link
                     href="https://goo.gl/maps/JjHGPvEaM1fiAFwk7"
                     rel="noopener noreferrer"
                     target="_blank"
+                    className="flex items-start justify-center gap-1.5 sm:justify-start"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -353,9 +356,9 @@ const Footer: React.FC = () => {
                       />
                     </svg>
 
-                    <address className="-mt-0.5 not-italic text-gray-700">
+                    <span className="text-gray-700 transition hover:text-gray-700/75">
                       Via Mauro Gavazzeni, 29, 24125 Bergamo
-                    </address>
+                    </span>
                   </Link>
                 </li>
               </ul>
