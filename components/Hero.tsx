@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { HiBars3, HiXMark } from "react-icons/hi2";
 import Link from "next/link";
 
 const Hero = () => {

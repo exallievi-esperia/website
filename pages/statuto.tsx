@@ -1,7 +1,8 @@
 import HeaderSection from "@/components/HeaderSection";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
-import React from "react";
+import Link from "next/link";
+import { VscFilePdf } from "react-icons/vsc";
 
 const StatutoPage = () => {
   return (
@@ -18,8 +19,24 @@ const StatutoPage = () => {
           }
         />
 
+        <div className="flex justify-center mt-10">
+          <div className="rounded-full py-1 px-3 text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <Link
+              href="/documenti/statuto.pdf"
+              className="hover:text-red-400 transition duration-150 flex gap-2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <VscFilePdf className="text-red-400 w-5 h-5" />
+              <p>Visualizza lo statuto in formato PDF</p>
+
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+        </div>
+
         {/* Statuto */}
-        <div className="mt-28">
+        <div className="mt-16">
           {/* Titolo statuto */}
           <h2 className="font-bold text-xl mb-6">
             Statuto dell’Associazione non riconosciuta “Ex Allievi ITIS
@@ -27,70 +44,535 @@ const StatutoPage = () => {
             117/2017. Ente del Terzo Settore
           </h2>
 
+          {/* Articoli */}
           <ol>
+            {/* Art. 1 */}
             <li>
-              {/* Art. 1 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art.1 - Denominazione, sede e durata
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      1. E' costituita l'associazione
+                      <span className="font-bold">
+                        “Ex Allievi ITIS P. Paleocapa di Bergamo (Esperia) –
+                        APS” (Associazione di Promozione Sociale)
+                      </span>
+                      , in seguito in forma breve “associazione”, con sede in
+                      Bergamo, Via Gavazzeni n° 29, CAP 24125. L’associazione è
+                      un Ente del Terzo Settore ed è disciplinata dal seguente
+                      statuto e agisce nei limiti del D. Lgs. 117/2017;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      2. L'ordinamento interno dell'associazione è ispirato a
+                      criteri di democraticità, di uguaglianza dei diritti e
+                      delle pari opportunità di tutti gli associati, ne
+                      favorisce la partecipazione sociale senza limiti a
+                      condizioni economiche e senza discriminazioni di qualsiasi
+                      natura;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      3. In conseguenza dell’iscrizione al Registro Unico del
+                      Terzo Settore, l’associazione dovrà indicare gli estremi
+                      dell’iscrizione stessa negli atti, nella corrispondenza e
+                      nelle comunicazioni al pubblico;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4. L’associazione ha sede legale nel comune di Bergamo e
+                      la sua durata è illimitata;
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 2 */}
             <li>
-              {/* Art. 2 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">Art.2 – Scopo</h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      1. L’associazione non ha scopo di lucro e persegue
+                      finalità civiche, solidaristiche e di utilità sociale. In
+                      particolare intende:
+                    </p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>
+                          1. Stimolare e rendere più intensi i rapporti fra il
+                          mondo della scuola e gli ex allievi;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          2. Favorire le scelte degli allievi apportando una
+                          migliore conoscenza delle opportunità lavorative e
+                          universitarie;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          3. Supportare i percorsi educativi utilizzando le
+                          esperienze e i contatti degli Ex Allievi;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          4. Promuovere la ricaduta della professionalità
+                          sviluppata sul territorio bergamasco;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          5. Contribuire ad aumentare il prestigio dell’ITIS
+                          Paleocapa;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          6. Operare per gli interessi della categoria e
+                          favorire l’ingresso degli ex allievi neo diplomati nel
+                          mondo del lavoro;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          7. Organizzare e favorire iniziative per valorizzare
+                          la professionalità dei docenti, degli allievi e degli
+                          ex allievi;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          8. Favorire lo scambio scuola – lavoro degli allievi.
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 3 */}
             <li>
-              {/* Art. 3 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art 3 - Attività di interesse generale
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      1. L’associazione, nel perseguire le finalità di cui
+                      sopra, svolge in via esclusiva o principale le seguenti
+                      attività di interesse generale:
+                    </p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>
+                          d) Educazione, istruzione e formazione professionale,
+                          ai sensi della legge 28 marzo 2003, n. 53, e
+                          successive modificazioni, nonché le attività culturali
+                          di interesse sociale con finalità educativa;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          i) Organizzazione e gestione di attività culturali,
+                          artistiche o ricreative di interesse sociale, incluse
+                          attività, anche editoriali, di promozione e diffusione
+                          della cultura e della pratica del volontariato e delle
+                          attività di interesse generale;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          u) Beneficenza, sostegno a distanza, cessione gratuita
+                          di alimenti o prodotti di cui alla legge 19 agosto
+                          2016, n. 166, e successive modificazioni, o erogazioni
+                          di denaro, beni o servizi a sostegno delle persone
+                          svantaggiate o di attività di interesse generale a
+                          norma del presente articolo.
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <p>2. In particolare l’associazione si propone di:</p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>
+                          a) Effettuare la pubblicazione della rivista
+                          associativa Esperia e il mantenimento del sito
+                          internet;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          b) Organizzare la Festa degli Ex Allievi di fine anno
+                          scolastico con premiazione degli allievi meritevoli
+                          (borse di studio);
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          c) Instituire contatti con il modo imprenditoriale e
+                          dell’università;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          d) Organizzare conferenze tecniche e di orientamento,
+                          seminari, convegni, visite e stage degli allievi nelle
+                          industrie utilizzando le competenze, i contatti e
+                          l’esperienza degli ex allievi;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          e) Assistere gli ex allievi nella ricerca del posto di
+                          lavoro e qualsiasi altra attività idonea al
+                          conseguimento delle finalità istituzionali del
+                          sodalizio;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          f) Contribuire alla realizzazione di progetti per il
+                          miglioramento dell’Istituto, dei laboratori,
+                          dell’istruzione di insegnati e alunni;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>g) Diminuire la dispersione scolastica;</p>
+                      </li>
+
+                      <li>
+                        <p>
+                          h) Inserire nel mondo del lavoro gli alunni con
+                          handicap utilizzando le competenze, i contatti e
+                          l’esperienza degli ex allievi;
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          i) Collaborare con il collegio dei Periti Industriali,
+                          Enti e Privati per promuovere la valorizzazione del
+                          perito Industriale.
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <p>
+                      3. Le attività di cui ai commi precedenti sono svolte in
+                      favore dei propri associati, dei loro familiari o dei
+                      terzi, avvalendosi in modo prevalente dell’attività di
+                      volontariato dei propri associati. Il volontario presta la
+                      sua attività secondo il principio di gratuità, con
+                      l’eccezione del rimborso delle spese sostenute e
+                      documentate entro limiti massimi predefiniti, il divieto
+                      di rimborsi forfettari e l’incompatibilità tra la
+                      posizione del volontario e ogni forma di prestazione
+                      lavorativa retribuita dall’ente di cui il volontario è
+                      socio, associato o tramite cui presta attività volontaria;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4. L’associazione può assumere lavoratori dipendenti o
+                      avvalersi di prestazioni di lavoro autonomo o di altra
+                      natura, anche dei propri associati che non svolgono
+                      attività di volontariato, solo quando ciò sia necessario
+                      ai fini dello svolgimento dell'attività di cui ai commi
+                      precedenti e al perseguimento delle finalità
+                      dell’associazione. In ogni caso, il numero dei lavoratori
+                      impiegati nell'attività non può essere superiore al
+                      cinquanta per cento del numero dei volontari o al cinque
+                      per cento del numero degli associati.
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 4 */}
             <li>
-              {/* Art. 4 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art.4 - Ammissione dei soci
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      4.1. Sono ammessi a far parte dell'Associazione gli ex
+                      allievi, il corpo docente ed amministrativo dell’Esperia e
+                      tutti coloro i quali, aderendo alla finalità istituzionali
+                      del sodalizio, intendano collaborare al loro
+                      raggiungimento ed accettino le regole adottate attraverso
+                      lo statuto ed i regolamenti;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4.2. Nessun motivo legato a distinzioni di razza, sesso,
+                      religione, possesso di cittadinanza italiana o straniera,
+                      condizioni sociali o personali, può essere posto a base
+                      del rifiuto di richiesta di adesione all’organizzazione;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4.3. L'ammissione all'Associazione è deliberata dal
+                      Consiglio direttivo su domanda scritta del richiedente
+                      nella quale dovrà specificare le proprie complete
+                      generalità;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4.4. All'atto dell'ammissione il socio si impegna al
+                      versamento della quota associativa annuale, al rispetto
+                      dello Statuto e dei regolamenti emanati;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4.5 Avverso il diniego motivato di iscrizione
+                      all’associazione espresso dal consiglio, il richiedente
+                      può ricorrere al Collegio dei Probiviri, se nominato, o
+                      all’Assemblea degli aderenti, che devono decidere
+                      sull’argomento nella prima riunione convocata. La
+                      decisione è inappellabile;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      4.6. Non è ammessa la figura del socio temporaneo. La
+                      quota associativa è intrasmissibile.
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 5 */}
             <li>
-              {/* Art. 5 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art.5 - Diritti e doveri dei soci
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      5.1. Tutti i soci hanno diritto di voto ed hanno diritto
+                      all’elettorato attivo e passivo. I soci minorenni, sino al
+                      compimento della maggiore età, eserciteranno il loro
+                      diritto per il tramite dei loro genitori;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      5.2. Tutti i soci hanno i diritti di informazione e di
+                      controllo stabiliti dalle leggi e dal presente Statuto, in
+                      particolare i soci hanno diritto di accesso ai documenti,
+                      delibere, bilanci, rendiconti e registri
+                      dell'associazione;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      5.3. Il socio volontario non potrà in alcun modo essere
+                      retribuito, ma avrà diritto al solo rimborso delle spese
+                      effettivamente sostenute per l'attività prestata,
+                      avvalendosi l'associazione prevalentemente dell’attività
+                      resa in forma volontaria e gratuita dei propri associati;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      5.4. Il comportamento del socio verso gli altri aderenti e
+                      all'esterno dell'associazione deve essere animato da
+                      spirito di solidarietà ed attuato con correttezza, buona
+                      fede, onestà, probità e rigore morale, nel rispetto del
+                      presente Statuto e delle linee programmatiche emanate.
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 6 */}
             <li>
-              {/* Art. 6 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art.6 - Recesso ed esclusione del socio
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>
+                      6.1. Il socio può recedere dall'associazione mediante
+                      comunicazione scritta da inviare al Presidente;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      6.2. Il socio può essere escluso dall'associazione nei
+                      seguenti casi:
+                    </p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>
+                          a) Morosità protrattasi per 3 mesi dal temine di
+                          versamento richiesto,
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          b) Gravi motivi che abbiano arrecato danno morale e/o
+                          materiale all'associazione stessa.
+                        </p>
+                      </li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <p>
+                      6.3. L'esclusione del socio è deliberata dal Consiglio
+                      direttivo e la relativa delibera, contenente le
+                      motivazioni del provvedimento, deve essere comunicata
+                      all’interessato a mezzo lettera semplice;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      6.4. Il socio interessato dal provvedimento può ricorrere
+                      al Collegio dei Probiviri, o in assenza di questo organo,
+                      chiedere che sia posto all’ordine del giorno della
+                      successiva assemblea l’esame dei motivi che hanno
+                      determinato l’esclusione al fine di contestare gli
+                      addebiti a fondamento del provvedimento. Fino alla data di
+                      convocazione dell’Assemblea – che deve avvenire nel
+                      termine di tre mesi - il socio interessato dal
+                      provvedimento si intende sospeso;
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      6.5. I Soci receduti e/o esclusi non possono richiedere la
+                      restituzione dei contributi versati, né hanno diritto
+                      alcuno sul patrimonio dell'associazione;
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 7 */}
             <li>
-              {/* Art. 7 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">
                   Art.7 - Gli organi sociali
                 </h3>
+
+                <ol>
+                  <li>
+                    <p>7.1. Gli organi dell'associazione sono:</p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>1. L'Assemblea dei soci,</p>
+                      </li>
+
+                      <li>
+                        <p>2. Il Consiglio Direttivo,</p>
+                      </li>
+
+                      <li>
+                        <p>3. Il Presidente,</p>
+                      </li>
+                    </ol>
+
+                    <p>
+                      Possono essere inoltre costituiti i seguenti organi di
+                      controllo e garanzia:
+                    </p>
+
+                    <ol className="pl-5">
+                      <li>
+                        <p>4. Il Collegio dei Revisori dei conti</p>
+                      </li>
+
+                      <li>
+                        <p>5. Il Collegio dei Probiviri</p>
+                      </li>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <p>7.2. Cariche sociali</p>
+                    <p>
+                      Tutte le cariche sociali sono assunte a titolo gratuito.
+                    </p>
+                  </li>
+                </ol>
               </div>
             </li>
 
+            {/* Art. 8 */}
             <li>
-              {/* Art. 8 */}
               <div className="mb-6">
                 <h3 className="font-bold text-lg">Art.8 - L'assemblea</h3>
 
@@ -103,20 +585,20 @@ const StatutoPage = () => {
                       mediante:
                     </p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Avviso scritto da inviare con lettera semplice/ fax/
-                          e-mail/ telegramma/ avviso pubblicato sulla rivista
-                          Esperia agli associati, almeno 10 giorni prima di
-                          quello fissato per l'adunanza,
+                          1. Avviso scritto da inviare con lettera semplice/
+                          fax/ e-mail/ telegramma/ avviso pubblicato sulla
+                          rivista Esperia agli associati, almeno 10 giorni prima
+                          di quello fissato per l'adunanza,
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Avviso affisso nei locali della Sede almeno 20 giorni
-                          prima,
+                          2. Avviso affisso nei locali della Sede almeno 20
+                          giorni prima,
                         </p>
                       </li>
                     </ol>
@@ -171,27 +653,27 @@ const StatutoPage = () => {
                   <li>
                     <p>8.8. Competenze inderogabili dell'assemblea</p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Nomina e revoca i componenti degli organi sociali;
+                          a) Nomina e revoca i componenti degli organi sociali;
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Nomina e revoca, quando previsto, il soggetto
+                          b) Nomina e revoca, quando previsto, il soggetto
                           incaricato della revisione legale dei conti;
                         </p>
                       </li>
 
                       <li>
-                        <p>Approva il bilancio;</p>
+                        <p>c) Approva il bilancio;</p>
                       </li>
 
                       <li>
                         <p>
-                          Delibera sulla responsabilità' dei componenti degli
+                          d) Delibera sulla responsabilità' dei componenti degli
                           organi sociali e promuove azione di responsabilità'
                           nei loro confronti;
                         </p>
@@ -199,7 +681,7 @@ const StatutoPage = () => {
 
                       <li>
                         <p>
-                          Delibera sull'esclusione degli associati, se l'atto
+                          e) Delibera sull'esclusione degli associati, se l'atto
                           costitutivo o lo statuto non attribuiscono la relativa
                           competenza ad altro organo eletto dalla medesima;
                         </p>
@@ -207,27 +689,30 @@ const StatutoPage = () => {
 
                       <li>
                         <p>
-                          Approva l'eventuale regolamento dei lavori
+                          f) Approva l'eventuale regolamento dei lavori
                           assembleari;
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Delibera sugli altri oggetti attribuiti dalla legge,
-                          dall'atto costitutivo o dallo statuto alla sua
+                          g) Delibera sugli altri oggetti attribuiti dalla
+                          legge, dall'atto costitutivo o dallo statuto alla sua
                           competenza.
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Determina l’importo della quota sociale di adesione;
+                          h) Determina l’importo della quota sociale di
+                          adesione;
                         </p>
                       </li>
 
                       <li>
-                        <p>Approva il programma annuale dell’associazione.</p>
+                        <p>
+                          i) Approva il programma annuale dell’associazione.
+                        </p>
                       </li>
                     </ol>
                   </li>
@@ -276,18 +761,18 @@ const StatutoPage = () => {
                       la delibera delle seguenti questioni:
                     </p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Approvazione di eventuali modifiche allo Statuto con
-                          la presenza di 2/3 dei soci e con decisione deliberata
-                          maggioranza dei presenti;
+                          1. Approvazione di eventuali modifiche allo Statuto
+                          con la presenza di 2/3 dei soci e con decisione
+                          deliberata maggioranza dei presenti;
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Scioglimento dell'associazione e devoluzione del
+                          2. Scioglimento dell'associazione e devoluzione del
                           patrimonio residuo, col voto favorevole di 3/4 dei
                           soci.
                         </p>
@@ -348,36 +833,36 @@ const StatutoPage = () => {
                   <li>
                     <p>9.4. Il Consiglio Direttivo:</p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Compie tutti gli atti di ordinaria e straordinaria
+                          1. Compie tutti gli atti di ordinaria e straordinaria
                           amministrazione;
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Redige e presenta all'assemblea il rapporto annuale
+                          2. Redige e presenta all'assemblea il rapporto annuale
                           sulle attività dell'associazione;
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Redige e presenta all'assemblea il rendiconto
+                          3. Redige e presenta all'assemblea il rendiconto
                           economico finanziario consuntivo ed il bilancio
                           preventivo;
                         </p>
                       </li>
 
                       <li>
-                        <p>Ammette i nuovi soci;</p>
+                        <p>4. Ammette i nuovi soci;</p>
                       </li>
 
                       <li>
                         <p>
-                          Esclude i soci salva successiva ratifica
+                          5. Esclude i soci salva successiva ratifica
                           dell'assemblea.
                         </p>
                       </li>
@@ -398,24 +883,24 @@ const StatutoPage = () => {
                       almeno le seguenti figure:
                     </p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Il Presidente (eletto nell’ambito del Consiglio
+                          1. Il Presidente (eletto nell’ambito del Consiglio
                           Direttivo stesso),
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Il Vice Presidente (eletto nell'ambito del Consiglio
-                          Direttivo stesso),
+                          2. Il Vice Presidente (eletto nell'ambito del
+                          Consiglio Direttivo stesso),
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Il Segretario (eletto nell'ambito del Consiglio
+                          3. Il Segretario (eletto nell'ambito del Consiglio
                           Direttivo stesso).
                         </p>
                       </li>
@@ -510,7 +995,7 @@ const StatutoPage = () => {
                       13.3. Partecipa alle riunioni del Consiglio Direttivo e
                       alle Assemblee, senza diritto di voto, ove presenta la
                       propria relazione annuale in tema di rendiconto economico
-                      e finanziario.”
+                      e finanziario.
                     </p>
                   </li>
                 </ol>
@@ -527,7 +1012,7 @@ const StatutoPage = () => {
                 <ol>
                   <li>
                     <p>
-                      14.1.“Il Collegio dei Probiviri è composto da tre soci
+                      14.1. Il Collegio dei Probiviri è composto da tre soci
                       eletti dall'Assemblea e resta in carica per tre anni. La
                       carica di Probiviro è incompatibile con qualsiasi altra
                       carica all’interno dell’associazione;
@@ -547,26 +1032,26 @@ const StatutoPage = () => {
                   <li>
                     <p>Spetta in particolare al Collegio dei Probiviri: </p>
 
-                    <ol className="list-decimal pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
-                          Decidere in merito ai provvedimenti disciplinari posti
-                          in essere dal consiglio Direttivo, con particolare
-                          riferimento alla mancata ammissione del socio, o
-                          all’espulsione di esso,
+                          1. Decidere in merito ai provvedimenti disciplinari
+                          posti in essere dal consiglio Direttivo, con
+                          particolare riferimento alla mancata ammissione del
+                          socio, o all’espulsione di esso,
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Arbitrare in merito alle vertenze sorte nell'ambito
+                          2. Arbitrare in merito alle vertenze sorte nell'ambito
                           dell'Associazione e che interessino uno o più soci,
                         </p>
                       </li>
 
                       <li>
                         <p>
-                          Controllare il corretto funzionamento
+                          3. Controllare il corretto funzionamento
                           dell'Associazione, nonché il rispetto, da parte delle
                           cariche elette, delle norme statutarie. Per perseguire
                           questo fine, il Collegio dei Probiviri può chiedere
@@ -580,8 +1065,8 @@ const StatutoPage = () => {
 
                       <li>
                         <p>
-                          Dirimere vertenze e questioni sollevate da uno o più
-                          soci riguardanti la corretta interpretazione dello
+                          4. Dirimere vertenze e questioni sollevate da uno o
+                          più soci riguardanti la corretta interpretazione dello
                           Statuto e dei suoi principi.
                         </p>
                       </li>
@@ -605,7 +1090,7 @@ const StatutoPage = () => {
                       proprio funzionamento e per lo svolgimento delle attività
                       da:
                     </p>
-                    <ol className="pl-10">
+                    <ol className="pl-5">
                       <li>
                         <p>
                           a) quote e contributi degli associati, nella misura
@@ -847,6 +1332,17 @@ const StatutoPage = () => {
               </div>
             </li>
           </ol>
+
+          {/* Firma */}
+          <div>
+            <p>Associazione Ex Allievi dell’ITIS P.Paleocapa di Bergamo</p>
+            <p>Il Presidente</p>
+            <p className="italic">Alessandro Gigli</p>
+            <p className="text-right">Bergamo 21 maggio 2022</p>
+            <p className="text-right">
+              Approvato dall’assemblea ordinaria del 21 maggio 2022
+            </p>
+          </div>
         </div>
       </main>
     </Layout>
