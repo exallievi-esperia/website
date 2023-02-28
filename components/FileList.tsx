@@ -19,9 +19,12 @@ const FileList: React.FC<FileListProps> = ({ year, files }) => {
       <ul className="flex flex-col gap-5">
         {files.map((file: File) => (
           <li key={file.name}>
-            <Link href={file.href} className="flex gap-2 items-center">
+            <Link
+              href={file.href}
+              className="group hover:underline underline-offset-2 decoration-red-400 decoration-2 flex gap-2 items-center"
+            >
               <span>
-                <VscFilePdf className="text-red-400" />
+                <VscFilePdf className="text-red-400 group-hover:rotate-45 transition duration-500 w-8 h-8" />
               </span>
               {file.name}
             </Link>
