@@ -38,13 +38,13 @@ const ContattiPage = () => {
           <div className="flex flex-col mb-10 gap-y-10 lg:my-auto h-full justify-around">
             <Link href="mailto:exallievi@itispaleocapa.it" className="group">
               <MdMail className="w-10 h-10 group-hover:scale-110 transition duration-300" />
-              <p className="font-bold text-2xl">Email</p>
-              <p>exallievi@itispaleocapa.it</p>
+              <p className="font-bold text-xl">Email</p>
+              <p className="text-gray-600">exallievi@itispaleocapa.it</p>
             </Link>
             <Link href="tel:035319388" className="group">
               <MdPhone className="w-10 h-10 group-hover:scale-110 transition duration-30" />
-              <p className="font-bold text-2xl">Telefono</p>
-              <p> 035 319388</p>
+              <p className="font-bold text-xl">Telefono</p>
+              <p className="text-gray-600"> 035 319388</p>
             </Link>
             <Link
               href="https://goo.gl/maps/JjHGPvEaM1fiAFwk7"
@@ -53,8 +53,10 @@ const ContattiPage = () => {
               className="group"
             >
               <MdLocationPin className="w-10 h-10 group-hover:scale-110 transition duration-30" />
-              <p className="font-bold text-2xl">Indirizzo</p>
-              <p>Via Mauro Gavazzeni, 29, 24125 Bergamo</p>
+              <p className="font-bold text-xl">Indirizzo</p>
+              <p className="text-gray-600">
+                Via Mauro Gavazzeni, 29, 24125 Bergamo
+              </p>
             </Link>
           </div>
         </div>

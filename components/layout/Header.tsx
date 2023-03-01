@@ -3,25 +3,68 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { HiBars3, HiXMark, HiChevronDown } from "react-icons/hi2";
+import {
+  HiMagnifyingGlass,
+  HiDocumentText,
+  HiBookOpen,
+  HiCheckCircle,
+} from "react-icons/hi2";
+import { FaHandsHelping } from "react-icons/fa";
+import { MdEmojiPeople, MdPeopleAlt } from "react-icons/md";
 
 const menuItems = [
   {
     label: "Associazione",
     href: "",
     subItems: [
-      { label: "Chi siamo", href: "/chi-siamo" },
-      { label: "Cosa facciamo", href: "/cosa-facciamo" },
-      { label: "Soci", href: "/soci" },
-      { label: "Sostieni", href: "/sostieni" },
+      {
+        label: "Chi siamo",
+        href: "/chi-siamo",
+        icon: MdPeopleAlt,
+        description: "Scopri chi siamo!",
+      },
+      {
+        label: "Cosa facciamo",
+        href: "/cosa-facciamo",
+        icon: HiCheckCircle,
+        description: "Scopri che cosa facciamo!",
+      },
+      {
+        label: "Soci",
+        href: "/soci",
+        icon: MdEmojiPeople,
+        description: "Scopri come diventare socio anche tu!",
+      },
+      {
+        label: "Sostieni",
+        href: "/sostieni",
+        icon: FaHandsHelping,
+        description: "Scopri come aiutare l'associazione!",
+      },
     ],
   },
   {
     label: "Documenti",
     href: "",
     subItems: [
-      { label: "Statuto", href: "/statuto" },
-      { label: "Trasparenza", href: "/trasparenza" },
-      { label: "Verbali", href: "/verbali" },
+      {
+        label: "Statuto",
+        href: "/statuto",
+        icon: HiDocumentText,
+        description: "Leggi lo statuto dell'associazione!",
+      },
+      {
+        label: "Trasparenza",
+        href: "/trasparenza",
+        icon: HiMagnifyingGlass,
+        description: "Scopri come vengono utilizzati i contributi pubblici!",
+      },
+      {
+        label: "Verbali",
+        href: "/verbali",
+        icon: HiBookOpen,
+        description: "Recupera i verbali delle assemblee ordinarie!",
+      },
     ],
   },
   { label: "Eventi", href: "/eventi" },
@@ -101,10 +144,10 @@ const Header = () => {
                           className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                         >
                           <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                            {/* <item.icon
+                            <subItem.icon
                               className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                               aria-hidden="true"
-                            /> */}
+                            />
                           </div>
                           <div className="flex-auto">
                             <Link
@@ -114,9 +157,9 @@ const Header = () => {
                               {subItem.label}
                               <span className="absolute inset-0" />
                             </Link>
-                            {/* <p className="mt-1 text-gray-600">
-                              {item.description}
-                            </p> */}
+                            <p className="mt-1 text-gray-600">
+                              {subItem.description}
+                            </p>
                           </div>
                         </div>
                       ))}
