@@ -5,23 +5,31 @@ import Head from "next/head";
 
 const eventiList = [
   {
-    name: "Eventi 1",
-    description: "Lorem Ipsum",
+    name: "Borse di studio: Area Tessile",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "01 Gennaio 2023",
     href: "/",
   },
   {
-    name: "Eventi 2",
-    description: "Lorem Ipsum",
+    name: "Borse di studio: Area Informatica",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "01 Gennaio 2023",
     href: "/",
   },
   {
     name: "Eventi 3",
-    description: "Lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "01 Gennaio 2023",
     href: "/",
   },
   {
     name: "Eventi 4",
-    description: "Lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "01 Gennaio 2023",
     href: "/",
   },
 ];
@@ -41,12 +49,13 @@ const EventiPage = () => {
           }
         />
 
-        <div className="grid grid-cols-3 gap-4 mt-28">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-28">
           {eventiList.map((evento) => (
             <EventiCard
               key={evento.name}
               name={evento.name}
               description={evento.description}
+              date={evento.date}
               href={evento.href}
             />
           ))}

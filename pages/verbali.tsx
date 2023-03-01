@@ -20,7 +20,7 @@ const VerbaliPage = () => {
         />
 
         {/* Elenco file */}
-        <div className="flex flex-col gap-10 mt-28">
+        <div className="flex flex-col gap-x-10 mt-28">
           {/* 2020 */}
           <FileList
             year={2020}
@@ -29,6 +29,7 @@ const VerbaliPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
+            style="bg-gray-100"
           />
 
           <hr />
@@ -53,6 +54,7 @@ const VerbaliPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
+            style="bg-gray-100"
           />
         </div>
       </main>

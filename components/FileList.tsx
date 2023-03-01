@@ -10,11 +10,14 @@ interface File {
 interface FileListProps {
   year: number;
   files: File[];
+  style?: string;
 }
 
-const FileList: React.FC<FileListProps> = ({ year, files }) => {
+const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 items-center justify-center w-full">
+    <div
+      className={`flex flex-col sm:flex-row gap-10 sm:gap-20 items-center justify-center w-full py-5 ${style}`}
+    >
       <h3 className="text-4xl font-bold">{year}</h3>
       <ul className="flex flex-col gap-5">
         {files.map((file: File) => (
