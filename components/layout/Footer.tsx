@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-white">
+    <footer aria-label="Site Footer" className="bg-gray-100">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -366,7 +366,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-6">
+        <div className="mt-12 border-t border-gray-300 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
               &copy; {new Date().getFullYear()} Ex Allievi Esperia.

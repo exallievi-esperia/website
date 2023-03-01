@@ -23,7 +23,7 @@ const VerbaliPage = () => {
         <div className="flex flex-col gap-x-10 mt-28">
           {/* 2020 */}
           <FileList
-            year={2020}
+            year={2022}
             files={[
               { name: "primofile.pdf", href: "/" },
               { name: "secondofile.pdf", href: "/" },
@@ -48,7 +48,7 @@ const VerbaliPage = () => {
 
           {/* 2022 */}
           <FileList
-            year={2022}
+            year={2020}
             files={[
               { name: "primofile.pdf", href: "/" },
               { name: "secondofile.pdf", href: "/" },
