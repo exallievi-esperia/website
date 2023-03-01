@@ -2,6 +2,7 @@ import HeaderSection from "@/components/HeaderSection";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 const RivistaPage = () => {
   return (
@@ -19,166 +20,156 @@ const RivistaPage = () => {
         />
 
         {/* Bookshelf */}
-        {/* <div className="container">
-          <div className="row">
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 mt-28">
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2022
+            </span>
+          </Link>
 
-            <div className="col-6 col-md-3 centra">
-              <a href="/" className="libro" title="Post-itis - Numero 7">
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="../giornalini/post-itis/6_Numero.pdf"
-                className="libro"
-                title="Post-itis - Numero 6"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2021
+            </span>
+          </Link>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="../giornalini/post-itis/5_Numero.pdf"
-                className="libro"
-                title="Post-itis - Numero 5"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="/logo.svg"
-                className="libro"
-                title="Post-itis - Numero 4"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            {" "}
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2020
+            </span>
+          </Link>
 
-            <div className="col-12 shelf hidden-xs-down"></div>
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="../giornalini/post-itis/3_Numero.pdf"
-                className="libro"
-                title="Post-itis - Numero 3"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            {" "}
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2019
+            </span>
+          </Link>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="../giornalini/post-itis/2_Numero.pdf"
-                className="libro"
-                title="Post-itis - Numero 2"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden md:block col-span-4 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
 
-            <div className="col-6 col-md-3 centra">
-              <a
-                href="../giornalini/post-itis/1_Numero.pdf"
-                className="libro"
-                title="Post-itis - Numero 1"
-              >
-                <img
-                  src="/logo.svg"
-                  className="img-responsive book d-none d-md-block"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-                <img
-                  src="/logo.svg"
-                  className="img-responsive bookMobile d-md-none"
-                  onmouseover="ciao(this)"
-                  onmouseout="provolo(this)"
-                />
-              </a>
-            </div>
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            {" "}
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2018
+            </span>
+          </Link>
 
-            <div className="col-12 shelf hidden-xs-down"></div>
-          </div>
-        </div> */}
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
 
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 mt-28 justify-items-center libreria">
-          <Image src="/logo.svg" alt="Rivista 1" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 1" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 2" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 3" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 4" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 5" width={100} height={100} />
-          <Image src="/logo.svg" alt="Rivista 6" width={100} height={100} />
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            {" "}
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2017
+            </span>
+          </Link>
+
+          <span className="block sm:hidden col-span-1 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+
+          <Link
+            href="/documenti/riviste/rivista-2019.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+          >
+            <Image
+              src="/img/copertine/rivista-2019.jpg"
+              alt="Anteprima rivista 2019"
+              width={150}
+              height={150}
+              className=" translate-y-9"
+            />
+            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+              2016
+            </span>
+          </Link>
+
+          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
+          <span className="hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
         </div>
       </main>
     </Layout>
