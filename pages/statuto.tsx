@@ -19,18 +19,24 @@ const StatutoPage = () => {
           }
         />
 
-        <div className="flex justify-center mt-10">
-          <div className="rounded-full py-1 px-3 text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+        <div className="flex justify-center mt-16">
+          <div className="rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             <Link
               href="/documenti/statuto.pdf"
-              className="hover:text-red-400 transition duration-150 flex gap-2"
+              className="flex gap-2 group items-center"
               rel="noopener noreferrer"
               target="_blank"
             >
               <VscFilePdf className="text-red-400 w-5 h-5" />
-              <p>Visualizza lo statuto in formato PDF</p>
-
-              <span aria-hidden="true">&rarr;</span>
+              <p className="hover:text-red-400 transition duration-300">
+                Visualizza lo statuto in formato PDF
+              </p>
+              <span
+                aria-hidden="true"
+                className="group-hover:translate-x-1 transition duration-300 text-red-400"
+              >
+                &rarr;
+              </span>
             </Link>
           </div>
         </div>

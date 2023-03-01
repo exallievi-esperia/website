@@ -1,6 +1,5 @@
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
-import React from "react";
 import FileList from "@/components/FileList";
 import HeaderSection from "@/components/HeaderSection";
 
