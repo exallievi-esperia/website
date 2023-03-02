@@ -9,17 +9,18 @@ const TrasparenzaPage = () => {
       <Head>
         <title>Trasparenza - Ex Allievi Esperia</title>
       </Head>
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
-        {/* Title */}
-        <HeaderSection
-          title={"Trasparenza"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-          }
-        />
 
+      {/* Title */}
+      <HeaderSection
+        title={"Trasparenza"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
+
+      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         {/* Elenco file */}
-        <div className="flex flex-col gap-x-10 mt-28">
+        <div className="flex flex-col gap-x-10">
           {/* 2020 */}
           <FileList
             year={2022}

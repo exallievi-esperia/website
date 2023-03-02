@@ -10,16 +10,17 @@ const StatutoPage = () => {
       <Head>
         <title>Statuto - Ex Allievi Esperia</title>
       </Head>
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
-        {/* Title */}
-        <HeaderSection
-          title={"Statuto"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-          }
-        />
 
-        <div className="flex justify-center mt-16">
+      {/* Title */}
+      <HeaderSection
+        title={"Statuto"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
+
+      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-14">
+        <div className="flex justify-center">
           <div className="rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             <Link
               href="/documenti/statuto.pdf"

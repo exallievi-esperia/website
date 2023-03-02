@@ -40,16 +40,17 @@ const EventiPage = () => {
       <Head>
         <title>Eventi - Ex Allievi Esperia</title>
       </Head>
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
-        {/* Title */}
-        <HeaderSection
-          title={"Eventi"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-          }
-        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-28">
+      {/* Title */}
+      <HeaderSection
+        title={"Eventi"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
+
+      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {eventiList.map((evento) => (
             <EventiCard
               key={evento.name}
