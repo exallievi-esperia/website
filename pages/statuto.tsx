@@ -1,4 +1,3 @@
-import HeaderSection from "@/components/HeaderSection";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
@@ -6,18 +5,15 @@ import { VscFilePdf } from "react-icons/vsc";
 
 const StatutoPage = () => {
   return (
-    <Layout>
+    <Layout
+      title={"Statuto"}
+      description={
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+      }
+    >
       <Head>
         <title>Statuto - Ex Allievi Esperia</title>
       </Head>
-
-      {/* Title */}
-      <HeaderSection
-        title={"Statuto"}
-        description={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-        }
-      />
 
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-14">
         <div className="flex justify-center">

@@ -1,4 +1,3 @@
-import HeaderSection from "@/components/HeaderSection";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -17,18 +16,15 @@ const CosaFacciamoPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout
+      title={"Cosa facciamo"}
+      description={
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+      }
+    >
       <Head>
         <title>Cosa facciamo - Ex Allievi Esperia</title>
       </Head>
-
-      {/* Title */}
-      <HeaderSection
-        title={"Cosa facciamo"}
-        description={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-        }
-      />
 
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         {/* Progetti realizzati */}

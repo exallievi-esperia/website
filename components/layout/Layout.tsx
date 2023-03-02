@@ -4,12 +4,14 @@ import Header from "./Header";
 
 interface LayoutProps {
   children: React.ReactNode;
+  title: string;
+  description: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title, description }) => {
   return (
     <>
-      <Header />
+      <Header title={title} description={description} />
       {children}
       <Footer />
     </>
