@@ -17,7 +17,7 @@ const VerbaliPage = () => {
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         {/* Elenco file */}
         <div className="flex flex-col gap-x-10">
-          {/* 2020 */}
+          {/* 2022 */}
           <FileList
             year={2022}
             files={[
@@ -42,7 +42,7 @@ const VerbaliPage = () => {
 
           <hr />
 
-          {/* 2022 */}
+          {/* 2020 */}
           <FileList
             year={2020}
             files={[

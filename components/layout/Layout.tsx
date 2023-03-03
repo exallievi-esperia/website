@@ -4,8 +4,8 @@ import Header from "./Header";
 
 interface LayoutProps {
   children: React.ReactNode;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title, description }) => {

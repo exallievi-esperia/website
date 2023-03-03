@@ -2,16 +2,16 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import FileList from "@/components/FileList";
 
-const TrasparenzaPage = () => {
+const BilanciPage = () => {
   return (
     <Layout
-      title={"Trasparenza"}
+      title={"Bilanci"}
       description={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
       }
     >
       <Head>
-        <title>Trasparenza - Ex Allievi Esperia</title>
+        <title>Bilanci - Ex Allievi Esperia</title>
       </Head>
 
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
@@ -58,4 +58,4 @@ const TrasparenzaPage = () => {
   );
 };
 
-export default TrasparenzaPage;
+export default BilanciPage;

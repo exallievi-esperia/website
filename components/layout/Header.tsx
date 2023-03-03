@@ -2,7 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import { HiBars3, HiXMark, HiChevronDown } from "react-icons/hi2";
+import {
+  HiBars3,
+  HiXMark,
+  HiChevronDown,
+  HiChatBubbleBottomCenterText,
+} from "react-icons/hi2";
 import {
   HiMagnifyingGlass,
   HiDocumentText,
@@ -60,9 +65,15 @@ const menuItems = [
         description: "Scopri come vengono utilizzati i contributi pubblici!",
       },
       {
+        label: "Bilanci",
+        href: "/bilanci",
+        icon: HiBookOpen,
+        description: "Scopri i bilanci dell'associazione!",
+      },
+      {
         label: "Verbali",
         href: "/verbali",
-        icon: HiBookOpen,
+        icon: HiChatBubbleBottomCenterText,
         description: "Recupera i verbali delle assemblee ordinarie!",
       },
     ],
@@ -78,11 +89,14 @@ const classNames = (...classes: string[]) => {
 };
 
 interface HeaderProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, description }) => {
+const Header: React.FC<HeaderProps> = ({
+  title = undefined,
+  description = undefined,
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -254,10 +268,14 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
       </Dialog>
 
       {/* Title */}
-      <div className="text-center p-12 md:p-36 bg-gray-300">
-        <h1 className="font-bold sm:text-5xl text-4xl mb-5">{title}</h1>
-        <p className="text-xl">{description}</p>
-      </div>
+      {title && description ? (
+        <div className="text-center p-12 md:p-36 bg-gray-300">
+          <h1 className="font-bold sm:text-5xl text-4xl mb-5">{title}</h1>
+          <p className="text-xl">{description}</p>
+        </div>
+      ) : (
+        <></>
+      )}
     </header>
   );
 };
