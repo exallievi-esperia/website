@@ -5,16 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const CosaFacciamoPage = () => {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const settings = {
+  dots: true,
+  arrows: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
+const CosaFacciamoPage = () => {
   return (
     <Layout
       title={"Cosa facciamo"}

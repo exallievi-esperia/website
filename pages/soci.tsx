@@ -19,10 +19,8 @@ const settings = {
 const SociPage = () => {
   return (
     <Layout
-      title={"Soci"}
-      description={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-      }
+      title="Soci"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     >
       <Head>
         <title>Soci - Ex Allievi Esperia</title>
