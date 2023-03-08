@@ -229,10 +229,9 @@ const Footer: React.FC = () => {
         <div className="mt-12 border-t border-gray-300 pt-6">
           <div className="text-center">
             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-              &copy; {new Date().getFullYear()} Ex Allievi Esperia - 
+              &copy; {new Date().getFullYear()} Ex Allievi Esperia -
               <span className="block sm:inline"> C.F. 001122334455</span>
             </p>
-            
           </div>
         </div>
       </div>
