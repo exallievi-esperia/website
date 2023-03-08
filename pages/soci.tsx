@@ -3,8 +3,6 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-import { HiCheck } from "react-icons/hi2";
 import Testimonial from "@/components/Testimonial";
 import Feature from "@/components/Feature";
 

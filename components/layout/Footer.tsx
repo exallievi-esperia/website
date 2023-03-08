@@ -8,6 +8,51 @@ import {
   MdOutlineLocationOn,
 } from "react-icons/md";
 
+const menuItems = [
+  {
+    label: "Associazione",
+    subItems: [
+      {
+        label: "Chi siamo",
+        href: "/chi-siamo",
+      },
+      {
+        label: "Cosa facciamo",
+        href: "/cosa-facciamo",
+      },
+      {
+        label: "Soci",
+        href: "/soci",
+      },
+      {
+        label: "Sostieni",
+        href: "/sostieni",
+      },
+    ],
+  },
+  {
+    label: "Documenti",
+    subItems: [
+      {
+        label: "Statuto",
+        href: "/statuto",
+      },
+      {
+        label: "Trasparenza",
+        href: "/trasparenza",
+      },
+      {
+        label: "Bilanci",
+        href: "/bilanci",
+      },
+      {
+        label: "Verbali",
+        href: "/verbali",
+      },
+    ],
+  },
+];
+
 const Footer: React.FC = () => {
   return (
     <footer aria-label="Site Footer" className="bg-gray-100">
@@ -25,7 +70,7 @@ const Footer: React.FC = () => {
               </Link>
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+            <p className="mt-6 text-center leading-relaxed text-gray-500 sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -51,41 +96,16 @@ const Footer: React.FC = () => {
 
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/chi-siamo"
-                    >
-                      Chi siamo
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/cosa-facciamo"
-                    >
-                      Cosa facciamo
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/soci"
-                    >
-                      Soci
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/sostieni"
-                    >
-                      Sostieni
-                    </Link>
-                  </li>
+                  {menuItems[0].subItems.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        className="text-gray-700 transition hover:text-gray-700/75"
+                        href={item.href}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
@@ -95,32 +115,16 @@ const Footer: React.FC = () => {
 
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/statuto"
-                    >
-                      Statuto
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/trasparenza"
-                    >
-                      Trasparenza
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/verbali"
-                    >
-                      Verbali
-                    </Link>
-                  </li>
+                  {menuItems[1].subItems.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        className="text-gray-700 transition hover:text-gray-700/75"
+                        href={item.href}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
@@ -149,6 +153,24 @@ const Footer: React.FC = () => {
                       target="_blank"
                     >
                       TeamArtist
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-gray-700 transition hover:text-gray-700/75"
+                      href="/"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      className="text-gray-700 transition hover:text-gray-700/75"
+                      href="/"
+                    >
+                      Cookie Policy
                     </Link>
                   </li>
                 </ul>
@@ -205,26 +227,12 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 border-t border-gray-300 pt-6">
-          <div className="text-center sm:flex sm:justify-between sm:text-left">
+          <div className="text-center">
             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-              &copy; {new Date().getFullYear()} Ex Allievi Esperia.
-              <span className="block sm:inline"> All rights reserved.</span>
+              &copy; {new Date().getFullYear()} Ex Allievi Esperia - 
+              <span className="block sm:inline"> C.F. 001122334455</span>
             </p>
-            <div className="text-sm text-gray-500 flex justify-center sm:justify-end gap-4 mt-6 sm:mt-0">
-              <Link
-                className="inline-block text-gray-500 transition hover:opacity-75"
-                href="/"
-              >
-                Privacy Policy
-              </Link>
-
-              <Link
-                className="inline-block text-gray-500 transition hover:opacity-75"
-                href="/"
-              >
-                Cookie Policy
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>
