@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import type { AppProps } from "next/app"
 import Head from "next/head"
-import { Inter, Open_Sans } from "@next/font/google"
+import { Inter, Open_Sans } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 const open_sans = Open_Sans({
