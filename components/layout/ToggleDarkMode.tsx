@@ -8,13 +8,13 @@ interface ToggleDarkModeProps {
 
 const ToggleDarkMode: React.FC<ToggleDarkModeProps> = ({ theme, toggle }) => {
   return (
-    <button className='ml-5' onClick={toggle}>
+    <div className='md:ml-5 cursor-pointer' onClick={toggle}>
       {theme === "light" ? (
         <HiOutlineSun className='w-6 h-6' />
       ) : (
         <HiOutlineMoon className='w-6 h-6' />
       )}
-    </button>
+    </div>
   )
 }
 

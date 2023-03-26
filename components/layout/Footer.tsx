@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Associazione</p>
+              <h3 className="text-lg font-medium text-gray-900">Associazione</h3>
 
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Documenti</p>
+              <h3 className="text-lg font-medium text-gray-900">Documenti</h3>
 
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Link utili</p>
+              <h3 className="text-lg font-medium text-gray-900">Link utili</h3>
 
               <nav aria-label="Footer Helpful Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -178,7 +178,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Contatti</p>
+              <h3 className="text-lg font-medium text-gray-900">Contatti</h3>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
