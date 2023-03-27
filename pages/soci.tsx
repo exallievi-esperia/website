@@ -1,10 +1,11 @@
-import Layout from "@/components/layout/Layout";
-import Head from "next/head";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import Testimonial from "@/components/Testimonial";
-import Feature from "@/components/Feature";
+import Layout from "@/components/layout/Layout"
+import Head from "next/head"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import Testimonial from "@/components/Testimonial"
+import Feature from "@/components/Feature"
+import Heading from "@/components/Heading"
 
 const settings = {
   dots: true,
@@ -12,17 +13,19 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-};
+}
 
 const SociPage = () => {
   return (
-    <Layout
-      title='Soci'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-    >
+    <Layout>
       <Head>
         <title>Soci - Ex Allievi Esperia</title>
       </Head>
+
+      <Heading
+        title='Soci'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+      />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Iscriviti | Rinnova */}
@@ -173,6 +176,6 @@ const SociPage = () => {
       </main>
     </Layout>
   )
-};
+}
 
-export default SociPage;
+export default SociPage

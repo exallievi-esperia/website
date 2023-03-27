@@ -1,19 +1,22 @@
-import Layout from "@/components/layout/Layout";
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
+import Layout from "@/components/layout/Layout"
+import Image from "next/image"
+import Head from "next/head"
+import Link from "next/link"
+import Heading from "@/components/Heading"
 
 const RivistaPage = () => {
   return (
-    <Layout
-      title={"Rivista"}
-      description={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-      }
-    >
+    <Layout>
       <Head>
         <title>Rivista - Ex Allievi Esperia</title>
       </Head>
+
+      <Heading
+        title={"Rivista"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Bookshelf */}
@@ -190,6 +193,6 @@ const RivistaPage = () => {
       </main>
     </Layout>
   )
-};
+}
 
-export default RivistaPage;
+export default RivistaPage

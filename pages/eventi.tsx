@@ -1,6 +1,7 @@
-import Layout from "@/components/layout/Layout";
-import EventiCard from "@/components/EventiCard";
-import Head from "next/head";
+import Layout from "@/components/layout/Layout"
+import EventiCard from "@/components/EventiCard"
+import Head from "next/head"
+import Heading from "@/components/Heading"
 
 const eventiList = [
   {
@@ -31,22 +32,24 @@ const eventiList = [
     date: "01 Gennaio 2023",
     href: "/",
   },
-];
+]
 
 const EventiPage = () => {
   return (
-    <Layout
-      title={"Eventi"}
-      description={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-      }
-    >
+    <Layout>
       <Head>
         <title>Eventi - Ex Allievi Esperia</title>
       </Head>
 
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <Heading
+        title={"Eventi"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
+
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {eventiList.map((evento) => (
             <EventiCard
               key={evento.name}
@@ -59,7 +62,7 @@ const EventiPage = () => {
         </div>
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default EventiPage;
+export default EventiPage

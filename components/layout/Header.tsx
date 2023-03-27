@@ -89,19 +89,15 @@ const classNames = (...classes: string[]) => {
   return classes.filter(Boolean).join(" ")
 }
 
-interface HeaderProps {
-  title?: string
-  description?: string
-}
-
-const Header: React.FC<HeaderProps> = ({
-  title = undefined,
-  description = undefined,
-}) => {
+const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className='bg-[#a0c3d9] dark:bg-gray-700'>
+    <header
+      className={`bg-[#a0c3d9] dark:bg-gray-700 sticky top-0 ${
+        mobileMenuOpen ? "" : "z-50"
+      }`}
+    >
       {/* Navbar */}
       <nav
         className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8'
@@ -288,16 +284,6 @@ const Header: React.FC<HeaderProps> = ({
           </div>
         </Dialog.Panel>
       </Dialog>
-
-      {/* Title */}
-      {title && description ? (
-        <div className='text-center p-12 md:p-36 bg-gray-300 dark:bg-gray-600'>
-          <h1 className='font-bold sm:text-5xl text-4xl mb-5 dark:text-white'>{title}</h1>
-          <p className='text-xl dark:text-gray-200'>{description}</p>
-        </div>
-      ) : (
-        <></>
-      )}
     </header>
   )
 }

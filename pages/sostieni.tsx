@@ -1,11 +1,12 @@
-import Layout from "@/components/layout/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import Link from "next/link";
+import Layout from "@/components/layout/Layout"
+import Head from "next/head"
+import Image from "next/image"
+import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import Link from "next/link"
+import Heading from "@/components/Heading"
 
 const settings = {
   slidesToShow: 3,
@@ -16,17 +17,19 @@ const settings = {
   autoplaySpeed: 0,
   cssEase: "linear",
   arrows: false,
-};
+}
 
 const SostieniPage = () => {
   return (
-    <Layout
-      title='Sostieni'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-    >
+    <Layout>
       <Head>
         <title>Sostieni - Ex Allievi Esperia</title>
       </Head>
+
+      <Heading
+        title='Sostieni'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+      />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* 5x1000 */}
@@ -219,6 +222,6 @@ const SostieniPage = () => {
       </main>
     </Layout>
   )
-};
+}
 
-export default SostieniPage;
+export default SostieniPage

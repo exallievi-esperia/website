@@ -1,22 +1,25 @@
-import Layout from "@/components/layout/Layout";
-import Head from "next/head";
-import FileList from "@/components/FileList";
+import Layout from "@/components/layout/Layout"
+import Head from "next/head"
+import FileList from "@/components/FileList"
+import Heading from "@/components/Heading"
 
 const BilanciPage = () => {
   return (
-    <Layout
-      title={"Bilanci"}
-      description={
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-      }
-    >
+    <Layout>
       <Head>
         <title>Bilanci - Ex Allievi Esperia</title>
       </Head>
 
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
+      <Heading
+        title={"Bilanci"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+      />
+
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Elenco file */}
-        <div className="flex flex-col gap-x-10">
+        <div className='flex flex-col gap-x-10'>
           {/* 2022 */}
           <FileList
             year={2022}
@@ -25,7 +28,7 @@ const BilanciPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100'
           />
 
           <hr />
@@ -50,12 +53,12 @@ const BilanciPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100'
           />
         </div>
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default BilanciPage;
+export default BilanciPage
