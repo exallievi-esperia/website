@@ -148,7 +148,7 @@ const Header: React.FC<HeaderProps> = ({
                   leaveFrom='opacity-100 translate-y-0'
                   leaveTo='opacity-0 translate-y-1'
                 >
-                  <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-gray-600 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/95'>
+                  <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-gray-600 shadow-lg ring-1 ring-gray-900/5'>
                     <div className='p-4'>
                       {menuItem.subItems?.map((subItem) => (
                         <div
@@ -191,14 +191,11 @@ const Header: React.FC<HeaderProps> = ({
           <div className='flex lg:hidden'>
             <button
               type='button'
-              className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+              className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-100'
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className='sr-only'>Open main menu</span>
-              <HiBars3
-                className='h-6 w-6 dark:text-gray-100'
-                aria-hidden='true'
-              />
+              <HiBars3 className='h-6 w-6 ' aria-hidden='true' />
             </button>
           </div>
         </div>
@@ -212,7 +209,7 @@ const Header: React.FC<HeaderProps> = ({
         onClose={setMobileMenuOpen}
       >
         <div className='fixed inset-0 z-10' />
-        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-600 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-600 px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between sm:justify-end gap-x-5'>
             <Link
               href='/'
@@ -224,7 +221,9 @@ const Header: React.FC<HeaderProps> = ({
                 width={48}
                 height={48}
               />
-              <span className='text-2xl'>Ex Allievi Esperia</span>
+              <span className='text-2xl dark:text-white'>
+                Ex Allievi Esperia
+              </span>
             </Link>
 
             <div className='flex gap-x-5'>
@@ -233,14 +232,11 @@ const Header: React.FC<HeaderProps> = ({
 
               <button
                 type='button'
-                className='-m-2.5 rounded-md p-2.5 text-gray-700'
+                className='-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-100'
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className='sr-only'>Close menu</span>
-                <HiXMark
-                  className='h-6 w-6 dark:text-gray-100'
-                  aria-hidden='true'
-                />
+                <HiXMark className='h-6 w-6' aria-hidden='true' />
               </button>
             </div>
           </div>
@@ -252,7 +248,7 @@ const Header: React.FC<HeaderProps> = ({
                     <Link
                       href={menuItem.href}
                       key={menuItem.label}
-                      className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-700'
                     >
                       {menuItem.label}
                     </Link>
@@ -260,12 +256,12 @@ const Header: React.FC<HeaderProps> = ({
                     <Disclosure as='div' className='-mx-3' key={menuItem.label}>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className='flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50'>
+                          <Disclosure.Button className='flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-700'>
                             {menuItem.label}
                             <HiChevronDown
                               className={classNames(
                                 open ? "rotate-180" : "",
-                                "h-5 w-5 flex-none"
+                                "h-5 w-5 flex-none dark:text-gray-300"
                               )}
                               aria-hidden='true'
                             />
@@ -276,7 +272,7 @@ const Header: React.FC<HeaderProps> = ({
                                 key={subItem.label}
                                 as='a'
                                 href={subItem.href}
-                                className='block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                                className='block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-700'
                               >
                                 {subItem.label}
                               </Disclosure.Button>
@@ -295,9 +291,9 @@ const Header: React.FC<HeaderProps> = ({
 
       {/* Title */}
       {title && description ? (
-        <div className='text-center p-12 md:p-36 bg-gray-300'>
-          <h1 className='font-bold sm:text-5xl text-4xl mb-5'>{title}</h1>
-          <p className='text-xl'>{description}</p>
+        <div className='text-center p-12 md:p-36 bg-gray-300 dark:bg-gray-600'>
+          <h1 className='font-bold sm:text-5xl text-4xl mb-5 dark:text-white'>{title}</h1>
+          <p className='text-xl dark:text-gray-200'>{description}</p>
         </div>
       ) : (
         <></>
