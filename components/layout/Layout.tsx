@@ -5,8 +5,6 @@ import { IoMdArrowRoundUp } from "react-icons/io"
 
 interface LayoutProps {
   children: React.ReactNode
-  title?: string
-  description?: string
 }
 
 const isBrowser = () => typeof window !== "undefined"
@@ -16,10 +14,10 @@ const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title, description }) => {
+const Layout: React.FC<LayoutProps> = ({ children}) => {
   return (
     <>
-      <Header title={title} description={description} />
+      <Header />
       {children}
       <Footer />
       <button
