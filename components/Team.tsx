@@ -35,7 +35,7 @@ const Team: React.FC<TeamProps> = ({ name, role, image, contacts }) => {
           <Link href={contact.link} key={index}>
             <contact.icon
               key={index}
-              className='w-6 h-6 hover:text-red-400 transition-colors'
+              className='w-6 h-6 hover:text-[#f25116] transition-colors'
             />
           </Link>
         ))}

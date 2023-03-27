@@ -15,181 +15,181 @@ const RivistaPage = () => {
         <title>Rivista - Ex Allievi Esperia</title>
       </Head>
 
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Bookshelf */}
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4">
+        <div className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4'>
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2022
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2021
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             {" "}
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2020
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             {" "}
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2019
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             {" "}
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2018
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             {" "}
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2017
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
-            href="/documenti/riviste/rivista-2019.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center flex-col transition-transform duration-300 hover:-translate-y-5"
+            href='/documenti/riviste/rivista-2019.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
           >
             <Image
-              src="/img/copertine/rivista-2019.jpg"
-              alt="Anteprima rivista 2019"
+              src='/img/copertine/rivista-2019.jpg'
+              alt='Anteprima rivista 2019'
               width={150}
               height={150}
-              className=" translate-y-9"
+              className=' translate-y-9'
             />
-            <span className="font-bold bg-red-400 text-white px-3 rounded-full z-10 translate-y-5">
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
               2016
             </span>
           </Link>
 
-          <span className="block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className="hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></span>
-          <span className="hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400"></span>
+          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
         </div>
       </main>
     </Layout>
-  );
+  )
 };
 
 export default RivistaPage;

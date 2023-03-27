@@ -46,7 +46,7 @@ const EventiPage = () => {
       </Head>
 
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {eventiList.map((evento) => (
             <EventiCard
               key={evento.name}

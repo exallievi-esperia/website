@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useContext } from "react"
 import Footer from "./Footer"
 import Header from "./Header"
 
@@ -8,26 +8,10 @@ interface LayoutProps {
   description?: string
 }
 
-const currentTheme =
-  typeof window === "undefined" ? "" : localStorage.getItem("theme")
-
 const Layout: React.FC<LayoutProps> = ({ children, title, description }) => {
-  const [theme, setTheme] = useState(currentTheme || "light")
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light"
-    setTheme(newTheme)
-    localStorage.setItem("theme", newTheme)
-  }
-
   return (
-    <div className={`${theme === "light" ? "light" : "dark"}`}>
-      <Header
-        title={title}
-        description={description}
-        theme={theme}
-        toggleTheme={toggleTheme}
-      />
+    <div>
+      <Header title={title} description={description} />
       {children}
       <Footer />
     </div>

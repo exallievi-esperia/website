@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
         h3,
         h4,
         h5,
-        h6 {
+        h6, span, button {
           font-family: ${open_sans.style.fontFamily};
         }
       `}</style>

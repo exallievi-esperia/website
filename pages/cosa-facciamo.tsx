@@ -26,49 +26,49 @@ const CosaFacciamoPage = () => {
         <title>Cosa facciamo - Ex Allievi Esperia</title>
       </Head>
 
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Progetti realizzati */}
-        <section className="flex flex-col gap-20">
+        <section className='flex flex-col gap-20'>
           {/* Museo TIME */}
-          <div className="mt-8 flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div className='mt-8 flex flex-col lg:flex-row gap-8 lg:gap-16'>
             {/* Img */}
-            <div className="w-full lg:w-1/2">
-              <Slider {...settings} className="self-center">
+            <div className='w-full lg:w-1/2'>
+              <Slider {...settings} className='self-center'>
                 <div>
                   <Image
-                    alt="Party"
+                    alt='Party'
                     width={1000}
                     height={1000}
-                    src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                    className="h-full w-full object-cover aspect-auto"
+                    src='https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
+                    className='h-full w-full object-cover aspect-auto'
                   />
-                  <p className="text-center w-full mt-3">Prima</p>
+                  <p className='text-center w-full mt-3'>Prima</p>
                 </div>
 
                 <div>
                   <Image
-                    alt="Party"
+                    alt='Party'
                     width={1000}
                     height={1000}
-                    src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                    className="h-full w-full object-cover aspect-auto"
+                    src='https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
+                    className='h-full w-full object-cover aspect-auto'
                   />
-                  <p className="text-center w-full mt-3">Dopo</p>
+                  <p className='text-center w-full mt-3'>Dopo</p>
                 </div>
               </Slider>
             </div>
 
             {/* Text */}
-            <div className="self-center">
-              <div className="max-w-3xl mb-8">
-                <h2 className="text-2xl font-bold sm:text-2xl">Museo TIME</h2>
-                <span className="flex items-center text-gray-500 text-base mt-2">
-                  <span className="block h-0.5 w-4 bg-red-400 mr-2 rounded-full"></span>
+            <div className='self-center'>
+              <div className='max-w-3xl mb-8'>
+                <h2 className='text-2xl font-bold sm:text-2xl'>Museo TIME</h2>
+                <span className='flex items-center text-gray-500 text-base mt-2'>
+                  <span className='block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full'></span>
                   Giugno 2016
                 </span>
               </div>
 
-              <div className="space-y-4 text-gray-600">
+              <div className='space-y-4 text-gray-600'>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
                   qui hic atque tenetur quis eius quos ea neque sunt,
@@ -92,18 +92,18 @@ const CosaFacciamoPage = () => {
           <hr />
 
           {/* Lab */}
-          <div className="mt-8 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16">
+          <div className='mt-8 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16'>
             {/* Text */}
-            <div className="self-center">
-              <div className="max-w-3xl mb-8">
-                <h2 className="text-2xl font-bold sm:text-2xl">Laboratorio</h2>
-                <span className="flex items-center text-gray-500 text-base mt-2">
-                  <span className="block h-0.5 w-4 bg-red-400 mr-2 rounded-full"></span>
+            <div className='self-center'>
+              <div className='max-w-3xl mb-8'>
+                <h2 className='text-2xl font-bold sm:text-2xl'>Laboratorio</h2>
+                <span className='flex items-center text-gray-500 text-base mt-2'>
+                  <span className='block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full'></span>
                   Giugno 2016
                 </span>
               </div>
 
-              <div className="space-y-4 text-gray-600">
+              <div className='space-y-4 text-gray-600'>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
                   qui hic atque tenetur quis eius quos ea neque sunt,
@@ -124,28 +124,28 @@ const CosaFacciamoPage = () => {
             </div>
 
             {/* Img */}
-            <div className="w-full lg:w-1/2">
-              <Slider {...settings} className="self-center">
+            <div className='w-full lg:w-1/2'>
+              <Slider {...settings} className='self-center'>
                 <div>
                   <Image
-                    alt="Party"
+                    alt='Party'
                     width={1000}
                     height={1000}
-                    src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                    className="h-full w-full object-cover aspect-auto"
+                    src='https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
+                    className='h-full w-full object-cover aspect-auto'
                   />
-                  <p className="text-center w-full mt-3">Prima</p>
+                  <p className='text-center w-full mt-3'>Prima</p>
                 </div>
 
                 <div>
                   <Image
-                    alt="Party"
+                    alt='Party'
                     width={1000}
                     height={1000}
-                    src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                    className="h-full w-full object-cover aspect-auto"
+                    src='https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80'
+                    className='h-full w-full object-cover aspect-auto'
                   />
-                  <p className="text-center w-full mt-3">Dopo</p>
+                  <p className='text-center w-full mt-3'>Dopo</p>
                 </div>
               </Slider>
             </div>
@@ -153,7 +153,7 @@ const CosaFacciamoPage = () => {
         </section>
       </main>
     </Layout>
-  );
+  )
 };
 
 export default CosaFacciamoPage;

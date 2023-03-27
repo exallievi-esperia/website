@@ -55,7 +55,7 @@ const menuItems = [
 
 const Footer: React.FC = () => {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-100">
+    <footer aria-label="Site Footer" className="bg-[#a0c3d9]">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               </Link>
             </div>
 
-            <p className="mt-6 text-center leading-relaxed text-gray-500 sm:text-left">
+            <p className="mt-6 text-center leading-relaxed sm:text-left text-gray-700">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                   href="https://www.facebook.com/exallievi.paleocapa"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75"
+                  className="text-[#f25116] transition hover:text-[#bf3617]"
                 >
                   <span className="sr-only">Facebook</span>
                   <MdFacebook className="w-8 h-8" />
@@ -228,7 +228,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-12 border-t border-gray-300 pt-6">
           <div className="text-center">
-            <p className="mt-4 text-sm text-gray-500 sm:mt-0">
+            <p className="mt-4 text-sm text-gray-700 sm:mt-0">
               &copy; {new Date().getFullYear()} Ex Allievi Esperia -
               <span className="block sm:inline"> C.F. 001122334455</span>
             </p>

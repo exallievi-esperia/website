@@ -92,20 +92,16 @@ const classNames = (...classes: string[]) => {
 interface HeaderProps {
   title?: string
   description?: string
-  theme: string
-  toggleTheme: () => void
 }
 
 const Header: React.FC<HeaderProps> = ({
   title = undefined,
   description = undefined,
-  theme,
-  toggleTheme,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className='bg-white dark:bg-gray-600'>
+    <header className='bg-[#a0c3d9] dark:bg-gray-700'>
       {/* Navbar */}
       <nav
         className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8'
@@ -119,7 +115,7 @@ const Header: React.FC<HeaderProps> = ({
               width={48}
               height={48}
             />
-            <span className='text-2xl'>Ex Allievi Esperia</span>
+            <span className='text-2xl dark:text-white'>Ex Allievi Esperia</span>
           </Link>
         </div>
 
@@ -128,17 +124,17 @@ const Header: React.FC<HeaderProps> = ({
             menuItem.href ? (
               <Link
                 href={menuItem.href}
-                className='text-sm font-semibold leading-6 text-gray-900'
+                className='text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100'
                 key={menuItem.label}
               >
                 {menuItem.label}
               </Link>
             ) : (
               <Popover className='relative' key={menuItem.label}>
-                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900'>
+                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100'>
                   {menuItem.label}
                   <HiChevronDown
-                    className='h-5 w-5 flex-none text-gray-400'
+                    className='h-5 w-5 flex-none text-gray-700 dark:text-gray-300'
                     aria-hidden='true'
                   />
                 </Popover.Button>
@@ -152,28 +148,28 @@ const Header: React.FC<HeaderProps> = ({
                   leaveFrom='opacity-100 translate-y-0'
                   leaveTo='opacity-0 translate-y-1'
                 >
-                  <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5'>
+                  <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-gray-600 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/95'>
                     <div className='p-4'>
                       {menuItem.subItems?.map((subItem) => (
                         <div
                           key={subItem.label}
-                          className='group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50'
+                          className='group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-gray-700'
                         >
                           <div className='flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white'>
                             <subItem.icon
-                              className='h-6 w-6 text-gray-600 group-hover:text-red-400'
+                              className='h-6 w-6 text-gray-600 group-hover:text-[#f25116]'
                               aria-hidden='true'
                             />
                           </div>
                           <div className='flex-auto'>
                             <Link
                               href={subItem.href}
-                              className='block font-semibold text-gray-900'
+                              className='block font-semibold text-gray-900 dark:text-gray-100'
                             >
                               {subItem.label}
                               <span className='absolute inset-0' />
                             </Link>
-                            <p className='mt-1 text-gray-600'>
+                            <p className='mt-1 text-gray-600 dark:text-gray-200'>
                               {subItem.description}
                             </p>
                           </div>
@@ -189,7 +185,7 @@ const Header: React.FC<HeaderProps> = ({
 
         <div className='flex gap-x-5'>
           {/* Dark mode */}
-          <ToggleDarkMode theme={theme} toggle={toggleTheme} />
+          <ToggleDarkMode />
 
           {/* Hamburger button */}
           <div className='flex lg:hidden'>
@@ -199,7 +195,10 @@ const Header: React.FC<HeaderProps> = ({
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className='sr-only'>Open main menu</span>
-              <HiBars3 className='h-6 w-6' aria-hidden='true' />
+              <HiBars3
+                className='h-6 w-6 dark:text-gray-100'
+                aria-hidden='true'
+              />
             </button>
           </div>
         </div>
@@ -213,7 +212,7 @@ const Header: React.FC<HeaderProps> = ({
         onClose={setMobileMenuOpen}
       >
         <div className='fixed inset-0 z-10' />
-        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-600 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between sm:justify-end gap-x-5'>
             <Link
               href='/'
@@ -228,9 +227,9 @@ const Header: React.FC<HeaderProps> = ({
               <span className='text-2xl'>Ex Allievi Esperia</span>
             </Link>
 
-            <div className="flex gap-x-5">
+            <div className='flex gap-x-5'>
               {/* Dark mode */}
-              <ToggleDarkMode theme={theme} toggle={toggleTheme} />
+              <ToggleDarkMode />
 
               <button
                 type='button'
@@ -238,7 +237,10 @@ const Header: React.FC<HeaderProps> = ({
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className='sr-only'>Close menu</span>
-                <HiXMark className='h-6 w-6' aria-hidden='true' />
+                <HiXMark
+                  className='h-6 w-6 dark:text-gray-100'
+                  aria-hidden='true'
+                />
               </button>
             </div>
           </div>

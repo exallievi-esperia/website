@@ -15,22 +15,22 @@ const StatutoPage = () => {
         <title>Statuto - Ex Allievi Esperia</title>
       </Head>
 
-      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-14">
-        <div className="flex justify-center">
-          <div className="rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-14'>
+        <div className='flex justify-center'>
+          <div className='rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
             <Link
-              href="/documenti/statuto.pdf"
-              className="flex gap-2 group items-center"
-              rel="noopener noreferrer"
-              target="_blank"
+              href='/documenti/statuto.pdf'
+              className='flex gap-2 group items-center'
+              rel='noopener noreferrer'
+              target='_blank'
             >
-              <VscFilePdf className="text-red-400 w-5 h-5" />
-              <p className="hover:text-red-400 transition duration-300">
+              <VscFilePdf className='text-[#f25116] w-5 h-5' />
+              <p className='hover:text-[#f25116] transition duration-300'>
                 Visualizza lo statuto in formato PDF
               </p>
               <span
-                aria-hidden="true"
-                className="group-hover:translate-x-1 transition duration-300 text-red-400"
+                aria-hidden='true'
+                className='group-hover:translate-x-1 transition duration-300 text-[#f25116]'
               >
                 &rarr;
               </span>
@@ -39,9 +39,9 @@ const StatutoPage = () => {
         </div>
 
         {/* Statuto */}
-        <div className="mt-16">
+        <div className='mt-16'>
           {/* Titolo statuto */}
-          <h2 className="font-bold text-xl mb-6">
+          <h2 className='font-bold text-xl mb-6'>
             Statuto dell’Associazione non riconosciuta “Ex Allievi ITIS
             P.Paleocapa di Bergamo (Esperia) – APS” modificato secondo il D.Lgs.
             117/2017. Ente del Terzo Settore
@@ -51,8 +51,8 @@ const StatutoPage = () => {
           <ol>
             {/* Art. 1 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.1 - Denominazione, sede e durata
                 </h3>
 
@@ -60,7 +60,7 @@ const StatutoPage = () => {
                   <li>
                     <p>
                       1. E' costituita l'associazione
-                      <span className="font-bold">
+                      <span className='font-bold'>
                         “Ex Allievi ITIS P. Paleocapa di Bergamo (Esperia) –
                         APS” (Associazione di Promozione Sociale)
                       </span>
@@ -103,8 +103,8 @@ const StatutoPage = () => {
 
             {/* Art. 2 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art.2 – Scopo</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art.2 – Scopo</h3>
 
                 <ol>
                   <li>
@@ -114,7 +114,7 @@ const StatutoPage = () => {
                       particolare intende:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Stimolare e rendere più intensi i rapporti fra il
@@ -180,8 +180,8 @@ const StatutoPage = () => {
 
             {/* Art. 3 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art 3 - Attività di interesse generale
                 </h3>
 
@@ -193,7 +193,7 @@ const StatutoPage = () => {
                       attività di interesse generale:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           d) Educazione, istruzione e formazione professionale,
@@ -229,7 +229,7 @@ const StatutoPage = () => {
                   <li>
                     <p>2. In particolare l’associazione si propone di:</p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           a) Effettuare la pubblicazione della rivista
@@ -337,8 +337,8 @@ const StatutoPage = () => {
 
             {/* Art. 4 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.4 - Ammissione dei soci
                 </h3>
 
@@ -403,8 +403,8 @@ const StatutoPage = () => {
 
             {/* Art. 5 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.5 - Diritti e doveri dei soci
                 </h3>
 
@@ -453,8 +453,8 @@ const StatutoPage = () => {
 
             {/* Art. 6 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.6 - Recesso ed esclusione del socio
                 </h3>
 
@@ -472,7 +472,7 @@ const StatutoPage = () => {
                       seguenti casi:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           a) Morosità protrattasi per 3 mesi dal temine di
@@ -525,8 +525,8 @@ const StatutoPage = () => {
 
             {/* Art. 7 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.7 - Gli organi sociali
                 </h3>
 
@@ -534,7 +534,7 @@ const StatutoPage = () => {
                   <li>
                     <p>7.1. Gli organi dell'associazione sono:</p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>1. L'Assemblea dei soci,</p>
                       </li>
@@ -553,7 +553,7 @@ const StatutoPage = () => {
                       controllo e garanzia:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>4. Il Collegio dei Revisori dei conti</p>
                       </li>
@@ -576,8 +576,8 @@ const StatutoPage = () => {
 
             {/* Art. 8 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art.8 - L'assemblea</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art.8 - L'assemblea</h3>
 
                 <ol>
                   <li>
@@ -588,7 +588,7 @@ const StatutoPage = () => {
                       mediante:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Avviso scritto da inviare con lettera semplice/
@@ -656,7 +656,7 @@ const StatutoPage = () => {
                   <li>
                     <p>8.8. Competenze inderogabili dell'assemblea</p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           a) Nomina e revoca i componenti degli organi sociali;
@@ -764,7 +764,7 @@ const StatutoPage = () => {
                       la delibera delle seguenti questioni:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Approvazione di eventuali modifiche allo Statuto
@@ -796,8 +796,8 @@ const StatutoPage = () => {
 
             {/* Art. 9 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.9 - Il Consiglio Direttivo
                 </h3>
                 <p>
@@ -836,7 +836,7 @@ const StatutoPage = () => {
                   <li>
                     <p>9.4. Il Consiglio Direttivo:</p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Compie tutti gli atti di ordinaria e straordinaria
@@ -886,7 +886,7 @@ const StatutoPage = () => {
                       almeno le seguenti figure:
                     </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Il Presidente (eletto nell’ambito del Consiglio
@@ -915,8 +915,8 @@ const StatutoPage = () => {
 
             {/* Art. 10 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art.10 - Il Presidente</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art.10 - Il Presidente</h3>
 
                 <ol>
                   <li>
@@ -933,8 +933,8 @@ const StatutoPage = () => {
 
             {/* Art. 11 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.11 - Il Vice Presidente
                 </h3>
 
@@ -949,8 +949,8 @@ const StatutoPage = () => {
 
             {/* Art. 12 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art.12 - Il Segretario</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art.12 - Il Segretario</h3>
 
                 <ol>
                   <li>
@@ -969,8 +969,8 @@ const StatutoPage = () => {
 
             {/* Art. 13 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.13 – Collegio dei Revisori dei Conti
                 </h3>
 
@@ -1007,8 +1007,8 @@ const StatutoPage = () => {
 
             {/* Art. 14 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art. 14 - Collegio dei probiviri
                 </h3>
 
@@ -1035,7 +1035,7 @@ const StatutoPage = () => {
                   <li>
                     <p>Spetta in particolare al Collegio dei Probiviri: </p>
 
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           1. Decidere in merito ai provvedimenti disciplinari
@@ -1081,8 +1081,8 @@ const StatutoPage = () => {
 
             {/* Art. 15 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.15 - I mezzi finanziari
                 </h3>
 
@@ -1093,7 +1093,7 @@ const StatutoPage = () => {
                       proprio funzionamento e per lo svolgimento delle attività
                       da:
                     </p>
-                    <ol className="pl-5">
+                    <ol className='pl-5'>
                       <li>
                         <p>
                           a) quote e contributi degli associati, nella misura
@@ -1187,8 +1187,8 @@ const StatutoPage = () => {
 
             {/* Art. 16 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.16 - Rendiconto economico finanziario
                 </h3>
 
@@ -1245,8 +1245,8 @@ const StatutoPage = () => {
 
             {/* Art. 17 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>
                   Art.17 – Scioglimento o estinzione
                 </h3>
 
@@ -1283,8 +1283,8 @@ const StatutoPage = () => {
 
             {/* Art. 18 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art. 18 - Controversie</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art. 18 - Controversie</h3>
                 <ol>
                   <li>
                     <p>
@@ -1325,8 +1325,8 @@ const StatutoPage = () => {
 
             {/* Art. 19 */}
             <li>
-              <div className="mb-6">
-                <h3 className="font-bold text-lg">Art. 19 - Norma di rinvio</h3>
+              <div className='mb-6'>
+                <h3 className='font-bold text-lg'>Art. 19 - Norma di rinvio</h3>
                 <p>
                   Per quanto non è previsto nel presente statuto si fa
                   riferimento alle norme vigenti in materia ed ai principi
@@ -1340,16 +1340,16 @@ const StatutoPage = () => {
           <div>
             <p>Associazione Ex Allievi dell’ITIS P.Paleocapa di Bergamo</p>
             <p>Il Presidente</p>
-            <p className="italic">Alessandro Gigli</p>
-            <p className="text-right">Bergamo 21 maggio 2022</p>
-            <p className="text-right">
+            <p className='italic'>Alessandro Gigli</p>
+            <p className='text-right'>Bergamo 21 maggio 2022</p>
+            <p className='text-right'>
               Approvato dall’assemblea ordinaria del 21 maggio 2022
             </p>
           </div>
         </div>
       </main>
     </Layout>
-  );
+  )
 };
 
 export default StatutoPage;
