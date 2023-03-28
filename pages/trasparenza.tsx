@@ -13,7 +13,7 @@ const TrasparenzaPage = () => {
       <Heading
         title={"Trasparenza"}
         description={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          "Consulta i contributi pubblici dell'associazione suddivisi per anno"
         }
       />
 
@@ -24,11 +24,9 @@ const TrasparenzaPage = () => {
           <FileList
             year={2022}
             files={[
-              { name: "primofile.pdf", href: "/" },
-              { name: "secondofile.pdf", href: "/" },
-              { name: "terzofile.pdf", href: "/" },
+              { name: "Contributo 5x1000.pdf", href: "/trasparenza" },
             ]}
-            style='bg-gray-100'
+            style="bg-gray-100"
           />
 
           <hr />
@@ -37,9 +35,8 @@ const TrasparenzaPage = () => {
           <FileList
             year={2021}
             files={[
-              { name: "primofile.pdf", href: "/" },
-              { name: "secondofile.pdf", href: "/" },
-              { name: "terzofile.pdf", href: "/" },
+              { name: "Contrbuto 5x1000.pdf", href: "https://drive.google.com/file/d/1UWDG3RpNgs6vJi4uh3tiDGwyvuP7PrHf/view?usp=sharing" },
+              { name: "Dichiarazione 5x1000.pdf", href: "https://drive.google.com/file/d/1IMvdhhzZHHHRWY1ANwR0LWj1Rqe7QFU9/view?usp=sharing" },
             ]}
           />
 
@@ -49,11 +46,62 @@ const TrasparenzaPage = () => {
           <FileList
             year={2020}
             files={[
-              { name: "primofile.pdf", href: "/" },
-              { name: "secondofile.pdf", href: "/" },
-              { name: "terzofile.pdf", href: "/" },
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1-8zh41IjWHOi576P6xRGvPEno3pEJw4T/view?usp=sharing" },
             ]}
-            style='bg-gray-100'
+            style="bg-gray-100"
+          />
+
+          <hr />
+
+          {/* 2019 */}
+          <FileList
+            year={2019}
+            files={[
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing" },
+            ]}
+          />
+
+          <hr />
+
+          {/* 2018 */}
+          <FileList
+            year={2018}
+            files={[
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing" },
+            ]}
+            style="bg-gray-100"
+          />
+
+          <hr />
+
+          {/* 2017 */}
+          <FileList
+            year={2017}
+            files={[
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1QCFexIWpevX_JYdpRZDvjk4OvYaVyNeB/view?usp=sharing" },
+            ]}
+          />
+
+          <hr />
+
+          {/* 2016 */}
+          <FileList
+            year={2016}
+            files={[
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing" },
+            ]}
+            style="bg-gray-100"
+          />
+
+          <hr />
+
+          {/* 2015 */}
+          <FileList
+            year={2015}
+            files={[
+              { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1bLTJ0eyYBPb9koJwvQzW7gPl2ppLw7nm/view?usp=sharing" },
+              { name: "Dichiarazione 5x1000.pdf", href: "https://drive.google.com/file/d/1lqWFLXZnv37jDjiQPgqQeJMRkzhiq7gK/view?usp=sharing" },
+            ]}
           />
         </div>
       </main>

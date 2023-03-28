@@ -14,7 +14,7 @@ const StatutoPage = () => {
       <Heading
         title={"Statuto"}
         description={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+          "Consulta lo statuto dell'associazione degli Ex Allievi"
         }
       />
 
