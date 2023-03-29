@@ -28,7 +28,7 @@ const VerbaliPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
-            style='bg-gray-100'
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -53,7 +53,7 @@ const VerbaliPage = () => {
               { name: "secondofile.pdf", href: "/" },
               { name: "terzofile.pdf", href: "/" },
             ]}
-            style='bg-gray-100'
+            style='bg-gray-100 dark:bg-gray-700'
           />
         </div>
       </main>

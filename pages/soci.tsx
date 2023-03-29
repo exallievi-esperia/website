@@ -32,14 +32,16 @@ const SociPage = () => {
         <div className='flex flex-col md:flex-row md:justify-around gap-10'>
           {/* Iscriviti */}
           <div className='w-full md:w-1/2 flex flex-col'>
-            <h2 className='font-bold text-3xl md:text-center'>Iscriviti</h2>
-            <p className='mt-5 mb-2 leading-7'>
+            <h2 className='font-bold text-3xl md:text-center dark:text-white'>
+              Iscriviti
+            </h2>
+            <p className='mt-5 mb-2 leading-7 dark:text-gray-200'>
               Se non sei socio dell’Associazione Ex Allievi dell’I.T.I.S. P.
               Paleocapa di Bergamo (Esperia) – APS ma vorresti diventarlo, segui
               queste semplici istruzioni:
             </p>
 
-            <ol className='leading-7 mb-8'>
+            <ol className='leading-7 mb-8 dark:text-gray-200'>
               <li>
                 <p>
                   1. Premi sul pulsante “<strong>ISCRIVITI</strong>”
@@ -68,17 +70,17 @@ const SociPage = () => {
               </li>
             </ol>
 
-            <a className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-white hover:text-[#f25116] transition-colors duration-300'>
+            <a className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'>
               ISCRIVITI
             </a>
           </div>
 
           {/* Rinnova */}
           <div className='w-full md:w-1/2 flex flex-col'>
-            <h2 className='font-bold text-3xl md:text-center'>
+            <h2 className='font-bold text-3xl md:text-center dark:text-white'>
               Rinnova la quota
             </h2>
-            <p className='mt-5 leading-7 mb-8'>
+            <p className='mt-5 leading-7 mb-8 dark:text-gray-200'>
               Se sei già socio dell’Associazione e vuoi rinnovare la tua quota
               annuale, pari a 30€, premi sul pulsante “<strong>RINNOVA</strong>”
               per pagare con Carte di Credito/Debito o PayPal. <br />
@@ -88,7 +90,7 @@ const SociPage = () => {
               quanto preferisci.
             </p>
             <a
-              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-white hover:text-[#f25116] transition-colors duration-300'
+              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'
               href='https://www.paypal.com/donate?hosted_button_id=23BL2KLNJ6MF8'
               rel='noopener noreferrer'
               target='_blank'
@@ -100,10 +102,12 @@ const SociPage = () => {
 
         {/* Perché diventare soci */}
         <div className='mt-28'>
-          <h2 className='font-bold text-3xl'>Perché diventare soci?</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>
+            Perché diventare soci?
+          </h2>
           <Slider
             {...settings}
-            className='flex justify-center bg-gray-100 mt-5'
+            className='flex justify-center bg-gray-100 dark:bg-gray-800 mt-5'
           >
             {/* Paolo */}
             <Testimonial
@@ -136,8 +140,8 @@ const SociPage = () => {
 
         {/* Vantaggi */}
         <div className='mt-28'>
-          <h2 className='font-bold text-3xl'>Quali vantaggi ottengo?</h2>
-          <p className='mt-4'>
+          <h2 className='font-bold text-3xl dark:text-white'>Quali vantaggi ottengo?</h2>
+          <p className='mt-4 dark:text-gray-200'>
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.

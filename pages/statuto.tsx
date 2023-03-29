@@ -28,7 +28,7 @@ const StatutoPage = () => {
               target='_blank'
             >
               <VscFilePdf className='text-[#f25116] w-5 h-5' />
-              <p className='hover:text-[#f25116] transition duration-300'>
+              <p className='dark:text-gray-300 dark:hover:text-[#f25116] hover:text-[#f25116] transition duration-300'>
                 Visualizza lo statuto in formato PDF
               </p>
               <span
@@ -44,14 +44,14 @@ const StatutoPage = () => {
         {/* Statuto */}
         <div className='mt-16'>
           {/* Titolo statuto */}
-          <h2 className='font-bold text-xl mb-6'>
+          <h2 className='font-bold text-xl mb-6 dark:text-white'>
             Statuto dell’Associazione non riconosciuta “Ex Allievi ITIS
             P.Paleocapa di Bergamo (Esperia) – APS” modificato secondo il D.Lgs.
             117/2017. Ente del Terzo Settore
           </h2>
 
           {/* Articoli */}
-          <ol>
+          <ol className="dark:text-gray-200">
             {/* Art. 1 */}
             <li>
               <div className='mb-6'>
@@ -1340,7 +1340,7 @@ const StatutoPage = () => {
           </ol>
 
           {/* Firma */}
-          <div>
+          <div className="dark:text-gray-200">
             <p>Associazione Ex Allievi dell’ITIS P.Paleocapa di Bergamo</p>
             <p>Il Presidente</p>
             <p className='italic'>Alessandro Gigli</p>

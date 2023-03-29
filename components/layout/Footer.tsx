@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
                 Associazione
               </h3>
 
-              <nav aria-label='Footer About Nav' className='mt-8'>
+              <nav aria-label='Footer About Nav' className='mt-3 sm:mt-8'>
                 <ul className='space-y-4 text-sm'>
                   {menuItems[0].subItems.map((item) => (
                     <li key={item.href}>
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                 Documenti
               </h3>
 
-              <nav aria-label='Footer Services Nav' className='mt-8'>
+              <nav aria-label='Footer Services Nav' className='mt-3 sm:mt-8'>
                 <ul className='space-y-4 text-sm'>
                   {menuItems[1].subItems.map((item) => (
                     <li key={item.href}>
@@ -136,7 +136,7 @@ const Footer: React.FC = () => {
                 Link utili
               </h3>
 
-              <nav aria-label='Footer Helpful Nav' className='mt-8'>
+              <nav aria-label='Footer Helpful Nav' className='mt-3 sm:mt-8'>
                 <ul className='space-y-4 text-sm'>
                   <li>
                     <Link
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
                 Contatti
               </h3>
 
-              <ul className='mt-8 space-y-4 text-sm'>
+              <ul className='mt-3 sm:mt-8 space-y-4 text-sm'>
                 <li>
                   <Link
                     className='flex items-center justify-center gap-1.5 sm:justify-start'

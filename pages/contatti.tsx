@@ -40,17 +40,19 @@ const ContattiPage = () => {
               href='mailto:exallievi@itispaleocapa.it'
               className='group flex flex-col sm:items-center lg:items-start'
             >
-              <MdMail className='w-8 h-8 group-hover:scale-110 transition duration-300' />
-              <p className='font-bold text-xl'>Email</p>
-              <p className='text-gray-600'>exallievi@itispaleocapa.it</p>
+              <MdMail className='w-8 h-8 group-hover:scale-110 transition duration-300 text-[#f25116]' />
+              <p className='font-bold text-xl dark:text-white'>Email</p>
+              <p className='text-gray-600 dark:text-gray-200'>
+                exallievi@itispaleocapa.it
+              </p>
             </Link>
             <Link
               href='tel:035319388'
               className='group flex flex-col sm:items-center lg:items-start'
             >
-              <MdPhone className='w-8 h-8 group-hover:scale-110 transition duration-30' />
-              <p className='font-bold text-xl'>Telefono</p>
-              <p className='text-gray-600'> 035 319388</p>
+              <MdPhone className='w-8 h-8 group-hover:scale-110 transition duration-30 text-[#f25116]' />
+              <p className='font-bold text-xl dark:text-white'>Telefono</p>
+              <p className='text-gray-600 dark:text-gray-200'> 035 319388</p>
             </Link>
             <Link
               href='https://goo.gl/maps/JjHGPvEaM1fiAFwk7'
@@ -58,9 +60,9 @@ const ContattiPage = () => {
               target='_blank'
               className='group flex flex-col sm:items-center lg:items-start'
             >
-              <MdLocationPin className='w-8 h-8 group-hover:scale-110 transition duration-30' />
-              <p className='font-bold text-xl'>Indirizzo</p>
-              <p className='text-gray-600'>
+              <MdLocationPin className='w-8 h-8 group-hover:scale-110 transition duration-30 text-[#f25116]' />
+              <p className='font-bold text-xl dark:text-white'>Indirizzo</p>
+              <p className='text-gray-600 dark:text-gray-200'>
                 Via Mauro Gavazzeni, 29, 24125 Bergamo
               </p>
             </Link>

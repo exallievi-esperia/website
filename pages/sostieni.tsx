@@ -34,12 +34,12 @@ const SostieniPage = () => {
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* 5x1000 */}
         <div>
-          <h2 className='font-bold text-3xl'>5x1000</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>5x1000</h2>
 
-          <div className='flex md:gap-x-10 gap-y-10 md:gap-y-0 flex-col md:flex-row pt-12 mx-auto text-gray-600'>
+          <div className='flex md:gap-x-10 gap-y-10 md:gap-y-0 flex-col md:flex-row pt-5 md:pt-12 mx-auto text-gray-600'>
             <div className='w-full md:w-1/2'>
               <div className='flex relative pb-12'>
-                <p>
+                <p className="dark:text-gray-200">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -60,10 +60,10 @@ const SostieniPage = () => {
                   <RiNumber1 className='w-5 h-5' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
                     STEP 1
                   </h2>
-                  <p className='leading-relaxed'>
+                  <p className='leading-relaxed dark:text-gray-200'>
                     VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
                     Kinfolk bespoke try-hard cliche palo santo offal.
                   </p>
@@ -79,10 +79,10 @@ const SostieniPage = () => {
                   <RiNumber2 className='w-5 h-5' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
-                    STEP 3
+                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
+                    STEP 2
                   </h2>
-                  <p className='leading-relaxed'>
+                  <p className='leading-relaxed dark:text-gray-200'>
                     Coloring book nar whal glossier master cleanse umami. Salvia
                     +1 master cleanse blog taiyaki.
                   </p>
@@ -95,10 +95,10 @@ const SostieniPage = () => {
                   <RiNumber3 className='w-5 h-5' />
                 </div>
                 <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 mb-1 tracking-wider'>
+                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
                     FINISH
                   </h2>
-                  <p className='leading-relaxed'>
+                  <p className='leading-relaxed dark:text-gray-200'>
                     Pitchfork ugh tattooed scenester echo park gastropub
                     whatever cold-pressed retro.
                   </p>
@@ -118,11 +118,11 @@ const SostieniPage = () => {
 
         {/* Donazioni libere */}
         <div className='mt-20'>
-          <h2 className='font-bold text-3xl'>Donazioni libere</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>Donazioni libere</h2>
 
           <div className='flex flex-col sm:flex-row sm:gap-x-20 gap-y-10 sm:gap-y-0 items-center mt-5 justify-between'>
-            <div className=' text-gray-600'>
-              <p className='text-center sm:text-left sm:max-w-md md:max-w-3xl'>
+            <div className=' text-gray-600 dark:text-gray-200'>
+              <p className='text-left sm:max-w-md md:max-w-3xl'>
                 Per effettuare una donazione libera puoi utilizzare Paypal,
                 clicca sul pulsante accanto. Puoi anche fare un bonifico
                 bancario a IBAN IT12N0538711110000042430482 (BPER Banca).
@@ -148,9 +148,9 @@ const SostieniPage = () => {
 
         {/* Erogazioni da aziende */}
         <div className='mt-20'>
-          <h2 className='font-bold text-3xl'>Erogazioni da aziende</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>Erogazioni da aziende</h2>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 leading-7 mt-5 text-gray-600'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 leading-7 mt-5 text-gray-600 dark:text-gray-200'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
