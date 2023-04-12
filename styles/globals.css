@@ -7,6 +7,19 @@
   color: black !important;
 }
 
+.dark .slick-arrow::before {
+  color: white !important;
+}
+
+.dark .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+.dark .slick-dots button:before {
+  opacity: 25%;
+  color: white;
+}
+
 .slick-slide > div {
   margin: 0 10px;
 }

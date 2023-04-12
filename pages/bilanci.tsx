@@ -26,7 +26,7 @@ const BilanciPage = () => {
             files={[
               { name: "Bilancio.pdf", href: "https://drive.google.com/file/d/1pPxqKu4ml3NfKczj-xlu_BGtyxVnnKw-/view?usp=sharing" },
             ]}
-            style='bg-gray-100'
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -89,7 +89,7 @@ const BilanciPage = () => {
             files={[
               { name: "Bilancio.pdf", href: "https://drive.google.com/file/d/1BPjn0D97he0TSn7LmfRo-pqN59CJYAWv/view?usp=sharing" },
             ]}
-            style='bg-gray-100'
+            style='bg-gray-100 dark:bg-gray-700'
           />
         </div>
       </main>

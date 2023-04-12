@@ -1,24 +1,24 @@
-import Link from "next/link";
-import React from "react";
-import { VscFilePdf } from "react-icons/vsc";
+import Link from "next/link"
+import React from "react"
+import { VscFilePdf } from "react-icons/vsc"
 
 interface File {
-  name: string;
-  href: string;
+  name: string
+  href: string
 }
 
 interface FileListProps {
-  year: number;
-  files: File[];
-  style?: string;
+  year: number
+  files: File[]
+  style?: string
 }
 
 const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
   return (
     <div
-      className={`flex flex-col sm:flex-row gap-10 sm:gap-20 items-center justify-center w-full py-5 ${style}`}
+      className={`flex flex-col sm:flex-row gap-5 sm:gap-20 items-center justify-center w-full py-5 ${style}`}
     >
-      <h3 className='text-4xl font-bold'>{year}</h3>
+      <h3 className='text-4xl font-bold dark:text-white'>{year}</h3>
       <ul className='flex flex-col gap-5'>
         {files.map((file: File) => (
           <li key={file.name}>
@@ -29,13 +29,13 @@ const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
               <span>
                 <VscFilePdf className='text-[#f25116] group-hover:rotate-45 transition duration-500 w-8 h-8' />
               </span>
-              {file.name}
+              <p className="dark:text-gray-200">{file.name}</p>
             </Link>
           </li>
         ))}
       </ul>
     </div>
   )
-};
+}
 
-export default FileList;
+export default FileList

@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [theme])
 
   return (
-    <>
+    <div className="dark:bg-gray-600">
       <style jsx global>{`
         p {
           font-family: ${inter.style.fontFamily};
@@ -61,6 +61,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeContext.Provider value={{ theme: theme, toggleTheme: toggleTheme }}>
         <Component {...pageProps} />
       </ThemeContext.Provider>
-    </>
+    </div>
   )
 }

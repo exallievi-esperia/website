@@ -13,7 +13,7 @@ const Heading: React.FC<HeadingProps> = ({
     <>
       {/* Title */}
       {title && description ? (
-        <div className='text-center p-12 md:p-36 bg-gray-300 dark:bg-gray-600'>
+        <div className='text-center p-12 md:p-36 bg-gray-300 dark:bg-gray-800'>
           <h1 className='font-bold sm:text-5xl text-4xl mb-5 dark:text-white'>
             {title}
           </h1>

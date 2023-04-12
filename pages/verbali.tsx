@@ -26,7 +26,7 @@ const VerbaliPage = () => {
             files={[
               { name: "4 Febbraio.pdf", href: "https://drive.google.com/file/d/1wAlG6N9kC8W8hTC1YJFAyBch3tlomDq8/view?usp=sharing" }
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -48,7 +48,7 @@ const VerbaliPage = () => {
             files={[
               { name: "19 Giugno.pdf", href: "https://drive.google.com/file/d/1kaeXAQ_8q-JbITubSgVUiz00ZLKaC3WP/view?usp=sharing" }
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -71,7 +71,7 @@ const VerbaliPage = () => {
               { name: "26 Gennaio.pdf", href: "https://drive.google.com/file/d/1fkwihmzGa8Xnuq0_r93DUZyqOHRv1V7r/view?usp=sharing" },
               { name: "18 Maggio.pdf", href: "https://drive.google.com/file/d/1NNd6I4WLqEs3Q3Pg_GaCFNPuKQf4a1Bw/view?usp=sharing" }
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
         </div>

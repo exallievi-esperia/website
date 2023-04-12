@@ -26,7 +26,7 @@ const TrasparenzaPage = () => {
             files={[
               { name: "Contributo 5x1000.pdf", href: "/trasparenza" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100'
           />
 
           <hr />
@@ -48,7 +48,7 @@ const TrasparenzaPage = () => {
             files={[
               { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1-8zh41IjWHOi576P6xRGvPEno3pEJw4T/view?usp=sharing" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -69,7 +69,7 @@ const TrasparenzaPage = () => {
             files={[
               { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
@@ -90,7 +90,7 @@ const TrasparenzaPage = () => {
             files={[
               { name: "Contributo 5x1000.pdf", href: "https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing" },
             ]}
-            style="bg-gray-100"
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />

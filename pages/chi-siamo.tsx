@@ -40,11 +40,13 @@ const ChiSiamoPage = () => {
         title='Chi siamo'
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
       />
-      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-700'>
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-600'>
         {/* La nostra storia */}
         <div>
-          <h2 className='font-bold text-3xl mb-5'>La nostra storia</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 leading-7'>
+          <h2 className='font-bold text-3xl mb-5 dark:text-white'>
+            La nostra storia
+          </h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 dark:text-gray-200 leading-7'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -89,7 +91,7 @@ const ChiSiamoPage = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 mt-10 items-center'>
             <div>
-              <p className='leading-7'>
+              <p className='leading-7 dark:text-gray-200'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -128,7 +130,7 @@ const ChiSiamoPage = () => {
 
         {/* Direttivo */}
         <div className='mt-20'>
-          <h2 className='font-bold text-3xl mb-5'>
+          <h2 className='font-bold text-3xl mb-5 dark:text-white'>
             Scopri il direttivo 2020-2023
           </h2>
           <Slider {...settings}>
