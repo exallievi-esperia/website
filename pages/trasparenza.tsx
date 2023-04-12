@@ -26,7 +26,7 @@ const TrasparenzaPage = () => {
             files={[
               { name: "Contributo 5x1000.pdf", href: "/trasparenza" },
             ]}
-            style='bg-gray-100'
+            style='bg-gray-100 dark:bg-gray-700'
           />
 
           <hr />
