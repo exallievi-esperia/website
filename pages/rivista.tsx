@@ -18,6 +18,7 @@ import Copertina2017 from '../public/img/copertine/Copertina2017.jpg'
 import Copertina2018 from '../public/img/copertine/Copertina2018.jpg'
 import Copertina2019 from '../public/img/copertine/Copertina2019.jpg'
 import Copertina2022 from '../public/img/copertine/Copertina2022.jpg'
+import Copertina2023 from '../public/img/copertine/Copertina2023.jpg'
 
 const RivistaPage = () => {
   return (
@@ -36,6 +37,27 @@ const RivistaPage = () => {
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Bookshelf */}
         <div className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4'>
+        <Link
+            href='https://drive.google.com/file/d/1RL2X4MQM5oLfo5tuJkW3tPuKspnSnQw-/view?usp=sharing'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center flex-col transition-transform duration-300 hover:-translate-y-5'
+          >
+            <Image
+              src={Copertina2023}
+              alt='Anteprima rivista 2023'
+              width={150}
+              height={150}
+              className=' translate-y-9'
+            />
+            <span className='font-bold bg-[#f25116] text-white px-3 rounded-full z-10 translate-y-5'>
+              2023
+            </span>
+          </Link>
+
+          <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/1Z9rdZl8w6R5QeycQoZGsr-5hMqwNiaDA/view?usp=sharing'
             rel='noopener noreferrer'
@@ -57,6 +79,9 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/1VNA2eEEeGocQ57ZL8EUEkpzbrwpGAsXn/view?usp=sharing'
             rel='noopener noreferrer'
@@ -77,9 +102,6 @@ const RivistaPage = () => {
 
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
             href='https://drive.google.com/file/d/1oGYyXmk4B_UR0hrMLFwLPIRsE_lOvd1I/view?usp=sharing'
@@ -103,6 +125,12 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
+          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/1XcNrfMv1g9HYKlmlfxfBHrMgTVI9vfxb/view?usp=sharing'
             rel='noopener noreferrer'
@@ -124,12 +152,6 @@ const RivistaPage = () => {
 
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
             href='https://drive.google.com/file/d/1NldOFLFx8znGfcUsFpRa75p3afJ-P87o/view?usp=sharing'
@@ -153,6 +175,9 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/1YjTz6ImJt1u_kuccY0GJHsUa-HnUHcXJ/view?usp=sharing'
             rel='noopener noreferrer'
@@ -175,9 +200,6 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
           <Link
             href='https://drive.google.com/file/d/1tB3SBLGqBfxIO_TjREZ_QKuzx9s6wXOe/view?usp=sharing'
             rel='noopener noreferrer'
@@ -198,6 +220,12 @@ const RivistaPage = () => {
 
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
+          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
             href='https://drive.google.com/file/d/1HNIX2VM5PLv3ypMueKGEby51XgXQJDNF/view?usp=sharing'
@@ -221,12 +249,6 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-        
           <Link
             href='https://drive.google.com/file/d/1x7aqzCABo-eKVyS4lIh7liEO30ZzSoj2/view?usp=sharing'
             rel='noopener noreferrer'
@@ -248,6 +270,9 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/17Yz44xjIknMYe6W7me8RB1BacMC2RMEe/view?usp=sharing'
             rel='noopener noreferrer'
@@ -268,9 +293,6 @@ const RivistaPage = () => {
 
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
             href='https://drive.google.com/file/d/1scA-T-n11hWarxwwRW5BG1rgDKyPevd5/view?usp=sharing'
@@ -294,6 +316,12 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
+          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
           <Link
             href='https://drive.google.com/file/d/1ksEC0jNjNgdXovq7b4PraMqk-RVxfAf5/view?usp=sharing'
             rel='noopener noreferrer'
@@ -316,12 +344,6 @@ const RivistaPage = () => {
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
-          <span className='hidden md:block col-span-4 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden md:block col-span-4 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
-
           <Link
             href='https://drive.google.com/file/d/196BntM195JNZhUwM0sDrAaxzT3oe3hOh/view?usp=sharing'
             rel='noopener noreferrer'
@@ -342,6 +364,9 @@ const RivistaPage = () => {
 
           <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
           <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
 
           <Link
             href='https://drive.google.com/file/d/1sxv1IgnxnDLX04zMaNuV24-AoUaNS2Vw/view?usp=sharing'
