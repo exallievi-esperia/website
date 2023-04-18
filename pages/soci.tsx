@@ -24,7 +24,7 @@ const SociPage = () => {
 
       <Heading
         title='Soci'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+        description='Iscriviti o rinnova la tua quota'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
@@ -70,7 +70,8 @@ const SociPage = () => {
               </li>
             </ol>
 
-            <a className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'>
+            <a className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'
+            href="/documenti/Modulo-Iscrizione-Ex-Allievi-Esperia.pdf" target="_blank">
               ISCRIVITI
             </a>
           </div>
@@ -141,39 +142,31 @@ const SociPage = () => {
         {/* Vantaggi */}
         <div className='mt-28'>
           <h2 className='font-bold text-3xl dark:text-white'>Quali vantaggi ottengo?</h2>
-          <p className='mt-4 dark:text-gray-200'>
+          {/* <p className='mt-4 dark:text-gray-200'>
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.
-          </p>
+          </p> */}
 
           <div className='grid mx-auto mt-12 md:mt-16 max-w-2xl grid-cols-1 gap-y-10 gap-x-8 md:max-w-4xl md:grid-cols-2 md:gap-y-16'>
             <Feature
               title='Sostieni la scuola'
-              description='  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.'
+              description='In quanto socio con la tua quota di iscrizione sosterrai economicamente la scuola'
             />
 
             <Feature
-              title='Partecipa alle cerimonie'
-              description='  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.'
+              title='Proponi nuove idee'
+              description='In quanto socio potrai partecipare attivamente alle riunioni di consiglio e proporre nuove idee per migliorare la scuola'
             />
 
             <Feature
               title='Amplia le tue conoscenze'
-              description='  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.'
+              description='In quanto socio potrai conoscere le realtà industriali del territorio bergamasco'
             />
 
             <Feature
               title='Rivista annuale Esperia'
-              description='  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.'
+              description='In quanto socio riceverai a casa la rivista degli Ex Allievi'
             />
           </div>
         </div>

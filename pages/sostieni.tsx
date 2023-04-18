@@ -28,7 +28,7 @@ const SostieniPage = () => {
 
       <Heading
         title='Sostieni'
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+        description="Scopri come sostenere economicamente l'associazione"
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
@@ -40,14 +40,8 @@ const SostieniPage = () => {
             <div className='w-full md:w-1/2'>
               <div className='flex relative pb-12'>
                 <p className="dark:text-gray-200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Per rendere concreto un patto tra generazioni puoi aiutare attraverso un piccolo gesto, l'associazione e la scuola
+                  donando il tuo 5x1000. E' semplice e non ti costa nulla.
                 </p>
               </div>
 
@@ -61,11 +55,10 @@ const SostieniPage = () => {
                 </div>
                 <div className='flex-grow pl-4'>
                   <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    STEP 1
+                    Primo Passo
                   </h2>
                   <p className='leading-relaxed dark:text-gray-200'>
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    Decidi di donare il tuo 5x1000 all'associazione
                   </p>
                 </div>
               </div>
@@ -80,11 +73,10 @@ const SostieniPage = () => {
                 </div>
                 <div className='flex-grow pl-4'>
                   <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    STEP 2
+                    Secondo Passo
                   </h2>
                   <p className='leading-relaxed dark:text-gray-200'>
-                    Coloring book nar whal glossier master cleanse umami. Salvia
-                    +1 master cleanse blog taiyaki.
+                    Nella dichiarazione dei redditi firma l'apposito modulo e riporta il codice fiscale dell'associazione Ex Allievi dell'Esperia.
                   </p>
                 </div>
               </div>
@@ -96,11 +88,10 @@ const SostieniPage = () => {
                 </div>
                 <div className='flex-grow pl-4'>
                   <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    FINISH
+                    Fine
                   </h2>
                   <p className='leading-relaxed dark:text-gray-200'>
-                    Pitchfork ugh tattooed scenester echo park gastropub
-                    whatever cold-pressed retro.
+                    Bene, hai donato il tuo 5x1000.
                   </p>
                 </div>
               </div>
@@ -152,36 +143,20 @@ const SostieniPage = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 leading-7 mt-5 text-gray-600 dark:text-gray-200'>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Per quanto riguarda le erogazioni effettuate da enti e società,
+              per esse è prevista la sola possibilità di deduzione dal reddito
+              imponibile, nel medesimo limite del 10% del reddito complessivo dichiarato.
+              Qualora la deduzione sia di ammontare superiore al reddito complessivo
+              dichiarato, diminuito di tutte le deduzioni, l’eccedenza può essere 
+              computata negli anni successivi ma non oltre il quarto, fino a concorrenza del
+              suo ammontare.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Le erogazioni liberali effettuate a favore degli Enti del Terzo Settore
+              sono detraibili o deducibili dalle imposte sui redditi, con modalità
+              diverse a seconda del soggetto erogatore e dell’ente percipiente.
+              La detraibilità interviene sull’imposta lorda. La deducibilità interviene
+              invece sul reddito imponibile diminuendo la base imponibile fiscale.
             </p>
           </div>
 
