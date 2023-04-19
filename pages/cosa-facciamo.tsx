@@ -25,7 +25,7 @@ const CosaFacciamoPage = () => {
       <Heading
         title={"Cosa facciamo"}
         description={
-          "Scopri i progetti dell'associazione"
+          "Scopri i progetti dell'Associazione"
         }
       />
 

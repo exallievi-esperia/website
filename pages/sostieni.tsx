@@ -28,7 +28,7 @@ const SostieniPage = () => {
 
       <Heading
         title='Sostieni'
-        description="Scopri come sostenere economicamente l'associazione"
+        description="Scopri come sostenere economicamente l'Associazione"
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

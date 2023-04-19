@@ -39,7 +39,7 @@ const ChiSiamoPage = () => {
       </Head>
       <Heading
         title='Chi siamo'
-        description='Scopri la nostra associazione'
+        description='Scopri la nostra Associazione'
       />
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-600'>
         {/* La nostra storia */}
