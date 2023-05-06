@@ -81,7 +81,7 @@ const menuItems = [
   },
   { label: "Eventi", href: "/eventi" },
   { label: "Rivista", href: "/rivista" },
-  { label: "News", href: "/news" },
+  { label: "Notizie", href: "/notizie" },
   { label: "Contatti", href: "/contatti" },
 ]
 
