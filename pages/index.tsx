@@ -40,12 +40,12 @@ const HomePage = () => {
                 >
                   Scopri chi siamo
                 </a>
-                <a
+                <Link
                   href='/soci'
                   className='text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200'
                 >
                   Diventa socio <span aria-hidden='true'>→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

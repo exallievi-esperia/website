@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "next/image"
 
 interface SectionImageProps {
   reversed?: boolean
@@ -24,7 +25,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
               reversed ? "order-last" : ""
             } relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full`}
           >
-            <img
+            <Image
               alt='Party'
               src='http://via.placeholder.com/1280x500'
               className='absolute inset-0 h-full w-full object-cover'
