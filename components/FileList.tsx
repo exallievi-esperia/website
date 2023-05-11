@@ -16,7 +16,8 @@ interface FileListProps {
 const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
   return (
     <div
-      className={`flex flex-col sm:flex-row gap-5 sm:gap-20 items-center justify-center w-full py-5 ${style}`}
+      id={year.toString()}
+      className={`flex flex-col sm:flex-row gap-5 sm:gap-20 items-center w-full py-8 justify-center sm:justify-start px-5 sm:px-32 md:px-60 lg:px-72 xl:px-96 scroll-mt-16 md:scroll-mt-24 ${style}`}
     >
       <h3 className='text-4xl font-bold dark:text-white'>{year}</h3>
       <ul className='flex flex-col gap-5'>
@@ -29,7 +30,7 @@ const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
               <span>
                 <VscFilePdf className='text-[#f25116] group-hover:rotate-45 transition duration-500 w-8 h-8' />
               </span>
-              <p className="dark:text-gray-200">{file.name}</p>
+              <p className='dark:text-gray-200'>{file.name}</p>
             </Link>
           </li>
         ))}

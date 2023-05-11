@@ -29,6 +29,8 @@ const SectionImage: React.FC<SectionImageProps> = ({
               alt='Party'
               src='http://via.placeholder.com/1280x500'
               className='absolute inset-0 h-full w-full object-cover'
+              width={1280}
+              height={500}
             />
           </div>
 
