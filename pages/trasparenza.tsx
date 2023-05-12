@@ -9,17 +9,6 @@ import NavButton from "@/components/NavButton"
 const list = [
   {
     id: 0,
-    year: 2022,
-    file: [
-      {
-        name: "Contributo 5x1000",
-        href: "/trasparenza",
-      },
-    ],
-    style: "bg-gray-100 dark:bg-gray-700",
-  },
-  {
-    id: 1,
     year: 2021,
     file: [
       {
@@ -31,10 +20,10 @@ const list = [
         href: "https://drive.google.com/file/d/1IMvdhhzZHHHRWY1ANwR0LWj1Rqe7QFU9/view?usp=sharing",
       },
     ],
-    style: "",
+    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
-    id: 2,
+    id: 1,
     year: 2020,
     file: [
       {
@@ -42,11 +31,22 @@ const list = [
         href: "https://drive.google.com/file/d/1-8zh41IjWHOi576P6xRGvPEno3pEJw4T/view?usp=sharing",
       },
     ],
+    style: "",
+  },
+  {
+    id: 2,
+    year: 2019,
+    file: [
+      {
+        name: "Contributo 5x1000",
+        href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
+      },
+    ],
     style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 3,
-    year: 2019,
+    year: 2018,
     file: [
       {
         name: "Contributo 5x1000",
@@ -57,17 +57,6 @@ const list = [
   },
   {
     id: 4,
-    year: 2018,
-    file: [
-      {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
-      },
-    ],
-    style: "bg-gray-100 dark:bg-gray-700",
-  },
-  {
-    id: 5,
     year: 2017,
     file: [
       {
@@ -75,10 +64,10 @@ const list = [
         href: "https://drive.google.com/file/d/1QCFexIWpevX_JYdpRZDvjk4OvYaVyNeB/view?usp=sharing",
       },
     ],
-    style: "",
+    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
-    id: 6,
+    id: 5,
     year: 2016,
     file: [
       {
@@ -86,10 +75,10 @@ const list = [
         href: "https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
+    style: "",
   },
   {
-    id: 7,
+    id: 6,
     year: 2015,
     file: [
       {
@@ -101,13 +90,13 @@ const list = [
         href: "https://drive.google.com/file/d/1lqWFLXZnv37jDjiQPgqQeJMRkzhiq7gK/view?usp=sharing",
       },
     ],
-    style: "",
+    style: "bg-gray-100 dark:bg-gray-700",
   },
 ]
 
 const TrasparenzaPage = () => {
-  const [maxYear, setMaxyear] = useState(2022)
-  const [minYear, setMinYear] = useState(2018)
+  const [maxYear, setMaxyear] = useState(2021)
+  const [minYear, setMinYear] = useState(2017)
   const [currentPage, setCurrentPage] = useState(1)
 
   const filterList = (maxYear: number, minYear: number, id: number) => {
@@ -156,13 +145,13 @@ const TrasparenzaPage = () => {
 
         <Pagination>
           <NavButton
-            onClick={() => filterList(2022, 2018, 1)}
+            onClick={() => filterList(2021, 2017, 1)}
             isCurrent={currentPage === 1}
             idPage={1}
             position='left'
           />
           <NavButton
-            onClick={() => filterList(2017, 2015, 2)}
+            onClick={() => filterList(2016, 2015, 2)}
             isCurrent={currentPage === 2}
             idPage={2}
             position='right'

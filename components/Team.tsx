@@ -16,12 +16,12 @@ interface TeamProps {
 
 const Team: React.FC<TeamProps> = ({ name, role, image, contacts }) => {
   return (
-    <div className='flex flex-col items-center gap-y-8 bg-gray-100 dark:bg-gray-800 py-16 rounded-lg w-4/5 sm:w-full m-auto'>
+    <div className='flex flex-col items-center gap-y-8 bg-gray-100 dark:bg-gray-800 py-12 rounded-lg w-11/12 m-auto'>
       <Image
         src={image}
         alt='Direttivo'
-        width={250}
-        height={250}
+        width={200}
+        height={200}
         className='rounded-full p-4 sm:p-0'
       />
 
