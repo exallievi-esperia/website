@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react"
 import {
   HiBars3,
@@ -91,10 +91,34 @@ const classNames = (...classes: string[]) => {
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  let prevPosY = 0
+
+  useEffect(() => {
+    prevPosY = window.scrollY
+
+    //add eventlistener to window
+    window.addEventListener("scroll", onScroll, false)
+    // remove event on unmount to prevent a memory leak with the cleanup
+    return () => {
+      window.removeEventListener("scroll", onScroll, false)
+    }
+  }, [])
+
+  const onScroll = () => {
+    let currentPosY = window.scrollY
+
+    // Scroll down
+    if (currentPosY < prevPosY)
+      document.getElementById("header")!.style.top = "0"
+    else document.getElementById("header")!.style.top = "-100px"
+
+    prevPosY = currentPosY
+  }
 
   return (
     <header
-      className={`bg-[#a0c3d9] dark:bg-gray-700 sticky top-0 ${
+      id='header'
+      className={`bg-[#a0c3d9] dark:bg-gray-700 sticky top-0 transition-all duration-500 ${
         mobileMenuOpen ? "" : "z-50"
       }`}
     >

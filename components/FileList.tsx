@@ -25,6 +25,8 @@ const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
           <li key={file.name}>
             <Link
               href={file.href}
+              target='_blank'
+              rel='noopener noreferrer nofollow'
               className='group hover:underline underline-offset-2 decoration-[#f25116] decoration-2 flex gap-2 items-center'
             >
               <span>
