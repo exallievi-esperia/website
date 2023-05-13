@@ -1,20 +1,10 @@
 import React from "react"
 
-type Position = "left" | "central" | "right" | "unique"
-
 interface NavButtonProps {
-  isCurrent: boolean
-  idPage: number
   onClick: () => void
-  position: Position
 }
 
-const NavButton: React.FC<NavButtonProps> = ({
-  isCurrent,
-  onClick,
-  idPage,
-  position,
-}) => {
+const NavButton: React.FC<NavButtonProps> = ({ onClick }) => {
   const handleClick = () => {
     onClick()
   }
@@ -22,18 +12,9 @@ const NavButton: React.FC<NavButtonProps> = ({
   return (
     <button
       onClick={handleClick}
-      aria-current={isCurrent ? "page" : "false"}
-      className={`${position === "left" && "rounded-l-md"} ${
-        position === "right" && "rounded-r-md"
-      } ${position === "central" && "rounded-none"} ${
-        position === "unique" && "rounded-md"
-      } relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-50 ring-1 ring-inset ring-gray-300 ${
-        isCurrent
-          ? "bg-[#f25116] text-white"
-          : "hover:bg-gray-100 dark:hover:bg-gray-800"
-      }`}
+      className={`bg-[#f25116] hover:bg-[#bf3617] transition-colors text-white rounded-md relative inline-flex items-center px-4 py-2 text-sm font-semibold`}
     >
-      {idPage}
+      Carica altro
     </button>
   )
 }

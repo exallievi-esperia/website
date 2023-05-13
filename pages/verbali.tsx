@@ -77,23 +77,7 @@ const list = [
 ]
 
 const VerbaliPage = () => {
-  const [maxYear, setMaxyear] = useState(2023)
-  const [minYear, setMinYear] = useState(2019)
-  const [currentPage, setCurrentPage] = useState(1)
-
-  const filterList = (maxYear: number, minYear: number, id: number) => {
-    setMaxyear(maxYear)
-    setMinYear(minYear)
-    setCurrentPage(id)
-    scrollToTop()
-  }
-
-  const isBrowser = () => typeof window !== "undefined"
-
-  const scrollToTop = () => {
-    if (!isBrowser) return
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+  const [currentItems, setCurrentItems] = useState(5)
 
   return (
     <Layout>
@@ -112,27 +96,24 @@ const VerbaliPage = () => {
         {/* Elenco file */}
         <div className='flex flex-col gap-x-10'>
           {list
-            .filter((item) => item.year <= maxYear && item.year >= minYear)
+            .filter((item) => item.id + 1 <= currentItems)
             .map((file, index) => (
               <Fragment key={file.id}>
+                {file.id === 0 ? <></> : <hr />}
                 <FileList
                   year={file.year}
                   files={file.file}
                   style={file.style}
                 />
-                {index === 4 || file.id === list.length - 1 ? <></> : <hr />}
               </Fragment>
             ))}
         </div>
 
-        <Pagination>
-          <NavButton
-            onClick={() => filterList(2023, 2019, 1)}
-            isCurrent={currentPage === 1}
-            idPage={1}
-            position='unique'
-          />
-        </Pagination>
+        {currentItems <= list[list.length - 1].id && (
+          <Pagination>
+            <NavButton onClick={() => setCurrentItems(currentItems + 5)} />
+          </Pagination>
+        )}
       </main>
     </Layout>
   )

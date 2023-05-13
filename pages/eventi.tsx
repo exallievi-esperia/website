@@ -127,22 +127,8 @@ const eventiList = [
 ]
 
 const EventiPage = () => {
-  const [maxItem, setMaxItem] = useState(9)
-  const [minItem, setMinItem] = useState(1)
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentItems, setCurrentItems] = useState(9)
 
-  const filterList = (maxItem: number, minItem: number, id: number) => {
-    setMaxItem(maxItem)
-    setMinItem(minItem)
-    setCurrentPage(id)
-    scrollToTop()
-  }
-  const isBrowser = () => typeof window !== "undefined"
-
-  const scrollToTop = () => {
-    if (!isBrowser) return
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
   return (
     <Layout>
       <Head>
@@ -159,7 +145,7 @@ const EventiPage = () => {
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {eventiList
-            .filter((item) => item.id + 1 <= maxItem && item.id + 1 >= minItem)
+            .filter((item) => item.id + 1 <= currentItems)
             .map((evento, index) => (
               <EventiCard
                 key={index}
@@ -172,14 +158,11 @@ const EventiPage = () => {
             ))}
         </div>
 
-        <Pagination>
-          <NavButton
-            onClick={() => filterList(9, 1, 1)}
-            isCurrent={currentPage === 1}
-            idPage={1}
-            position='unique'
-          />
-        </Pagination>
+        {currentItems <= eventiList[eventiList.length - 1].id && (
+          <Pagination>
+            <NavButton onClick={() => setCurrentItems(currentItems + 9)} />
+          </Pagination>
+        )}
       </main>
     </Layout>
   )
