@@ -40,7 +40,7 @@ const CosaFacciamoPage = () => {
                     alt='Museo TIME prima'
                     width={1000}
                     height={1000}
-                    src='/img/Museo_Time_Prima.jpg'
+                    src='/img/progetti/Museo_Time_Prima.jpg'
                     className='h-full w-full object-cover'
                     priority
                   />
@@ -54,7 +54,7 @@ const CosaFacciamoPage = () => {
                     alt='Museo TIME dopo'
                     width={1000}
                     height={1000}
-                    src='/img/Museo_Time_Dopo.jpg'
+                    src='/img/progetti/Museo_Time_Dopo.jpg'
                     className='h-full w-full object-cover'
                     priority
                   />
@@ -150,7 +150,7 @@ const CosaFacciamoPage = () => {
                     alt='Sala immersiva prima'
                     width={1000}
                     height={1000}
-                    src='/img/Sala_Immersiva_Prima.jpg'
+                    src='/img/progetti/Sala_Immersiva_Prima.jpg'
                     className='h-full w-full object-cover'
                     priority
                   />
@@ -164,7 +164,7 @@ const CosaFacciamoPage = () => {
                     alt='Sala immersiva dopo'
                     width={1000}
                     height={1000}
-                    src='/img/Sala_Immersiva_Dopo.jpg'
+                    src='/img/progetti/Sala_Immersiva_Dopo.jpg'
                     className='h-full w-full object-cover'
                     priority
                   />

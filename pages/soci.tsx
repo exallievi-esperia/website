@@ -22,10 +22,7 @@ const SociPage = () => {
         <title>Soci - Ex Allievi Esperia</title>
       </Head>
 
-      <Heading
-        title='Soci'
-        description='Iscriviti o rinnova la tua quota'
-      />
+      <Heading title='Soci' description='Iscriviti o rinnova la tua quota' />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Iscriviti | Rinnova */}
@@ -70,8 +67,11 @@ const SociPage = () => {
               </li>
             </ol>
 
-            <a className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'
-            href="/documenti/Modulo-Iscrizione-Ex-Allievi-Esperia.pdf" target="_blank">
+            <a
+              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-[#d53c04] hover:border-[#d53c04] transition-colors duration-300'
+              href='/documenti/Modulo-Iscrizione-Ex-Allievi-Esperia.pdf'
+              target='_blank'
+            >
               ISCRIVITI
             </a>
           </div>
@@ -91,7 +91,7 @@ const SociPage = () => {
               quanto preferisci.
             </p>
             <a
-              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-transparent hover:text-[#f25116] transition-colors duration-300'
+              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-[#d53c04] hover:border-[#d53c04] transition-colors duration-300'
               href='https://www.paypal.com/donate?hosted_button_id=23BL2KLNJ6MF8'
               rel='noopener noreferrer'
               target='_blank'
@@ -108,7 +108,7 @@ const SociPage = () => {
           </h2>
           <Slider
             {...settings}
-            className='flex justify-center bg-gray-100 dark:bg-gray-800 mt-5'
+            className='flex justify-center bg-gray-100 dark:bg-gray-700 mt-5 rounded-md'
           >
             {/* Paolo */}
             <Testimonial
@@ -116,7 +116,7 @@ const SociPage = () => {
               label='Diplomato 2019/2020, socio dal 2022'
               description=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-              image='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
+              image='/img/soci/zanotti_paolo.jpg'
             />
 
             {/* Simone */}
@@ -141,7 +141,9 @@ const SociPage = () => {
 
         {/* Vantaggi */}
         <div className='mt-28'>
-          <h2 className='font-bold text-3xl dark:text-white'>Quali vantaggi ottengo?</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>
+            Quali vantaggi ottengo?
+          </h2>
           {/* <p className='mt-4 dark:text-gray-200'>
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.

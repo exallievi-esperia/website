@@ -129,7 +129,7 @@ const ChiSiamoPage = () => {
 
             <Image
               src='/img/Chi-Siamo2.jpg'
-              alt='Ex allievi disegno'
+              alt='Ex allievi medaglia centenario'
               width={1200}
               height={675}
             />

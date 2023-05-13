@@ -2,74 +2,147 @@ import Layout from "@/components/layout/Layout"
 import EventiCard from "@/components/EventiCard"
 import Head from "next/head"
 import Heading from "@/components/Heading"
+import Pagination from "@/components/Pagination"
+import NavButton from "@/components/NavButton"
+import { useState } from "react"
 
 const eventiList = [
   {
+    id: 0,
     name: "Borse di studio: Area Elettronica",
     description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "23 Ottobre 2021",
-    href: "https://drive.google.com/drive/folders/1HM-3XwJ24I4T426U_8ZZkJ87Rzlukp_A?usp=sharing",
-  },
-  {
-    name: "Borse di studio: Area Elettronica",
-    description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "25 Marzo 2023",
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Elettronica.",
+    date: {
+      day: 23,
+      month: "Marzo",
+      year: 2023,
+    },
     href: "https://drive.google.com/drive/folders/1nsDvYxw_-9MJ7x_A7gyzwE9unULT8Gzy?usp=sharing",
+    image: "/img/eventi/elettronica_23032023.jpg",
   },
   {
-    name: "Borse di studio: Area Informatica",
-    description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "2 Aprile 2022",
-    href: "https://drive.google.com/drive/folders/19CZITOdPUCzW7yiwBZvs8t9pFPO6DnVP?usp=sharing",
-  },
-  {
-    name: "Borse di studio: Area Informatica",
-    description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "19 Novembre 2022",
-    href: "https://drive.google.com/drive/folders/1bouFlkUcG8UuzcsLNVgi6ggWFsu81XWF?usp=sharing",
-  },
-  {
+    id: 1,
     name: "Borse di studio: Area Meccanica",
     description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "11 Dicembre 2021",
-    href: "https://drive.google.com/drive/folders/1H335bWpSWLH_PUkEY34gdFWERqlZdlvg?usp=sharing",
-  },
-  {
-    name: "Borse di studio: Area Meccanica",
-    description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "4 Marzo 2023",
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Meccanica.",
+    date: {
+      day: 4,
+      month: "Marzo",
+      year: 2023,
+    },
     href: "https://drive.google.com/drive/folders/1-tzJ_CM8DAzIGN4QTIR1wOPPod8GKA7R?usp=sharing",
+    image: "/img/eventi/meccanica_04032023.jpg",
   },
   {
-    name: "Borse di studio: Area Tessile",
+    id: 2,
+    name: "Borse di studio: Area Informatica",
     description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "26 Marzo 2022",
-    href: "https://drive.google.com/drive/folders/1AbL8p59OtB7HxItbcXIIAghUXRUo2FNc?usp=sharing",
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Informatica.",
+    date: {
+      day: 19,
+      month: "Novembre",
+      year: 2022,
+    },
+    href: "https://drive.google.com/drive/folders/1bouFlkUcG8UuzcsLNVgi6ggWFsu81XWF?usp=sharing",
+    image: "/img/eventi/informatica_19112022.jpg",
   },
   {
+    id: 3,
     name: "Borse di studio: Area Tessile",
     description:
-      "Clicca su questo collegamento per accedere alle foto dell'evento di consegna delle borse di studio agli studenti meritevoli.",
-    date: "7 Ottobre 2022",
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Tessile.",
+    date: {
+      day: 7,
+      month: "Ottobre",
+      year: 2022,
+    },
     href: "https://drive.google.com/drive/folders/1J6GrFYBsktXniYPWKUXrSDdWL8lQ86Kv?usp=sharing",
+    image: "/img/eventi/tessile_07102022.jpg",
   },
   {
+    id: 4,
     name: "Centenario dell'associazione Ex Allievi",
     description:
-      "Clicca su questo collegamento per accedere alle foto della festa organizzata per il centenario dell'Associazione (1920-2020).",
-    date: "28 Maggio 2022",
+      "Festa organizzata per il centenario dell'Associazione (1920-2020).",
+    date: {
+      day: 28,
+      month: "Maggio",
+      year: 2022,
+    },
     href: "https://drive.google.com/drive/folders/1LNLUp-muasW45qB5ivUPUzrkiBe2jJc-?usp=sharing",
+    image: "/img/eventi/centenario_28052022.jpg",
+  },
+  {
+    id: 5,
+    name: "Borse di studio: Area Informatica",
+    description:
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Informatica.",
+    date: {
+      day: 2,
+      month: "Aprile",
+      year: 2022,
+    },
+    href: "https://drive.google.com/drive/folders/19CZITOdPUCzW7yiwBZvs8t9pFPO6DnVP?usp=sharing",
+    image: "",
+  },
+  {
+    id: 6,
+    name: "Borse di studio: Area Tessile",
+    description:
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Tessile.",
+    date: {
+      day: 26,
+      month: "Marzo",
+      year: 2022,
+    },
+    href: "https://drive.google.com/drive/folders/1AbL8p59OtB7HxItbcXIIAghUXRUo2FNc?usp=sharing",
+    image: "/img/eventi/tessile_26032022.jpg",
+  },
+  {
+    id: 7,
+    name: "Borse di studio: Area Meccanica",
+    description:
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Meccanica.",
+    date: {
+      day: 11,
+      month: "Dicembre",
+      year: 2021,
+    },
+    href: "https://drive.google.com/drive/folders/1H335bWpSWLH_PUkEY34gdFWERqlZdlvg?usp=sharing",
+    image: "/img/eventi/meccanica_11122021.jpg",
+  },
+  {
+    id: 8,
+    name: "Borse di studio: Area Elettronica",
+    description:
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Elettronica.",
+    date: {
+      day: 23,
+      month: "Ottobre",
+      year: 2021,
+    },
+    href: "https://drive.google.com/drive/folders/1HM-3XwJ24I4T426U_8ZZkJ87Rzlukp_A?usp=sharing",
+    image: "/img/eventi/elettronica_23102021.jpg",
   },
 ]
 
 const EventiPage = () => {
+  const [maxItem, setMaxItem] = useState(9)
+  const [minItem, setMinItem] = useState(1)
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const filterList = (maxItem: number, minItem: number, id: number) => {
+    setMaxItem(maxItem)
+    setMinItem(minItem)
+    setCurrentPage(id)
+    scrollToTop()
+  }
+  const isBrowser = () => typeof window !== "undefined"
+
+  const scrollToTop = () => {
+    if (!isBrowser) return
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
   return (
     <Layout>
       <Head>
@@ -85,16 +158,28 @@ const EventiPage = () => {
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
-          {eventiList.map((evento) => (
-            <EventiCard
-              key={evento.name}
-              name={evento.name}
-              description={evento.description}
-              date={evento.date}
-              href={evento.href}
-            />
-          ))}
+          {eventiList
+            .filter((item) => item.id + 1 <= maxItem && item.id + 1 >= minItem)
+            .map((evento, index) => (
+              <EventiCard
+                key={index}
+                name={evento.name}
+                description={evento.description}
+                date={evento.date}
+                href={evento.href}
+                image={evento.image}
+              />
+            ))}
         </div>
+
+        <Pagination>
+          <NavButton
+            onClick={() => filterList(9, 1, 1)}
+            isCurrent={currentPage === 1}
+            idPage={1}
+            position='unique'
+          />
+        </Pagination>
       </main>
     </Layout>
   )

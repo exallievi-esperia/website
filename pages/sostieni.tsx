@@ -39,8 +39,9 @@ const SostieniPage = () => {
           <div className='flex md:gap-x-10 gap-y-10 md:gap-y-0 flex-col md:flex-row pt-5 md:pt-12 mx-auto text-gray-600'>
             <div className='w-full md:w-1/2'>
               <div className='flex relative pb-12'>
-                <p className="dark:text-gray-200">
-                  Per rendere concreto un patto tra generazioni puoi aiutare attraverso un piccolo gesto, l'associazione e la scuola
+                <p className='dark:text-gray-200'>
+                  Per rendere concreto un patto tra generazioni puoi aiutare
+                  attraverso un piccolo gesto, l'associazione e la scuola
                   donando il tuo 5x1000. E' semplice e non ti costa nulla.
                 </p>
               </div>
@@ -76,7 +77,9 @@ const SostieniPage = () => {
                     Secondo Passo
                   </h2>
                   <p className='leading-relaxed dark:text-gray-200'>
-                    Nella dichiarazione dei redditi firma l'apposito modulo e riporta il codice fiscale dell'associazione Ex Allievi dell'Esperia.
+                    Nella dichiarazione dei redditi firma l'apposito modulo e
+                    riporta il codice fiscale dell'associazione Ex Allievi
+                    dell'Esperia <span className="font-bold">03052000167</span>.
                   </p>
                 </div>
               </div>
@@ -107,14 +110,16 @@ const SostieniPage = () => {
           </div>
         </div>
 
-        {/* Donazioni libere */}
+        {/* Erogazioni libere */}
         <div className='mt-20'>
-          <h2 className='font-bold text-3xl dark:text-white'>Donazioni libere</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>
+            Erogazioni libere
+          </h2>
 
           <div className='flex flex-col sm:flex-row sm:gap-x-20 gap-y-10 sm:gap-y-0 items-center mt-5 justify-between'>
             <div className=' text-gray-600 dark:text-gray-200'>
               <p className='text-left sm:max-w-md md:max-w-3xl'>
-                Per effettuare una donazione libera puoi utilizzare Paypal,
+                Per effettuare una erogazione libera puoi utilizzare Paypal,
                 clicca sul pulsante accanto. Puoi anche fare un bonifico
                 bancario a IBAN IT12N0538711110000042430482 (BPER Banca).
               </p>
@@ -139,24 +144,27 @@ const SostieniPage = () => {
 
         {/* Erogazioni da aziende */}
         <div className='mt-20'>
-          <h2 className='font-bold text-3xl dark:text-white'>Erogazioni da aziende</h2>
+          <h2 className='font-bold text-3xl dark:text-white'>
+            Erogazioni da aziende
+          </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 leading-7 mt-5 text-gray-600 dark:text-gray-200'>
             <p>
               Per quanto riguarda le erogazioni effettuate da enti e società,
               per esse è prevista la sola possibilità di deduzione dal reddito
-              imponibile, nel medesimo limite del 10% del reddito complessivo dichiarato.
-              Qualora la deduzione sia di ammontare superiore al reddito complessivo
-              dichiarato, diminuito di tutte le deduzioni, l’eccedenza può essere 
-              computata negli anni successivi ma non oltre il quarto, fino a concorrenza del
-              suo ammontare.
+              imponibile, nel medesimo limite del 10% del reddito complessivo
+              dichiarato. Qualora la deduzione sia di ammontare superiore al
+              reddito complessivo dichiarato, diminuito di tutte le deduzioni,
+              l’eccedenza può essere computata negli anni successivi ma non
+              oltre il quarto, fino a concorrenza del suo ammontare.
             </p>
             <p>
-              Le erogazioni liberali effettuate a favore degli Enti del Terzo Settore
-              sono detraibili o deducibili dalle imposte sui redditi, con modalità
-              diverse a seconda del soggetto erogatore e dell’ente percipiente.
-              La detraibilità interviene sull’imposta lorda. La deducibilità interviene
-              invece sul reddito imponibile diminuendo la base imponibile fiscale.
+              Le erogazioni liberali effettuate a favore degli Enti del Terzo
+              Settore sono detraibili o deducibili dalle imposte sui redditi,
+              con modalità diverse a seconda del soggetto erogatore e dell’ente
+              percipiente. La detraibilità interviene sull’imposta lorda. La
+              deducibilità interviene invece sul reddito imponibile diminuendo
+              la base imponibile fiscale.
             </p>
           </div>
 
