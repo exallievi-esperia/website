@@ -1,9 +1,10 @@
 import Layout from "@/components/layout/Layout"
-import Image from "next/image"
 import Head from "next/head"
-import Link from "next/link"
 import Heading from "@/components/Heading"
 import Bookshelf from "@/components/Bookshelf"
+import { useState } from "react"
+import Pagination from "@/components/Pagination"
+import NavButton from "@/components/NavButton"
 
 const riviste = [
   {
@@ -114,6 +115,8 @@ const riviste = [
 ]
 
 const RivistaPage = () => {
+  const [currentItems, setCurrentItems] = useState(12)
+
   return (
     <Layout>
       <Head>
@@ -127,7 +130,24 @@ const RivistaPage = () => {
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Bookshelf */}
-        <Bookshelf riviste={riviste} />
+        <div className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4'>
+          {riviste
+            .filter((item) => item.id + 1 <= currentItems)
+            .map((rivista, index) => (
+              <Bookshelf
+                rivista={rivista}
+                index={index}
+                totalItems={riviste.length}
+                key={index}
+              />
+            ))}
+        </div>
+
+        {currentItems <= riviste[riviste.length - 1].id && (
+          <Pagination>
+            <NavButton onClick={() => setCurrentItems(currentItems + 12)} />
+          </Pagination>
+        )}
       </main>
     </Layout>
   )
