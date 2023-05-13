@@ -25,7 +25,7 @@ const EventiCard: React.FC<EventiCardProps> = ({
   return (
     <Link
       href={href}
-      className='bg-blend-overlay bg-cover bg-no-repeat bg-center bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 transition duration-300 p-4 rounded-lg shadow group flex flex-row relative min-h-[12rem]'
+      className='bg-blend-overlay bg-cover bg-no-repeat bg-center bg-gray-100 hover:bg-gray-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 transition duration-300 p-4 rounded-lg shadow group flex flex-row relative min-h-[12rem]'
       style={{ backgroundImage: `url("${image}")` }}
       rel='noopener noreferrer'
       target='_blank'
