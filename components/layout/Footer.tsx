@@ -69,8 +69,8 @@ const Footer: React.FC = () => {
             </Link>
 
             <p className='mt-6 text-center leading-relaxed sm:text-left text-gray-700 dark:text-gray-200'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+              Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo, da più
+              di cent'anni al fianco degli studenti.
             </p>
 
             <ul className='mt-8 flex justify-center gap-6 sm:justify-start md:gap-8'>

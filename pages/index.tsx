@@ -3,6 +3,7 @@ import SectionImage from "@/components/SectionImage"
 import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/image"
 
 const HomePage = () => {
   return (
@@ -12,7 +13,6 @@ const HomePage = () => {
       </Head>
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-12'>
         {/* Hero */}
-        <p>Hero</p>
         <div className='relative isolate px-6 pt-14 lg:px-8'>
           <div className='mx-auto max-w-2xl py-16 sm:py-16 lg:py-16'>
             <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
@@ -49,55 +49,90 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div
-            className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
-            aria-hidden='true'
-          >
-            <div
-              className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            />
-          </div>
         </div>
 
         {/* Chi siamo */}
-        <p id='chi-siamo'>Chi siamo</p>
         <SectionImage
           title='Chi siamo'
           paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
           buttonText='SCOPRI DI PIÙ'
           link='/chi-siamo'
+          imgSrc='http://via.placeholder.com/1280x500'
+          imgAlt=''
         />
 
         {/* Cosa facciamo */}
-        <p>Cosa facciamo</p>
         <SectionImage
           title='Cosa facciamo'
           paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '
           buttonText='SCOPRI DI PIÙ'
           link='/cosa-facciamo'
+          imgSrc='/img/progetti/Museo_Time_Dopo.jpg'
+          imgAlt='Museo TIME'
           reversed
         />
 
-        <p>Soci (CTA)</p>
         <Cta
           link='/soci'
-          title='Lorem Ipsum'
+          title='Soci'
           subTitle='lorem ipsum'
           buttonText='Diventa socio!'
         />
 
-        <p>Foto</p>
+        <div className='mt-20'>
+          <h2 className='text-3xl font-bold sm:text-4xl dark:text-white'>
+            Galleria
+          </h2>
 
-        <p>News (dal blog, successivo)</p>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-5'>
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover h-full w-full sm:col-span-2'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover w-full h-full sm:row-span-2'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover h-full w-full'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover w-full h-full'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover h-full w-full'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover h-full w-full sm:col-span-2'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover w-full h-full'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
+              alt='image'
+              className='object-cover h-full w-full'
+            />
+          </div>
+        </div>
 
-        <p>Dona (CTA)</p>
+        <p className='mt-20'>News (dal blog, successivo)</p>
+
         <Cta
           link='/sostieni'
-          title='Lorem Ipsum'
+          title='Sostieni'
           subTitle='lorem ipsum'
           buttonText='Dona ora!'
         />

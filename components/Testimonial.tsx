@@ -32,7 +32,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 
       <div className='flex items-center gap-x-4 mt-8'>
         <Image
-          className='w-10 h-10 rounded-full'
+          className='w-10 h-10 rounded-full object-cover object-top'
           width={100}
           height={100}
           src={image}

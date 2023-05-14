@@ -7,6 +7,8 @@ interface SectionImageProps {
   paragraph: string
   buttonText: string
   link: string
+  imgSrc: string
+  imgAlt: string
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
@@ -15,6 +17,8 @@ const SectionImage: React.FC<SectionImageProps> = ({
   paragraph,
   buttonText,
   link,
+  imgSrc,
+  imgAlt,
 }) => {
   return (
     <section>
@@ -23,11 +27,11 @@ const SectionImage: React.FC<SectionImageProps> = ({
           <div
             className={`${
               reversed ? "order-last" : ""
-            } relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full`}
+            } relative h-64 overflow-hidden rounded-md sm:h-80 lg:h-full`}
           >
             <Image
-              alt='Party'
-              src='http://via.placeholder.com/1280x500'
+              alt={imgAlt}
+              src={imgSrc}
               className='absolute inset-0 h-full w-full object-cover'
               width={1280}
               height={500}
