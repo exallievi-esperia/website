@@ -79,7 +79,7 @@ const SostieniPage = () => {
                   <p className='leading-relaxed dark:text-gray-200'>
                     Nella dichiarazione dei redditi firma l'apposito modulo e
                     riporta il codice fiscale dell'associazione Ex Allievi
-                    dell'Esperia <span className="font-bold">03052000167</span>.
+                    dell'Esperia <span className='font-bold'>03052000167</span>.
                   </p>
                 </div>
               </div>
@@ -169,37 +169,195 @@ const SostieniPage = () => {
           </div>
 
           <Slider {...settings} className='mt-16 flex items-center'>
-            <Image
-              src='/img/loghi-aziende/brembo.jpg'
-              alt='Logo azienda Brembo'
-              width={100}
-              height={100}
-              className='object-contain h-14'
-            />
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/gewiss.svg'
+                alt='Logo azienda Gewiss'
+                width={100}
+                height={100}
+                className='object-contain h-12 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
 
-            <Image
-              src='/img/loghi-aziende/brembo.jpg'
-              alt='Logo azienda Brembo'
-              width={100}
-              height={100}
-              className='object-contain h-14'
-            />
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/persico.svg'
+                alt='Logo azienda Persico'
+                width={100}
+                height={100}
+                className='object-contain h-12 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
 
-            <Image
-              src='/img/loghi-aziende/brembo.jpg'
-              alt='Logo azienda Brembo'
-              width={100}
-              height={100}
-              className='object-contain h-14'
-            />
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/persico_marine.svg'
+                alt='Logo azienda Persico Marine'
+                width={100}
+                height={100}
+                className='object-contain h-12 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
 
-            <Image
-              src='/img/loghi-aziende/brembo.jpg'
-              alt='Logo azienda Brembo'
-              width={100}
-              height={100}
-              className='object-contain h-14'
-            />
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/brembo.svg'
+                alt='Logo azienda Brembo'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/alba_elettr.svg'
+                alt='Logo azienda Alba Elettronic'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/siad.svg'
+                alt='Logo azienda SIAD'
+                width={100}
+                height={100}
+                className='object-contain h-10 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/lovato.png'
+                alt='Logo azienda Lovato'
+                width={100}
+                height={100}
+                className='object-contain h-16 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/sce.png'
+                alt='Logo azienda SCE'
+                width={100}
+                height={100}
+                className='object-contain h-16 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/tea.png'
+                alt='Logo azienda TEA'
+                width={100}
+                height={100}
+                className='object-contain h-16 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/cosberg.svg'
+                alt='Logo azienda Cosberg'
+                width={100}
+                height={100}
+                className='object-contain h-16 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/zotup.png'
+                alt='Logo azienda Zotup'
+                width={100}
+                height={100}
+                className='object-contain h-24 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/losma.png'
+                alt='Logo azienda Losma'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/ddx.svg'
+                alt='Logo azienda DDX'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/plastik.svg'
+                alt='Logo azienda Plastik'
+                width={100}
+                height={100}
+                className='object-contain h-10 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4'>
+              <Image
+                src='/img/loghi-aziende/minifaber.svg'
+                alt='Logo azienda Minifaber'
+                width={100}
+                height={100}
+                className='object-contain h-24 w-full'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/albini.svg'
+                alt='Logo azienda Albini'
+                width={100}
+                height={100}
+                className='object-contain h-20 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/martinelli.png'
+                alt='Logo azienda Martinelli'
+                width={100}
+                height={100}
+                className='object-contain h-20 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/zlab.png'
+                alt='Logo azienda Z-Lab'
+                width={100}
+                height={100}
+                className='object-contain h-16 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/goal.png'
+                alt='Logo azienda Goal'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
           </Slider>
         </div>
       </main>
