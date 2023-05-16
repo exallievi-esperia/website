@@ -37,13 +37,13 @@ const Bookshelf: React.FC<BookshelfProps> = ({
         </span>
       </a>
 
-      <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-      <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+      <span className='block sm:hidden col-span-1 border-b-[30px] border-b-orange-300 dark:border-b-yellow-900 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+      <span className='block sm:hidden col-span-1 mb-10 border-b-[15px] border-b-orange-400 dark:border-b-yellow-950 border-r-[20px] border-r-orange-400 dark:border-r-yellow-950 border-l-[20px] border-l-orange-400 dark:border-l-yellow-950'></span>
 
       {((index + 1) % 2 === 0 || index + 1 === totalItems) && (
         <>
-          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
-          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 border-r-[20px] border-r-orange-400 border-l-[20px] border-l-orange-400'></span>
+          <span className='hidden sm:block md:hidden col-span-2 border-b-[30px] border-b-orange-300 dark:border-b-yellow-900 border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent'></span>
+          <span className='hidden sm:block md:hidden col-span-2 mb-10 border-b-[15px] border-b-orange-400 dark:border-b-yellow-950 border-r-[20px] border-r-orange-400 dark:border-r-yellow-950 border-l-[20px] border-l-orange-400 dark:border-l-yellow-950'></span>
         </>
       )}
 
