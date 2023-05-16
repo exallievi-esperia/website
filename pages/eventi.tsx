@@ -140,6 +140,7 @@ const EventiPage = () => {
         description={
           "Scopri tutti gli eventi a cui prende parte l'Associazione"
         }
+        backgroundImage='/img/eventi/elettronica_23032023.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

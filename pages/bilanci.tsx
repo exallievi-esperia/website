@@ -98,6 +98,7 @@ const BilanciPage = () => {
       <Heading
         title={"Bilanci"}
         description={"Consulta i bilanci dell'associazione suddivisi per anno"}
+        backgroundImage='/img/eventi/elettronica_23032023.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

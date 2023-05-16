@@ -126,6 +126,7 @@ const RivistaPage = () => {
       <Heading
         title={"Rivista"}
         description={"La rivista ufficiale degli Ex Allievi"}
+        backgroundImage='/img/eventi/elettronica_23032023.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

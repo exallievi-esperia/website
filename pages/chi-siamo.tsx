@@ -36,7 +36,11 @@ const ChiSiamoPage = () => {
       <Head>
         <title>Chi siamo - Ex Allievi Esperia</title>
       </Head>
-      <Heading title='Chi siamo' description='Scopri la nostra Associazione' />
+      <Heading
+        title='Chi siamo'
+        description='Scopri la nostra Associazione'
+        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+      />
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-600'>
         {/* La nostra storia */}
         <div>

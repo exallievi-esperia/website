@@ -22,7 +22,11 @@ const SociPage = () => {
         <title>Soci - Ex Allievi Esperia</title>
       </Head>
 
-      <Heading title='Soci' description='Iscriviti o rinnova la tua quota' />
+      <Heading
+        title='Soci'
+        description='Iscriviti o rinnova la tua quota'
+        backgroundImage='/img/eventi/centenario_28052022.jpg'
+      />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         {/* Iscriviti | Rinnova */}

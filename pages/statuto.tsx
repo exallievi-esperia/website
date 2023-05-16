@@ -13,9 +13,8 @@ const StatutoPage = () => {
 
       <Heading
         title={"Statuto"}
-        description={
-          "Consulta lo statuto dell'associazione Ex Allievi"
-        }
+        description={"Consulta lo statuto dell'associazione Ex Allievi"}
+        backgroundImage='/img/eventi/elettronica_23032023.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-14'>
@@ -51,7 +50,7 @@ const StatutoPage = () => {
           </h2>
 
           {/* Articoli */}
-          <ol className="dark:text-gray-200">
+          <ol className='dark:text-gray-200'>
             {/* Art. 1 */}
             <li>
               <div className='mb-6'>
@@ -1340,7 +1339,7 @@ const StatutoPage = () => {
           </ol>
 
           {/* Firma */}
-          <div className="dark:text-gray-200">
+          <div className='dark:text-gray-200'>
             <p>Associazione Ex Allievi dell’ITIS P.Paleocapa di Bergamo</p>
             <p>Il Presidente</p>
             <p className='italic'>Alessandro Gigli</p>
