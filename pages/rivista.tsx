@@ -115,7 +115,7 @@ const riviste = [
 ]
 
 const RivistaPage = () => {
-  const [currentItems, setCurrentItems] = useState(12)
+  const [currentItems, setCurrentItems] = useState(15)
 
   return (
     <Layout>

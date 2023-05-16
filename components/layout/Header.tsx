@@ -17,6 +17,7 @@ import {
 import { FaHandsHelping } from "react-icons/fa"
 import { MdEmojiPeople, MdPeopleAlt } from "react-icons/md"
 import ToggleDarkMode from "./ToggleDarkMode"
+import { useRouter } from "next/router"
 
 const menuItems = [
   {
@@ -115,6 +116,8 @@ const Header: React.FC = () => {
     prevPosY = currentPosY
   }
 
+  const router = useRouter()
+
   return (
     <header
       id='header'
@@ -144,14 +147,18 @@ const Header: React.FC = () => {
             menuItem.href ? (
               <Link
                 href={menuItem.href}
-                className='text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100'
+                className={`text-sm font-semibold leading-6 transition text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-200 ${
+                  router.pathname === menuItem.href
+                    ? "border-b-2 border-[#f25116]"
+                    : ""
+                }`}
                 key={menuItem.label}
               >
                 {menuItem.label}
               </Link>
             ) : (
               <Popover className='relative' key={menuItem.label}>
-                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100'>
+                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 transition text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-200'>
                   {menuItem.label}
                   <HiChevronDown
                     className='h-5 w-5 flex-none text-gray-700 dark:text-gray-300'
@@ -173,11 +180,19 @@ const Header: React.FC = () => {
                       {menuItem.subItems?.map((subItem) => (
                         <div
                           key={subItem.label}
-                          className='group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-gray-700'
+                          className={`group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 dark:hover:bg-gray-700 ${
+                            router.pathname === subItem.href
+                              ? "bg-gray-50 dark:bg-gray-700"
+                              : ""
+                          }`}
                         >
                           <div className='flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white'>
                             <subItem.icon
-                              className='h-6 w-6 text-gray-600 group-hover:text-[#f25116]'
+                              className={`h-6 w-6 group-hover:text-[#f25116] ${
+                                router.pathname === subItem.href
+                                  ? "text-[#f25116]"
+                                  : "text-gray-600"
+                              }`}
                               aria-hidden='true'
                             />
                           </div>

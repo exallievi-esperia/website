@@ -87,7 +87,7 @@ const list = [
 ]
 
 const BilanciPage = () => {
-  const [currentItems, setCurrentItems] = useState(5)
+  const [currentItems, setCurrentItems] = useState(7)
 
   return (
     <Layout>

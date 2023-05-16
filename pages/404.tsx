@@ -1,7 +1,7 @@
-import Layout from "@/components/layout/Layout";
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
+import Layout from "@/components/layout/Layout"
+import Head from "next/head"
+import Link from "next/link"
+import Image from "next/image"
 
 const PageNotFound = () => {
   return (
@@ -28,7 +28,7 @@ const PageNotFound = () => {
 
           <Link
             href='/'
-            className='rounded-md bg-[#f25116] mt-10 px-3.5 py-2.5 text-sm font-semibold border border-[#f25116] text-white hover:bg-white hover:text-[#f25116] transition-colors duration-300'
+            className='rounded-md bg-[#f25116] hover:bg-[#bf3617] mt-10 px-3.5 py-2.5 text-sm font-semibold border text-white  transition-colors duration-300'
           >
             Torna alla home
           </Link>
@@ -36,6 +36,6 @@ const PageNotFound = () => {
       </main>
     </Layout>
   )
-};
+}
 
-export default PageNotFound;
+export default PageNotFound
