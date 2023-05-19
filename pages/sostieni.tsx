@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import Link from "next/link"
 import Heading from "@/components/Heading"
+import Step from "@/components/Step"
 
 const settings = {
   slidesToShow: 3,
@@ -37,68 +38,41 @@ const SostieniPage = () => {
         <div>
           <h2 className='font-bold text-3xl dark:text-white'>5x1000</h2>
 
-          <div className='flex md:gap-x-10 gap-y-10 md:gap-y-0 flex-col md:flex-row pt-5 md:pt-12 mx-auto text-gray-600'>
+          <div className='flex md:gap-x-10 gap-y-10 md:gap-y-0 flex-col md:flex-row pt-5 mx-auto text-gray-600'>
             <div className='w-full md:w-1/2'>
-              <div className='flex relative pb-12'>
+              <div className=' pb-12'>
                 <p className='dark:text-gray-200'>
-                  Per rendere concreto un patto tra generazioni puoi aiutare
+                  Per rendere concreto un patto tra generazioni puoi aiutare,
                   attraverso un piccolo gesto, l'associazione e la scuola
-                  donando il tuo 5x1000. E' semplice e non ti costa nulla.
+                  donando il tuo 5x1000.
+                  <br /> E' <span className='underline'>semplice</span> e{" "}
+                  <span className='underline'>non ti costa nulla</span>.
+                </p>
+                <p className='dark:text-gray-200 mt-4'>
+                  Nella dichiarazione dei redditi firma l'apposito modulo e
+                  riporta il codice fiscale dell'associazione Ex Allievi
+                  dell'Esperia{" "}
+                  <span className='font-bold tracking-wider'>03052000167</span>.
                 </p>
               </div>
 
-              {/* Primo step */}
-              <div className='flex relative pb-12'>
-                <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
-                  <div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
-                </div>
-                <div className='flex-shrink-0 w-10 h-10 rounded-full bg-[#f25116] inline-flex items-center justify-center text-white relative z-10'>
-                  <RiNumber1 className='w-5 h-5' />
-                </div>
-                <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    Primo Passo
-                  </h2>
-                  <p className='leading-relaxed dark:text-gray-200'>
-                    Decidi di donare il tuo 5x1000 all'associazione
-                  </p>
-                </div>
-              </div>
-
-              {/* Secondo step */}
-              <div className='flex relative pb-12'>
-                <div className='h-full w-10 absolute inset-0 flex items-center justify-center'>
-                  <div className='h-full w-1 bg-gray-200 pointer-events-none'></div>
-                </div>
-                <div className='flex-shrink-0 w-10 h-10 rounded-full bg-[#f25116] inline-flex items-center justify-center text-white relative z-10'>
-                  <RiNumber2 className='w-5 h-5' />
-                </div>
-                <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    Secondo Passo
-                  </h2>
-                  <p className='leading-relaxed dark:text-gray-200'>
-                    Nella dichiarazione dei redditi firma l'apposito modulo e
-                    riporta il codice fiscale dell'associazione Ex Allievi
-                    dell'Esperia <span className='font-bold'>03052000167</span>.
-                  </p>
-                </div>
-              </div>
-
-              {/* Ultimo step */}
-              <div className='flex relative'>
-                <div className='flex-shrink-0 w-10 h-10 rounded-full bg-[#f25116] inline-flex items-center justify-center text-white relative z-10'>
-                  <RiNumber3 className='w-5 h-5' />
-                </div>
-                <div className='flex-grow pl-4'>
-                  <h2 className='font-medium title-font text-sm text-gray-900 dark:text-gray-100 mb-1 tracking-wider'>
-                    Fine
-                  </h2>
-                  <p className='leading-relaxed dark:text-gray-200'>
-                    Bene, hai donato il tuo 5x1000.
-                  </p>
-                </div>
-              </div>
+              <Step
+                order={1}
+                title='Primo Passo'
+                paragraph="Cerca nel modello la sezione 'Scelta per la destinazione del 5x1000'."
+              />
+              <Step
+                order={2}
+                title='Secondo Passo'
+                paragraph="Firma nel riquadro 'Sostegno degli enti del terzo settore iscritti nel RUNTS'."
+              />
+              <Step
+                order={3}
+                title='Fine'
+                paragraph="Riporta il codice fiscale dell'associazione Ex Allievi
+                    dell'Esperia 03052000167 e consegna il documento alla fine della compilazione al CAF, commercialista o direttamente all'Agenzia delle Entrate."
+                isLast
+              />
             </div>
 
             <Image
@@ -107,6 +81,7 @@ const SostieniPage = () => {
               width={533}
               height={753}
               className='w-full md:w-1/2 object-contain aspect-auto sm:aspect-square'
+              priority
             />
           </div>
         </div>
@@ -121,8 +96,9 @@ const SostieniPage = () => {
             <div className=' text-gray-600 dark:text-gray-200'>
               <p className='text-left sm:max-w-md md:max-w-3xl'>
                 Per effettuare una erogazione libera puoi utilizzare Paypal,
-                clicca sul pulsante accanto. Puoi anche fare un bonifico
-                bancario a IBAN IT12N0538711110000042430482 (BPER Banca).
+                clicca sul pulsante accanto. <br />
+                In alternativa puoi anche fare un bonifico bancario a IBAN
+                IT12N0538711110000042430482 (BPER Banca).
               </p>
             </div>
 

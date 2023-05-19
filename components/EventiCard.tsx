@@ -1,4 +1,5 @@
 import { FcFolder, FcOpenedFolder } from "react-icons/fc"
+import Image from "next/image"
 
 interface Date {
   day: number
@@ -24,11 +25,21 @@ const EventiCard: React.FC<EventiCardProps> = ({
   return (
     <a
       href={href}
-      className='bg-blend-overlay bg-cover bg-no-repeat bg-center bg-gray-100 hover:bg-gray-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 transition duration-300 p-4 rounded-lg shadow group flex flex-row relative min-h-[12rem]'
-      style={{ backgroundImage: `url("${image}")` }}
+      className='p-4 group flex flex-row relative min-h-[12rem]'
       rel='noopener noreferrer'
       target='_blank'
     >
+      <Image
+        src={image}
+        alt='Eventi background image'
+        fill
+        priority
+        unoptimized
+        className='object-cover object-center rounded-lg'
+      />
+      {/* Overlay */}
+      <div className='absolute rounded-lg shadow w-full h-full inset-0 bg-white/[0.92] group-hover:bg-white/80 dark:bg-gray-900/[0.92] dark:group-hover:bg-gray-900/80 transition duration-300'></div>
+
       <div className='z-10 flex flex-col '>
         <span className='font-bold mb-2 flex justify-between flex-wrap text-lg'>
           <h2 className='dark:text-white'>{name}</h2>

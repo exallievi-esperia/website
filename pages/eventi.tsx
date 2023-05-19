@@ -83,7 +83,7 @@ const eventiList = [
       year: 2022,
     },
     href: "https://drive.google.com/drive/folders/19CZITOdPUCzW7yiwBZvs8t9pFPO6DnVP?usp=sharing",
-    image: "",
+    image: "http://via.placeholder.com/1280x500",
   },
   {
     id: 6,
