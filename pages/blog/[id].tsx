@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from "@/utils/posts"
 import React from "react"
 
-const Post = ({ postData }) => {
+const Post = ({ postData }: any) => {
   return <div>{postData.title}</div>
 }
 
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const postData = getPostData(params.id)
   return {
     props: {

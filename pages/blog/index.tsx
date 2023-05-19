@@ -4,7 +4,7 @@ import { getSortedPostsData } from "@/utils/posts"
 import Head from "next/head"
 import React from "react"
 
-const index = ({ allPostsData }) => {
+const index = ({ allPostsData }: any) => {
   return (
     <Layout>
       <Head>
@@ -18,8 +18,7 @@ const index = ({ allPostsData }) => {
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
-        <p>Blog!</p>
-        {allPostsData.map((post) => (
+        {allPostsData.map((post: any) => (
           <div key={post.id}>
             <h2>{post.title}</h2>
           </div>

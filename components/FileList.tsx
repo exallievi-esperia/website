@@ -30,7 +30,7 @@ const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
               className='group hover:underline underline-offset-2 decoration-[#f25116] decoration-2 flex gap-2 items-center'
             >
               <span>
-                <VscFilePdf className='text-[#f25116] group-hover:rotate-45 transition duration-500 w-8 h-8' />
+                <VscFilePdf className='text-[#f25116] group-hover:rotate-[20deg] group-hover:scale-110 transition duration-500 w-8 h-8' />
               </span>
               <p className='dark:text-gray-200'>{file.name}</p>
             </Link>

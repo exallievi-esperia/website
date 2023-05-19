@@ -1,6 +1,10 @@
 ---
-title: "Two Forms of Pre-rendering"
-date: "2020-01-01"
+title: "Festa degli Ex Allievi del 27 Maggio 2023"
+date: "2023-05-19"
+author: "Ex Allievi"
+tag: ["eventi", "festa", "comunicazione"]
+image: ""
+preview: "Il giorno 27 Maggio 2023 alle ore 09:00 si svolgerà presso la scuola la Festa annuale degli Ex Allievi, a cui sono invitati tutti i soci."
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

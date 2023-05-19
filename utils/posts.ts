@@ -21,6 +21,7 @@ export function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
+      date: matterResult.data.date,
       ...matterResult.data,
     }
   })
@@ -46,7 +47,7 @@ export function getAllPostIds() {
   })
 }
 
-export function getPostData(id) {
+export function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
 
