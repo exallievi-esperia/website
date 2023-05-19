@@ -28,7 +28,7 @@ const PageNotFound = () => {
 
           <Link
             href='/'
-            className='rounded-md bg-[#f25116] hover:bg-[#bf3617] mt-10 px-3.5 py-2.5 text-sm font-semibold border text-white  transition-colors duration-300'
+            className='rounded-md bg-[#f25116] hover:bg-[#bf3617] mt-10 px-3.5 py-2.5 text-sm font-semibold border text-white transition-colors duration-300'
           >
             Torna alla home
           </Link>
