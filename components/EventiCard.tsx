@@ -33,8 +33,7 @@ const EventiCard: React.FC<EventiCardProps> = ({
         src={image}
         alt='Eventi background image'
         fill
-        priority
-        unoptimized
+        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
         className='object-cover object-center rounded-lg'
       />
       {/* Overlay */}

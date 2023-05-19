@@ -22,7 +22,6 @@ const Heading: React.FC<HeadingProps> = ({
             alt='Heading background image'
             fill
             priority
-            unoptimized
             className='object-cover object-center'
           />
 

@@ -100,26 +100,38 @@ const ChiSiamoPage = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 mt-10 items-center'>
             <div>
-              <p className='leading-7 dark:text-gray-200'>
-                L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo si è
-                sviluppata facendo riferimento a tre valori: <br />
-                1. Creare un reale incontro fra la realtà scolastica e il
-                tessuto industriale. Scuola e Industria devono cooperare
-                affinché gli allievi acquisiscano le conoscenze e le competenze
-                che il mercato richiede e che sono in continua evoluzione.{" "}
-                <br />
-                2. Promuovere un percorso scolastico in cui le conoscenze
-                tecniche teoriche siano affiancate da momenti di realtà pratica.
-                Acquisire conoscenze e vedere concretamente come, dove e con
-                quali metodologie sono applicate è il primo passo del passaggio
-                dallo status di studente a quello di lavoratore. <br />
-                3. Promuovere e facilitare l’inserimento degli allievi nell’area
-                Bergamasca. I costi sociali della formazione diventano un
-                investimento per la collettività soprattutto se gli allievi
-                possono mettere a frutto il loro talento nel territorio di
-                origine.
-                <br />
-                <span className='font-bold'>Ascolta l'inno dell'Esperia:</span>
+              <div className='leading-7 dark:text-gray-200'>
+                <p>
+                  L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo si
+                  è sviluppata facendo riferimento a tre valori:
+                </p>
+                <ul className='list-decimal list-inside'>
+                  <li>
+                    Creare un reale incontro fra la realtà scolastica e il
+                    tessuto industriale. Scuola e Industria devono cooperare
+                    affinché gli allievi acquisiscano le conoscenze e le
+                    competenze che il mercato richiede e che sono in continua
+                    evoluzione.
+                  </li>
+                  <li>
+                    Promuovere un percorso scolastico in cui le conoscenze
+                    tecniche teoriche siano affiancate da momenti di realtà
+                    pratica. Acquisire conoscenze e vedere concretamente come,
+                    dove e con quali metodologie sono applicate è il primo passo
+                    del passaggio dallo status di studente a quello di
+                    lavoratore.
+                  </li>
+                  <li>
+                    Promuovere e facilitare l’inserimento degli allievi
+                    nell’area Bergamasca. I costi sociali della formazione
+                    diventano un investimento per la collettività soprattutto se
+                    gli allievi possono mettere a frutto il loro talento nel
+                    territorio di origine.
+                  </li>
+                </ul>
+              </div>
+              <p className='font-bold leading-7 dark:text-gray-200 mt-4'>
+                Ascolta l'inno dell'Esperia:
               </p>
 
               <audio
@@ -150,6 +162,21 @@ const ChiSiamoPage = () => {
             width={1280}
             height={500}
           />
+
+          <div className='bg-[#f25116] text-white mt-8 md:mt-16 font-semibold flex flex-col md:flex-row justify-around items-center text-2xl p-8 gap-y-20 shadow-lg rounded-lg'>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='text-5xl mb-4'>+500</div>
+              <div>Soci iscritti</div>
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='text-5xl mb-4'>103</div>
+              <div>Anni di attività</div>
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='text-5xl mb-4'>100</div>
+              <div>Borse di studio</div>
+            </div>
+          </div>
         </div>
 
         {/* Direttivo */}
