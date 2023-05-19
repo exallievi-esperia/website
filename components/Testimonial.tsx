@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
-import React from "react";
-import { FaQuoteLeft } from "react-icons/fa";
-import Image from "next/image";
+import { StaticImageData } from "next/image"
+import React from "react"
+import { FaQuoteLeft } from "react-icons/fa"
+import Image from "next/image"
 
 // interface TestimonialProps {
 //   name: string;
@@ -11,10 +11,11 @@ import Image from "next/image";
 // }
 
 interface TestimonialProps {
-  name: string;
-  label: string;
-  image: string;
-  description: string;
+  name: string
+  label: string
+  image: string
+  description: string
+  position?: string
 }
 
 const Testimonial: React.FC<TestimonialProps> = ({
@@ -22,6 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   label,
   image,
   description,
+  position = "object-center",
 }) => {
   return (
     <div className='flex flex-col items-center p-8 sm:p-16'>
@@ -32,7 +34,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 
       <div className='flex items-center gap-x-4 mt-8'>
         <Image
-          className='w-10 h-10 rounded-full object-cover object-top'
+          className={`w-10 h-10 rounded-full object-cover ${position}`}
           width={100}
           height={100}
           src={image}
@@ -45,6 +47,6 @@ const Testimonial: React.FC<TestimonialProps> = ({
       </div>
     </div>
   )
-};
+}
 
-export default Testimonial;
+export default Testimonial

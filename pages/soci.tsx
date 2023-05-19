@@ -114,31 +114,33 @@ const SociPage = () => {
             {...settings}
             className='flex justify-center bg-gray-100 dark:bg-gray-700 mt-5 rounded-md'
           >
-            {/* Paolo */}
+            {/* Paolo Zanotti */}
             <Testimonial
               name='Paolo Zanotti'
               label='Diplomato 2019/2020, socio dal 2022'
-              description=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              description="Sono diventato socio degli Ex Allievi dell'Esperia per poter dare un aiuto concreto alla scuola e a tutti i suoi ragazzi e ragazze, proprio come quello che ho ricevuto io da studente durante il mio percorso. Ho messo quindi a disposizione dell'associazione le mie competenze e conoscenze."
               image='/img/soci/zanotti_paolo.jpg'
+              position='object-top'
             />
 
-            {/* Simone */}
+            {/* Simone Spreafico */}
             <Testimonial
               name='Simone Spreafico'
               label='Diplomato 2019/2020, socio dal 2022'
-              description=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-              image='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
+              description="Da giovane ex studente, ho deciso di diventare socio dell'associazione perchè
+volevo supportare la scuola e al tempo stesso confrontarmi con altri ex allievi,
+ampliando la mia conoscenza delle realtà industriali del territorio bergamasco 
+sopratutto nel settore informatico."
+              image='/img/soci/spreafico_simone.JPG'
             />
 
-            {/* Marco */}
+            {/* Marco Mosca */}
             <Testimonial
               name='Marco Mosca'
               label='Diplomato 2019/2020, socio dal 2022'
-              description=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-              image='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png'
+              description='Con l’apporto creativo che ho sempre dato all’istituto da studente, ho voluto proseguire questo sodalizio anche post diploma. 
+Grazie all’associazione mi è stato possibile realizzare ciò dandomi, inoltre, la possibilità di conoscere nuove realtà industriali presenti nel nostro territorio. '
+              image='/img/soci/mosca_marco.JPG'
             />
           </Slider>
         </div>

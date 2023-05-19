@@ -27,7 +27,7 @@ const Heading: React.FC<HeadingProps> = ({
           />
 
           {/* Overlay */}
-          <div className='absolute w-full h-full inset-0 bg-[#d5f2ffe0] dark:bg-gray-800/[0.88]'></div>
+          <div className='absolute w-full h-full inset-0 bg-[#e0f5ffe0] dark:bg-gray-800/[0.88]'></div>
 
           <h1 className='font-bold sm:text-5xl text-4xl mb-5 dark:text-white break-words relative z-10'>
             {title}

@@ -20,7 +20,7 @@ const index = ({ allPostsData }) => {
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         <p>Blog!</p>
         {allPostsData.map((post) => (
-          <div>
+          <div key={post.id}>
             <h2>{post.title}</h2>
           </div>
         ))}
