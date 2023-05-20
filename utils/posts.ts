@@ -57,6 +57,7 @@ export function getPostData(id: string) {
   // Combine the data with the id
   return {
     id,
+    content: matterResult.content,
     ...matterResult.data,
   }
 }
