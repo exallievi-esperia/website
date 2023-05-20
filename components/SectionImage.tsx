@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface SectionImageProps {
   reversed?: boolean
@@ -9,6 +10,7 @@ interface SectionImageProps {
   link: string
   imgSrc: string
   imgAlt: string
+  id?: string
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
@@ -19,14 +21,30 @@ const SectionImage: React.FC<SectionImageProps> = ({
   link,
   imgSrc,
   imgAlt,
+  id = title,
 }) => {
   return (
-    <section>
+    <section id={id}>
       <div className='mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8'>
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16`}>
+          <div className='lg:py-24'>
+            <h2 className='text-3xl font-bold sm:text-4xl dark:text-white'>
+              {title}
+            </h2>
+
+            <p className='mt-4 text-gray-600 dark:text-gray-200'>{paragraph}</p>
+
+            <Link
+              href={link}
+              className='mt-8 inline-block rounded bg-[#f25116] hover:bg-[#d53c04] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-[#a0c3d9]'
+            >
+              {buttonText}
+            </Link>
+          </div>
+
           <div
             className={`${
-              reversed ? "order-last" : ""
+              reversed ? "lg:order-first" : ""
             } relative h-64 overflow-hidden rounded-md sm:h-80 lg:h-full`}
           >
             <Image
@@ -36,21 +54,6 @@ const SectionImage: React.FC<SectionImageProps> = ({
               width={1280}
               height={500}
             />
-          </div>
-
-          <div className='lg:py-24'>
-            <h2 className='text-3xl font-bold sm:text-4xl dark:text-white'>
-              {title}
-            </h2>
-
-            <p className='mt-4 text-gray-600 dark:text-gray-200'>{paragraph}</p>
-
-            <a
-              href={link}
-              className='mt-8 inline-block rounded bg-[#a0c3d9] 0 px-12 py-3 text-sm font-medium text-white transition hover:bg-[#a0c3d9] focus:outline-none focus:ring focus:ring-[#a0c3d9]'
-            >
-              {buttonText}
-            </a>
           </div>
         </div>
       </div>

@@ -1,16 +1,18 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import Image from "next/image"
 
 interface HeadingProps {
   title?: string
   description?: string
   backgroundImage?: string
+  children?: ReactNode
 }
 
 const Heading: React.FC<HeadingProps> = ({
   title = "",
   description = "",
   backgroundImage = "http://via.placeholder.com/1280x500",
+  children
 }) => {
   return (
     <div className='relative text-center px-12 py-24 md:p-36'>
@@ -31,6 +33,7 @@ const Heading: React.FC<HeadingProps> = ({
       <p className='text-xl dark:text-gray-100 break-words relative z-10'>
         {description}
       </p>
+      {children}
     </div>
   )
 }
