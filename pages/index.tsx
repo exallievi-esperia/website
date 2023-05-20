@@ -4,6 +4,7 @@ import SectionImage from "@/components/SectionImage"
 import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/image"
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
 
       <Heading backgroundImage='/img/eventi/elettronica_23032023.jpg'>
         {/* Hero */}
-        <div className='relative isolate px-6 md:py-14 lg:px-8'>
+        <div className='relative isolate px-6  lg:px-8'>
           <div className='mx-auto max-w-2xl py-16 sm:py-16 lg:py-16'>
             <div className='mb-8 sm:flex sm:justify-center'>
               <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-200 sm:ring-1 sm:ring-gray-900/10 sm:hover:ring-gray-900/20 sm:dark:ring-gray-100 sm:dark:hover:ring-gray-100/80 transition duration-300'>
@@ -23,7 +24,9 @@ const HomePage = () => {
                   className='underline sm:no-underline'
                 >
                   Festa degli Ex Allievi il 23 Maggio 2023.{" "}
-                  <span className='text-[#a0c3d9]'>Scopri di più</span>
+                  <span className='text-[#00558a] dark:text-[#a0c3d9]'>
+                    Scopri di più
+                  </span>
                 </Link>
               </div>
             </div>
@@ -47,7 +50,7 @@ const HomePage = () => {
                   href='/soci'
                   className='text-sm font-semibold leading-6 mt-8 sm:mt-0 text-gray-900 dark:text-gray-100 dark:hover:text-gray-300 transitions-colors duration-300 group'
                 >
-                  <p>Diventa socio</p>
+                  <p>Soci</p>
                 </Link>
               </div>
             </div>
@@ -71,7 +74,7 @@ const HomePage = () => {
         {/* Cosa facciamo */}
         <SectionImage
           title='Cosa facciamo'
-          paragraph="Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo ricordare il Museo TIME e la più recente sala immersiva."
+          paragraph="Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo ricordare il Museo TIME e la più recente sala immersiva. Inoltre vengono regolarmente emesse delle borse di studio a sostegno degli studenti."
           buttonText='SCOPRI DI PIÙ'
           link='/cosa-facciamo'
           imgSrc='/img/progetti/Museo_Time_Dopo.jpg'
@@ -80,9 +83,9 @@ const HomePage = () => {
 
         <Cta
           link='/soci'
-          title='Soci'
-          subTitle='lorem ipsum'
-          buttonText='Diventa socio!'
+          title='Soci Ex Allievi'
+          subTitle="Entrando a far parte dell'associazione avrai la possibilità di sostenere direttamente la scuola e di ampliare le tue conoscenze."
+          buttonText='Diventa socio'
         />
 
         <div className='mt-20'>
@@ -90,57 +93,98 @@ const HomePage = () => {
             Galleria
           </h2>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-5'>
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover h-full w-full sm:col-span-2'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover w-full h-full sm:row-span-2'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover h-full w-full'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover w-full h-full'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover h-full w-full'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover h-full w-full sm:col-span-2'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover w-full h-full'
-            />
-            <img
-              src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80'
-              alt='image'
-              className='object-cover h-full w-full'
-            />
+          <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/centenario_28052022.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/elettronica_23032023.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/elettronica_23102021.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/informatica_19112022.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/meccanica_04032023.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/eventi/meccanica_11122021.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/progetti/Museo_Time_Dopo.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/progetti/Sala_Immersiva_Dopo.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                className='h-full max-w-full rounded-md object-cover'
+                src='/img/Chi-Siamo.jpg'
+                alt=''
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
         </div>
 
-        <p className='mt-20'>News (dal blog, successivo)</p>
+        {/* <p className='mt-20'>News (dal blog, successivo)</p>  */}
 
         <Cta
           link='/sostieni'
-          title='Sostieni'
-          subTitle='lorem ipsum'
-          buttonText='Dona ora!'
+          title="Sostieni l'associazione"
+          subTitle="Puoi sostenere economicamente l'associazione donando il tuo 5x1000 oppure tramite delle erogazioni liberali."
+          buttonText='Dona ora'
         />
       </main>
     </Layout>

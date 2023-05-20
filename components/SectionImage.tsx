@@ -45,7 +45,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
           <div
             className={`${
               reversed ? "lg:order-first" : ""
-            } relative h-64 overflow-hidden rounded-md sm:h-80 lg:h-full`}
+            } relative h-64 overflow-hidden rounded-sm sm:h-80 lg:h-full shadow-lg`}
           >
             <Image
               alt={imgAlt}
