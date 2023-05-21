@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children}) => {
       {children}
       <Footer />
       <button
-        className='fixed bottom-5 right-5 p-3 rounded-full bg-[#f25116] z-10'
+        className='fixed bottom-5 right-5 p-3 rounded-full bg-[#f25116] hover:bg-[#d53c04] z-10'
         onClick={scrollToTop}
       >
         <IoMdArrowRoundUp className='w-6 h-6 text-gray-100' />

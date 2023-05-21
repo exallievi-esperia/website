@@ -165,7 +165,7 @@ const ChiSiamoPage = () => {
 
           <div className='bg-[#f25116] text-white mt-8 md:mt-16 font-semibold flex flex-col md:flex-row justify-around items-center text-2xl p-8 gap-y-20 shadow-lg rounded-lg'>
             <div className='flex flex-col justify-center items-center'>
-              <div className='text-5xl mb-4'>+500</div>
+              <div className='text-5xl mb-4'>+470</div>
               <div>Soci iscritti</div>
             </div>
             <div className='flex flex-col justify-center items-center'>
@@ -173,7 +173,7 @@ const ChiSiamoPage = () => {
               <div>Anni di attività</div>
             </div>
             <div className='flex flex-col justify-center items-center'>
-              <div className='text-5xl mb-4'>100</div>
+              <div className='text-5xl mb-4'>+130</div>
               <div>Borse di studio</div>
             </div>
           </div>

@@ -2548,6 +2548,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+photoswipe@^5.3.7:
+  version "5.3.7"
+  resolved "https://registry.yarnpkg.com/photoswipe/-/photoswipe-5.3.7.tgz#c67df67aaddb5705bcf8ff265bd2086f57805756"
+  integrity sha512-zsyLsTTLFrj0XR1m4/hO7qNooboFKUrDy+Zt5i2d6qjFPAtBjzaj/Xtydso4uxzcXpcqbTmyxDibb3BcSISseg==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -2738,6 +2743,11 @@ react-markdown@^8.0.7:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
+
+react-photoswipe-gallery@^2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/react-photoswipe-gallery/-/react-photoswipe-gallery-2.2.7.tgz#27fd45e84a3b7f15846761830c600b2c719053e3"
+  integrity sha512-AEYNoL4/IIRosIUonn4haaFQNn1ui4vdVgAY9LHd/imVamNCkqUcyWeT6317UILp/yJI2gohsd3lWmcJEbjCag==
 
 react-slick@^0.29.0:
   version "0.29.0"

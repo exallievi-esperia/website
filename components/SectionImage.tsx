@@ -36,7 +36,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
 
             <Link
               href={link}
-              className='mt-8 inline-block rounded bg-[#f25116] hover:bg-[#d53c04] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-[#a0c3d9]'
+              className='mt-8 inline-block rounded-sm bg-[#f25116] hover:bg-[#d53c04] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-[#a0c3d9]'
             >
               {buttonText}
             </Link>
@@ -45,12 +45,12 @@ const SectionImage: React.FC<SectionImageProps> = ({
           <div
             className={`${
               reversed ? "lg:order-first" : ""
-            } relative h-64 overflow-hidden rounded-sm sm:h-80 lg:h-full shadow-lg`}
+            } h-64 overflow-hidden rounded sm:h-80 lg:h-full shadow-lg`}
           >
             <Image
               alt={imgAlt}
               src={imgSrc}
-              className='absolute inset-0 h-full w-full object-cover'
+              className='h-full w-full object-cover'
               width={1280}
               height={500}
             />

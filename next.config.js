@@ -8,8 +8,10 @@ const nextConfig = {
       },
       { hostname: "flowbite.s3.amazonaws.com" },
       { hostname: "via.placeholder.com" },
+      { hostname: "farm4.staticflickr.com" },
+      { hostname: "farm6.staticflickr.com" },
     ],
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

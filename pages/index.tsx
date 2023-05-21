@@ -5,6 +5,8 @@ import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
+import "photoswipe/dist/photoswipe.css"
+import { Gallery, Item } from "react-photoswipe-gallery"
 
 const HomePage = () => {
   return (
@@ -93,89 +95,105 @@ const HomePage = () => {
             Galleria
           </h2>
 
-          <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/centenario_28052022.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
+          <Gallery withDownloadButton>
+            <div className='mt-8 grid gap-3 grid-cols-[15rem_10rem_10rem] grid-rows-[7rem_7rem]'>
+              <Item
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
+                width='1600'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='cursor-pointer rounded-sm'
+                    src='/img/eventi/centenario_28052022.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
+                  />
+                )}
+              </Item>
+              <Item
+                original='https://farm6.staticflickr.com/5591/15008867125_b61960af01_h.jpg'
+                thumbnail='https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg'
+                width='1600'
+                height='1068'
+                alt='Photo of mountain lake by Samuel Rohl'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='cursor-pointer object-cover w-full h-full rounded-sm'
+                    src='https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1068'
+                    alt='Photo of mountain lake by Samuel Rohl'
+                  />
+                )}
+              </Item>
+              <Item
+                original='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg'
+                thumbnail='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg'
+                width='1600'
+                height='1066'
+                alt='Photo of fog in the village by Ales Krivec'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='cursor-pointer object-cover w-full h-full rounded-sm'
+                    src='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1066'
+                    alt='Photo of fog in the village by Ales Krivec'
+                  />
+                )}
+              </Item>
+              <Item
+                original='https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg'
+                thumbnail='https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg'
+                width='1600'
+                height='1066'
+                alt='Photo of river sunset by Michael Hull'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    src='https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1066'
+                    alt='Photo of river sunset by Michael Hull'
+                    className='cursor-pointer object-cover w-full h-full col-start-2 rounded-sm'
+                  />
+                )}
+              </Item>
+              <Item
+                original='https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg'
+                thumbnail='https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg'
+                width='1600'
+                height='1066'
+                alt='Photo of bear by Thomas Lefebvre'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='cursor-pointer object-cover w-full h-full rounded-sm'
+                    src='https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1066'
+                    alt='Photo of bear by Thomas Lefebvre'
+                  />
+                )}
+              </Item>
             </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/elettronica_23032023.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/elettronica_23102021.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/informatica_19112022.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/meccanica_04032023.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/eventi/meccanica_11122021.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/progetti/Museo_Time_Dopo.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/progetti/Sala_Immersiva_Dopo.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-            <div>
-              <Image
-                className='h-full max-w-full rounded-md object-cover'
-                src='/img/Chi-Siamo.jpg'
-                alt=''
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
+          </Gallery>
         </div>
 
         {/* <p className='mt-20'>News (dal blog, successivo)</p>  */}
