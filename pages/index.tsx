@@ -23,7 +23,7 @@ const HomePage = () => {
                   href='/blog/festa-exallievi-2023'
                   className='underline sm:no-underline'
                 >
-                  Festa degli Ex Allievi il 23 Maggio 2023.{" "}
+                  Festa degli Ex Allievi il 27 Maggio 2023.{" "}
                   <span className='text-[#00558a] dark:text-[#a0c3d9]'>
                     Scopri di più
                   </span>
