@@ -146,7 +146,7 @@ const EventiPage = () => {
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {eventiList
-            .filter((item) => item.id + 1 <= currentItems)
+            .filter((item) => eventiList.length - item.id <= currentItems)
             .reverse()
             .map((evento, index) => (
               <EventiCard

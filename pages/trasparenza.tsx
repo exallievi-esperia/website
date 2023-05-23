@@ -123,7 +123,7 @@ const TrasparenzaPage = () => {
         {/* Elenco file */}
         <div className='flex flex-col gap-x-10'>
           {list
-            .filter((item) => item.id + 1 <= currentItems)
+            .filter((item) => list.length - item.id <= currentItems)
             .reverse()
             .map((file) => (
               <Fragment key={file.id}>

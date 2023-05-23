@@ -133,7 +133,7 @@ const RivistaPage = () => {
         {/* Bookshelf */}
         <div className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4'>
           {riviste
-            .filter((item) => item.id + 1 <= currentItems)
+            .filter((item) => riviste.length - item.id <= currentItems)
             .reverse()
             .map((rivista, index) => (
               <Bookshelf
