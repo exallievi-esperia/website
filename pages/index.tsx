@@ -15,16 +15,13 @@ const HomePage = () => {
         <title>Ex Allievi Esperia - Home</title>
       </Head>
 
-      <Heading backgroundImage='/img/eventi/elettronica_23032023.jpg'>
+      <Heading backgroundImage='/img/eventi/elettronica_23032023.jpg' isHome>
         {/* Hero */}
-        <div className='relative isolate px-6  lg:px-8'>
-          <div className='mx-auto max-w-2xl py-16 sm:py-16 lg:py-16'>
+        <div className='relative isolate px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl '>
             <div className='mb-8 sm:flex sm:justify-center'>
-              <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-200 sm:ring-1 sm:ring-gray-900/10 sm:hover:ring-gray-900/20 sm:dark:ring-gray-100 sm:dark:hover:ring-gray-100/80 transition duration-300'>
-                <Link
-                  href='/blog/festa-exallievi-2023'
-                  className='underline sm:no-underline'
-                >
+              <div className='relative px-3 py-1 text-base font-semibold text-gray-700 dark:text-gray-200 leading-6 transition duration-300'>
+                <Link href='/blog/festa-exallievi-2023'>
                   Festa degli Ex Allievi il 27 Maggio 2023.{" "}
                   <span className='text-[#00558a] dark:text-[#a0c3d9]'>
                     Scopri di più
@@ -44,15 +41,15 @@ const HomePage = () => {
               <div className='mt-10 flex flex-col sm:flex-row items-center justify-center gap-x-6'>
                 <a
                   href='#chi-siamo'
-                  className='rounded-md transition-colors duration-300 bg-[#f25116] hover:bg-[#d53c04] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  className='w-full sm:w-3/12 rounded-md transition-colors duration-300 bg-[#f25116] hover:bg-[#d53c04] px-3.5 py-3 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 >
                   Scopri chi siamo
                 </a>
                 <Link
                   href='/soci'
-                  className='text-sm font-semibold leading-6 mt-8 sm:mt-0 text-gray-900 dark:text-gray-100 dark:hover:text-gray-300 transitions-colors duration-300 group'
+                  className='w-full sm:w-3/12 rounded-md transition-colors duration-300 text-[#f25116] px-3.5 py-3 text-sm font-semibold bg-white mt-6 sm:mt-0 hover:bg-gray-200 shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 >
-                  <p>Soci</p>
+                  Sezione soci
                 </Link>
               </div>
             </div>
@@ -60,7 +57,7 @@ const HomePage = () => {
         </div>
       </Heading>
 
-      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-12'>
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 mb-12'>
         {/* Chi siamo */}
         <SectionImage
           title='Chi siamo'

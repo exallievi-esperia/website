@@ -27,7 +27,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
     <section id={id}>
       <div className='mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8'>
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16`}>
-          <div className='lg:py-24'>
+          <div className='lg:py-12'>
             <h2 className='text-3xl font-bold sm:text-4xl dark:text-white'>
               {title}
             </h2>
@@ -51,8 +51,8 @@ const SectionImage: React.FC<SectionImageProps> = ({
               alt={imgAlt}
               src={imgSrc}
               className='h-full w-full object-cover'
-              width={1280}
-              height={500}
+              width={506}
+              height={337}
             />
           </div>
         </div>

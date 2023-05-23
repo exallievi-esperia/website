@@ -21,7 +21,7 @@ const Cta: React.FC<CtaProps> = ({ link, title, subTitle, buttonText }) => {
           </p>
           <Link
             href={link}
-            className='text-white bg-[#f25116] hover:bg-[#d53c04] transition-colors duration-300 focus:ring-4 focus:ring-primary-300 font-semibold rounded-md text-md uppercase px-5 py-3'
+            className='inline-block rounded-sm bg-[#f25116] hover:bg-[#d53c04] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-[#a0c3d9]'
           >
             {buttonText}
           </Link>

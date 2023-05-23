@@ -6,16 +6,22 @@ interface HeadingProps {
   description?: string
   backgroundImage?: string
   children?: ReactNode
+  isHome?: boolean
 }
 
 const Heading: React.FC<HeadingProps> = ({
   title = "",
   description = "",
   backgroundImage = "http://via.placeholder.com/1280x500",
-  children
+  children,
+  isHome = false,
 }) => {
   return (
-    <div className='relative text-center px-12 py-24 md:p-36'>
+    <div
+      className={`relative text-center px-12 py-24 md:px-32 ${
+        isHome ? "md:py-24" : "md:py-32"
+      }`}
+    >
       <Image
         src={backgroundImage}
         alt='Heading background image'
