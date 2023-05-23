@@ -106,9 +106,10 @@ const VerbaliPage = () => {
         <div className='flex flex-col gap-x-10'>
           {list
             .filter((item) => item.id + 1 <= currentItems)
-            .map((file, index) => (
+            .reverse()
+            .map((file) => (
               <Fragment key={file.id}>
-                {file.id === 0 ? <></> : <hr />}
+                {file.id === list.length - 1 ? <></> : <hr />}
                 <FileList
                   year={file.year}
                   files={file.file}
