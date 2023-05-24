@@ -37,7 +37,7 @@ const index = ({ allPostsData }: any) => {
             {/* Info articolo */}
             <div className='dark:text-gray-100 md:max-w-3xl'>
               <div className='flex text-sm gap-8 flex-row items-center'>
-                <p>{post.date.split("-").reverse().join("/")}</p>
+                <p>{post.date.split("-").reverse().join(" ")}</p>
                 <div className='flex gap-5 flex-wrap'>
                   {post.tag.map((tag: string, index: number) => (
                     <div
@@ -62,9 +62,7 @@ const index = ({ allPostsData }: any) => {
                       alt={`Profile ${author.name}`}
                       width={100}
                       height={100}
-                      className={`${
-                        author.role === "admin" ? "hidden" : ""
-                      } rounded-full w-14 h-14 object-cover object-center`}
+                      className={`rounded-full w-14 h-14 object-cover object-center`}
                     />
                     <div>
                       <p className='font-semibold'>{author.name}</p>
