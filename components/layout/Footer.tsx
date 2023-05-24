@@ -55,7 +55,7 @@ const menuItems = [
 
 const Footer: React.FC = () => {
   return (
-    <footer aria-label='Site Footer' className='bg-[#a0c3d9] dark:bg-gray-700'>
+    <footer aria-label='Site Footer' className='bg-[#badaef] dark:bg-gray-700'>
       <div className='mx-auto max-w-screen-2xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           <div>
@@ -233,7 +233,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className='mt-12 border-t border-gray-300 pt-6'>
+        <div className='mt-12 border-t border-gray-100 pt-6'>
           <div className='text-center'>
             <p className='mt-4 text-sm text-gray-700 dark:text-gray-200 sm:mt-0'>
               &copy; 1920 - {new Date().getFullYear()} Ex Allievi Esperia -

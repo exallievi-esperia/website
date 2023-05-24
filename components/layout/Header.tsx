@@ -121,7 +121,7 @@ const Header: React.FC = () => {
   return (
     <header
       id='header'
-      className={`bg-[#a0c3d9] dark:bg-gray-700 sticky top-0 transition-all duration-500 ${
+      className={`bg-[#badaef] dark:bg-gray-700 sticky top-0 transition-all duration-500 ${
         mobileMenuOpen ? "" : "z-50"
       }`}
     >

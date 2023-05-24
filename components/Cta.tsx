@@ -10,7 +10,7 @@ interface CtaProps {
 
 const Cta: React.FC<CtaProps> = ({ link, title, subTitle, buttonText }) => {
   return (
-    <section className='bg-gray-200 dark:bg-gray-800 rounded-md mt-20'>
+    <section className='bg-[#badaef4b] dark:bg-gray-800 rounded-md mt-20'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
         <div className='mx-auto max-w-screen-md lg:max-w-screen-lg text-center sm:text-left'>
           <h2 className='mb-2 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white break-words'>
