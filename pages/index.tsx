@@ -7,6 +7,7 @@ import Link from "next/link"
 import Image from "next/image"
 import "photoswipe/dist/photoswipe.css"
 import { Gallery, Item } from "react-photoswipe-gallery"
+import Button from "@/components/Button"
 
 const HomePage = () => {
   return (
@@ -20,13 +21,8 @@ const HomePage = () => {
         <div className='relative isolate px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl '>
             <div className='mb-8 sm:flex sm:justify-center'>
-              <div className='relative px-3 py-1 text-base font-semibold text-gray-700 dark:text-gray-200 leading-6 transition duration-300'>
-                <Link href='/blog/festa-exallievi-2023'>
-                  Festa degli Ex Allievi il 27 Maggio 2023.{" "}
-                  <span className='text-[#00558a] dark:text-[#a0c3d9]'>
-                    Scopri di più
-                  </span>
-                </Link>
+              <div className='relative px-3 py-1 text-base font-medium text-gray-700 dark:text-gray-200 leading-6 transition duration-300'>
+                
               </div>
             </div>
             <div className='text-center'>
@@ -34,23 +30,24 @@ const HomePage = () => {
                 Ex Allievi Esperia
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200'>
-                L’Associazione ex-Allievi dell’ITIS P. Paleocapa di Bergamo,
-                fondata nel 1920, non ha fini di lucro ed è parte integrante
+                Associazione ex-Allievi dell’I.T.I.S. P. Paleocapa di Bergamo,
+                fondata nel 1920, senza fini di lucro e parte integrante
                 dell’Istituto Paleocapa.
               </p>
               <div className='mt-10 flex flex-col sm:flex-row items-center justify-center gap-x-6'>
-                <a
-                  href='#chi-siamo'
-                  className='w-full sm:w-3/12 rounded-md transition-colors duration-300 bg-[#f25116] hover:bg-[#d53c04] px-3.5 py-3 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                >
-                  Scopri chi siamo
-                </a>
-                <Link
-                  href='/soci'
-                  className='w-full sm:w-3/12 rounded-md transition-colors duration-300 text-[#f25116] px-3.5 py-3 text-sm font-semibold bg-white mt-6 sm:mt-0 hover:bg-gray-200 shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                >
-                  Sezione soci
-                </Link>
+                <Button
+                  text={"Scopri chi siamo"}
+                  link={"#chi-siamo"}
+                  style={"w-full sm:w-3/12"}
+                  padding='px-1'
+                />
+                <Button
+                  text={"Sezione soci"}
+                  link={"/soci"}
+                  style={"w-full sm:w-3/12 mt-6 sm:mt-0"}
+                  outline
+                  padding='px-1'
+                />
               </div>
             </div>
           </div>
@@ -73,7 +70,7 @@ const HomePage = () => {
         {/* Cosa facciamo */}
         <SectionImage
           title='Cosa facciamo'
-          paragraph="Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo ricordare il Museo TIME e la più recente sala immersiva. Inoltre vengono regolarmente emesse delle borse di studio a sostegno degli studenti."
+          paragraph="Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo trovare il Museo TIME e la più recente sala immersiva. Inoltre vengono regolarmente emesse delle borse di studio a sostegno degli studenti."
           buttonText='SCOPRI DI PIÙ'
           link='/cosa-facciamo'
           imgSrc='/img/progetti/Museo_Time_Dopo.jpg'
@@ -92,7 +89,7 @@ const HomePage = () => {
             Galleria
           </h2>
 
-          <Gallery withDownloadButton>
+          {/* <Gallery withDownloadButton>
             <div className='mt-8 grid gap-3 grid-cols-[15rem_10rem_10rem] grid-rows-[7rem_7rem]'>
               <Item
                 original='/img/eventi/centenario_28052022.jpg'
@@ -190,7 +187,7 @@ const HomePage = () => {
                 )}
               </Item>
             </div>
-          </Gallery>
+          </Gallery> */}
         </div>
 
         {/* <p className='mt-20'>News (dal blog, successivo)</p>  */}

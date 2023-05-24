@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import Link from "next/link"
+import Button from "./Button"
 
 interface SectionImageProps {
   reversed?: boolean
@@ -34,12 +34,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
 
             <p className='mt-4 text-gray-600 dark:text-gray-200'>{paragraph}</p>
 
-            <Link
-              href={link}
-              className='mt-8 inline-block rounded-sm bg-[#f25116] hover:bg-[#d53c04] px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-[#a0c3d9]'
-            >
-              {buttonText}
-            </Link>
+            <Button text={buttonText} link={link} uppercase style='mt-8' />
           </div>
 
           <div

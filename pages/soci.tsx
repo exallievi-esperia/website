@@ -6,6 +6,7 @@ import Slider from "react-slick"
 import Testimonial from "@/components/Testimonial"
 import Feature from "@/components/Feature"
 import Heading from "@/components/Heading"
+import Button from "@/components/Button"
 
 const settings = {
   dots: true,
@@ -71,13 +72,15 @@ const SociPage = () => {
               </li>
             </ol>
 
-            <a
-              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-[#d53c04] hover:border-[#d53c04] transition-colors duration-300'
-              href='/documenti/Modulo-Iscrizione-Ex-Allievi-Esperia.pdf'
-              target='_blank'
-            >
-              ISCRIVITI
-            </a>
+            <Button
+              text={"Iscriviti"}
+              link={
+                "https://drive.google.com/file/d/1UR587Y8BqzLIfIin6qEL4ZDckypt5W60/view?usp=sharing"
+              }
+              isBlank
+              style='mt-auto w-full md:w-1/3 text-center self-center'
+              uppercase
+            />
           </div>
 
           {/* Rinnova */}
@@ -85,7 +88,7 @@ const SociPage = () => {
             <h2 className='font-bold text-3xl md:text-center dark:text-white'>
               Rinnova la quota
             </h2>
-            <p className='mt-5 leading-7 mb-8 dark:text-gray-200'>
+            <p className='mt-5 leading-7 mb-8 dark:text-gray-200 break-words'>
               Se sei già socio dell’Associazione e vuoi rinnovare la tua quota
               annuale, pari a 30€, premi sul pulsante “<strong>RINNOVA</strong>”
               per pagare con Carte di Credito/Debito o PayPal. <br />
@@ -94,14 +97,16 @@ const SociPage = () => {
               L’importo da versare è pari a €30,00 ma sei libero di donare
               quanto preferisci.
             </p>
-            <a
-              className='mt-auto bg-[#f25116] text-white border-2 border-[#f25116] p-3 rounded-md w-full md:w-1/3 font-bold text-center self-center hover:bg-[#d53c04] hover:border-[#d53c04] transition-colors duration-300'
-              href='https://www.paypal.com/donate?hosted_button_id=23BL2KLNJ6MF8'
-              rel='noopener noreferrer'
-              target='_blank'
-            >
-              RINNOVA
-            </a>
+
+            <Button
+              text={"Rinnova"}
+              link={
+                "https://www.paypal.com/donate?hosted_button_id=23BL2KLNJ6MF8"
+              }
+              isBlank
+              style='mt-auto w-full md:w-1/3 text-center self-center'
+              uppercase
+            />
           </div>
         </div>
 
@@ -150,11 +155,6 @@ Grazie all’associazione mi è stato possibile realizzare ciò dandomi, inoltre
           <h2 className='font-bold text-3xl dark:text-white'>
             Quali vantaggi ottengo?
           </h2>
-          {/* <p className='mt-4 dark:text-gray-200'>
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
-          </p> */}
 
           <div className='grid mx-auto mt-12 md:mt-16 max-w-2xl grid-cols-1 gap-y-10 gap-x-8 md:max-w-4xl md:grid-cols-2 md:gap-y-16'>
             <Feature
