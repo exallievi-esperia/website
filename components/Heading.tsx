@@ -18,7 +18,7 @@ const Heading: React.FC<HeadingProps> = ({
 }) => {
   return (
     <div
-      className={`relative text-center px-12 py-24 md:px-32 ${
+      className={`relative text-center px-8 py-24 md:px-28 ${
         isHome ? "md:py-24" : "md:py-32"
       }`}
     >

@@ -21,12 +21,29 @@ const HomePage = () => {
         <div className='relative isolate px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl '>
             <div className='mb-8 sm:flex sm:justify-center'>
-              <div className='relative px-3 py-1 text-base font-medium text-gray-700 dark:text-gray-200 leading-6 transition duration-300'>
-                
+              <div className='w-fit m-auto hover:-translate-y-1.5 hover:cursor-pointer rounded-full text-[#f25116] bg-[#f2511640] dark:bg-[#f2511640] px-3 py-1 text-base font-medium transition duration-300'>
+                <Link
+                  href='/blog/festa-exallievi-2023'
+                  className='min-[339px]:hidden'
+                >
+                  Festa del 27/05
+                </Link>
+                <Link
+                  href='/blog/festa-exallievi-2023'
+                  className='max-[338px]:hidden min-[499px]:hidden'
+                >
+                  Festa del 27 Maggio 2023
+                </Link>
+                <Link
+                  href='/blog/festa-exallievi-2023'
+                  className='max-[500px]:hidden'
+                >
+                  Partecipa alla festa del 27 Maggio
+                </Link>
               </div>
             </div>
             <div className='text-center'>
-              <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl'>
+              <h1 className='text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl'>
                 Ex Allievi Esperia
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200'>

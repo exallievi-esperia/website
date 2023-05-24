@@ -19,7 +19,7 @@ const StatutoPage = () => {
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-14'>
         <div className='flex justify-center'>
-          <div className='rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
+          <div className='rounded-full py-1 px-3 text-sm sm:text-base leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-300/20 dark:hover:ring-gray-300/10'>
             <a
               href='https://drive.google.com/file/d/1pnj1P1IwSQ35OkV8y8BJ3VRTq8PWJcdj/view?usp=sharing'
               className='flex gap-2 group items-center'

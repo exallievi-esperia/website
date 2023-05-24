@@ -41,7 +41,7 @@ const index = ({ allPostsData }: any) => {
                 <div className='flex gap-5 flex-wrap'>
                   {post.tag.map((tag: string, index: number) => (
                     <div
-                      className='rounded-full  py-px px-2 bg-[#f2511687]'
+                      className='rounded-full text-white py-px px-2 bg-[#f25116cc]'
                       key={index}
                     >
                       <p>{tag}</p>
@@ -56,7 +56,7 @@ const index = ({ allPostsData }: any) => {
               {/* author */}
               <div className='flex flex-col sm:flex-row mt-6 gap-10 flex-wrap'>
                 {post.authors.map((author: any, index: number) => (
-                  <div key={index} className="flex gap-5 items-center">
+                  <div key={index} className='flex gap-5 items-center'>
                     <Image
                       src={author.image}
                       alt={`Profile ${author.name}`}
