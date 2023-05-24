@@ -245,7 +245,7 @@ const Header: React.FC = () => {
       >
         <div className='fixed inset-0 z-10' />
         <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-600 px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10'>
-          <div className='flex items-center justify-between sm:justify-end gap-x-5'>
+          <div className='flex items-center justify-between sm:justify-end'>
             <Link
               href='/'
               className='-m-1.5 p-1.5 flex items-center sm:invisible'

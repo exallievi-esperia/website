@@ -106,8 +106,8 @@ const HomePage = () => {
             Galleria
           </h2>
 
-          {/* <Gallery withDownloadButton>
-            <div className='mt-8 grid gap-3 grid-cols-[15rem_10rem_10rem] grid-rows-[7rem_7rem]'>
+          <Gallery withDownloadButton>
+            <div className='mt-8 grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
               <Item
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
@@ -127,87 +127,172 @@ const HomePage = () => {
                   />
                 )}
               </Item>
+
               <Item
-                original='https://farm6.staticflickr.com/5591/15008867125_b61960af01_h.jpg'
-                thumbnail='https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg'
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1068'
-                alt='Photo of mountain lake by Samuel Rohl'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer object-cover w-full h-full rounded-sm'
-                    src='https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg'
+                    className='cursor-pointer rounded-sm lg:row-span-2 h-full w-full object-cover'
+                    src='/img/eventi/centenario_28052022.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
-                    height='1068'
-                    alt='Photo of mountain lake by Samuel Rohl'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
                   />
                 )}
               </Item>
+
               <Item
-                original='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg'
-                thumbnail='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg'
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1066'
-                alt='Photo of fog in the village by Ales Krivec'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer object-cover w-full h-full rounded-sm'
-                    src='https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg'
+                    className='cursor-pointer rounded-sm'
+                    src='/img/eventi/centenario_28052022.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
-                    height='1066'
-                    alt='Photo of fog in the village by Ales Krivec'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
                   />
                 )}
               </Item>
+
               <Item
-                original='https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg'
-                thumbnail='https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg'
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1066'
-                alt='Photo of river sunset by Michael Hull'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
+              >
+                {({ ref, open }) => (
+                  <div
+                    className='relative lg:row-span-2 w-full h-full object-cover'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                  >
+                    <Image
+                      className='cursor-pointer rounded-sm lg:row-span-2 w-full h-full object-cover'
+                      src='/img/eventi/centenario_28052022.jpg'
+                      ref={ref as React.MutableRefObject<HTMLImageElement>}
+                      onClick={open}
+                      width='1600'
+                      height='1600'
+                      alt='Photo of seashore by Folkert Gorter'
+                    />
+                    <div className='hidden lg:flex absolute  items-center justify-center rounded-sm shadow w-full h-full inset-0 bg-white/[0.80] cursor-pointer hover:bg-white/90 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
+                      <p className='text-center text-3xl md:text-2xl font-semibold'>
+                        +32 foto
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </Item>
+
+              <Item
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
+                width='1600'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
                   <Image
-                    src='https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg'
+                    className='cursor-pointer rounded-sm'
+                    src='/img/eventi/centenario_28052022.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
-                    height='1066'
-                    alt='Photo of river sunset by Michael Hull'
-                    className='cursor-pointer object-cover w-full h-full col-start-2 rounded-sm'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
                   />
                 )}
               </Item>
+
               <Item
-                original='https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg'
-                thumbnail='https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg'
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1066'
-                alt='Photo of bear by Thomas Lefebvre'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
+              >
+                {({ ref, open }) => (
+                  <div
+                    className='relative'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                  >
+                    <Image
+                      className='cursor-pointer rounded-sm'
+                      src='/img/eventi/centenario_28052022.jpg'
+                      ref={ref as React.MutableRefObject<HTMLImageElement>}
+                      onClick={open}
+                      width='1600'
+                      height='1600'
+                      alt='Photo of seashore by Folkert Gorter'
+                    />
+                    <div className='lg:hidden absolute flex items-center justify-center rounded-sm shadow w-full h-full cursor-pointer inset-0 bg-white/[0.80] hover:bg-white/90 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
+                      <p className='text-center text-3xl md:text-2xl font-semibold'>
+                        +32 foto
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </Item>
+
+              {/* hidden */}
+              <Item
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
+                width='1600'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer object-cover w-full h-full rounded-sm'
-                    src='https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg'
+                    className='hidden cursor-pointer rounded-sm'
+                    src='/img/eventi/centenario_28052022.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
-                    height='1066'
-                    alt='Photo of bear by Thomas Lefebvre'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
+                  />
+                )}
+              </Item>
+
+              <Item
+                original='/img/eventi/centenario_28052022.jpg'
+                thumbnail='/img/eventi/centenario_28052022.jpg'
+                width='1600'
+                height='1600'
+                alt='Photo of seashore by Folkert Gorter'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='hidden cursor-pointer rounded-sm'
+                    src='/img/eventi/centenario_28052022.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1600'
+                    alt='Photo of seashore by Folkert Gorter'
                   />
                 )}
               </Item>
             </div>
-          </Gallery> */}
+          </Gallery>
         </div>
-
-        {/* <p className='mt-20'>News (dal blog, successivo)</p>  */}
 
         <Cta
           link='/sostieni'
