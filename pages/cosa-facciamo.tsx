@@ -32,9 +32,9 @@ const CosaFacciamoPage = () => {
         {/* Progetti realizzati */}
         <section className='flex flex-col gap-12 lg:gap-20'>
           {/* Museo TIME */}
-          <div className='flex flex-col-reverse lg:flex-row gap-8 lg:gap-16'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
             {/* Img */}
-            <div className='w-full lg:w-1/2 mt-8'>
+            <div className='w-full mt-8 order-last lg:order-none'>
               <Slider {...settings} className='self-center'>
                 <div>
                   <Image
@@ -104,7 +104,7 @@ const CosaFacciamoPage = () => {
           <hr />
 
           {/* Lab */}
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-16'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
             {/* Text */}
             <div className='self-center'>
               <div className='max-w-3xl mb-8'>
@@ -144,7 +144,7 @@ const CosaFacciamoPage = () => {
             </div>
 
             {/* Img */}
-            <div className='w-full lg:w-1/2 mt-8'>
+            <div className='w-full mt-8'>
               <Slider {...settings} className='self-center'>
                 <div>
                   <Image
