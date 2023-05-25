@@ -113,7 +113,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -133,7 +133,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -153,7 +153,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -173,7 +173,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -204,7 +204,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -224,7 +224,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -256,7 +256,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
@@ -276,7 +276,7 @@ const HomePage = () => {
                 original='/img/eventi/centenario_28052022.jpg'
                 thumbnail='/img/eventi/centenario_28052022.jpg'
                 width='1600'
-                height='1600'
+                height='1068'
                 alt='Photo of seashore by Folkert Gorter'
               >
                 {({ ref, open }) => (
