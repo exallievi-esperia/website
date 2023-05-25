@@ -20,7 +20,7 @@ const EventiCard: React.FC<EventiCardProps> = ({
   description,
   date,
   href,
-  image,
+  image = undefined,
 }) => {
   return (
     <a
@@ -29,13 +29,16 @@ const EventiCard: React.FC<EventiCardProps> = ({
       rel='noopener noreferrer'
       target='_blank'
     >
-      <Image
-        src={image}
-        alt='Eventi background image'
-        fill
-        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-        className='object-cover object-center rounded-lg'
-      />
+      {image && (
+        <Image
+          src={image}
+          alt='Eventi background image'
+          fill
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          className='object-cover object-center rounded-lg'
+        />
+      )}
+
       {/* Overlay */}
       <div className='absolute rounded-lg shadow w-full h-full inset-0 bg-white/[0.92] group-hover:bg-white/80 dark:bg-gray-900/[0.92] dark:group-hover:bg-gray-900/80 transition duration-300'></div>
 

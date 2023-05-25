@@ -39,7 +39,7 @@ const ChiSiamoPage = () => {
       <Heading
         title='Chi siamo'
         description='Scopri la nostra Associazione'
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/eventi/centenario_28052022.jpg'
       />
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-600'>
         {/* La nostra storia */}

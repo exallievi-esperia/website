@@ -57,7 +57,7 @@ const eventiList = [
       year: 2022,
     },
     href: "https://drive.google.com/drive/folders/19CZITOdPUCzW7yiwBZvs8t9pFPO6DnVP?usp=sharing",
-    image: "http://via.placeholder.com/1280x500",
+    image: "",
   },
   {
     id: 4,
@@ -140,7 +140,7 @@ const EventiPage = () => {
         description={
           "Scopri tutti gli eventi a cui prende parte l'Associazione"
         }
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/DSCF9784.JPG'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

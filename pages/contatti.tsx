@@ -16,7 +16,8 @@ const ContattiPage = () => {
         description={
           "Tutte le informazioni utili per contattare o incontrare l'Associazione"
         }
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/esterno.jpg'
+        position='object-bottom'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

@@ -25,7 +25,7 @@ const CosaFacciamoPage = () => {
       <Heading
         title={"Cosa facciamo"}
         description={"Scopri i progetti dell'Associazione"}
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/sala_immersiva.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

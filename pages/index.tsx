@@ -16,7 +16,7 @@ const HomePage = () => {
         <title>Ex Allievi Esperia - Home</title>
       </Head>
 
-      <Heading backgroundImage='/img/eventi/elettronica_23032023.jpg' isHome>
+      <Heading backgroundImage='/img/museo_time_ampia.jpg' isHome>
         {/* Hero */}
         <div className='relative isolate px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl '>
@@ -190,7 +190,7 @@ const HomePage = () => {
                       height='1600'
                       alt='Photo of seashore by Folkert Gorter'
                     />
-                    <div className='hidden lg:flex absolute  items-center justify-center rounded-sm shadow w-full h-full inset-0 bg-white/[0.80] cursor-pointer hover:bg-white/90 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
+                    <div className='hidden lg:flex absolute  items-center justify-center rounded-sm shadow w-full h-full inset-0 bg-white/90 cursor-pointer hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
                       <p className='text-center text-3xl md:text-2xl font-semibold'>
                         +32 foto
                       </p>
@@ -241,7 +241,7 @@ const HomePage = () => {
                       height='1600'
                       alt='Photo of seashore by Folkert Gorter'
                     />
-                    <div className='lg:hidden absolute flex items-center justify-center rounded-sm shadow w-full h-full cursor-pointer inset-0 bg-white/[0.80] hover:bg-white/90 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
+                    <div className='lg:hidden absolute flex items-center justify-center rounded-sm shadow w-full h-full cursor-pointer inset-0 bg-white/90 hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
                       <p className='text-center text-3xl md:text-2xl font-semibold'>
                         +32 foto
                       </p>

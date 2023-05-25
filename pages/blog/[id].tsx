@@ -38,16 +38,21 @@ const Post = ({ postData }: any) => {
               ))}
             </div>
             <div className='flex flex-col sm:flex-row items-center text-gray-700 dark:text-gray-200'>
-              <div className="flex">
+              <div className='flex'>
                 {postData.authors.map(
-                  (author: { name: string; role: string; image: string }, index: number) => (
+                  (
+                    author: { name: string; role: string; image: string },
+                    index: number
+                  ) => (
                     <Image
                       key={index}
                       src={author.image}
                       alt={`Immagine autore ${author.name}`}
                       width={100}
                       height={100}
-                      className={`w-12 h-12 rounded-full object-cover ${index > 0 ? "-ml-4" : ""}`}
+                      className={`w-12 h-12 rounded-full object-cover ${
+                        index > 0 ? "-ml-4" : ""
+                      }`}
                     />
                   )
                 )}

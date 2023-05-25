@@ -7,6 +7,7 @@ interface HeadingProps {
   backgroundImage?: string
   children?: ReactNode
   isHome?: boolean
+  position?: string
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -15,6 +16,7 @@ const Heading: React.FC<HeadingProps> = ({
   backgroundImage = "http://via.placeholder.com/1280x500",
   children,
   isHome = false,
+  position = "object-center",
 }) => {
   return (
     <div
@@ -27,11 +29,11 @@ const Heading: React.FC<HeadingProps> = ({
         alt='Heading background image'
         fill
         priority
-        className='object-cover object-center'
+        className={`object-cover ${position}`}
       />
 
       {/* Overlay */}
-      <div className='absolute w-full h-full inset-0 bg-[#e0f5ffe0] dark:bg-gray-800/[0.88]'></div>
+      <div className='absolute w-full h-full inset-0 bg-[#eaf8ffe0] dark:bg-gray-800/[0.88]'></div>
 
       <h1 className='font-bold sm:text-5xl text-4xl mb-5 dark:text-white break-words relative z-10'>
         {title}
