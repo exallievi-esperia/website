@@ -158,7 +158,7 @@ const Header: React.FC = () => {
               </Link>
             ) : (
               <Popover className='relative' key={menuItem.label}>
-                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 transition text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-200'>
+                <Popover.Button className='flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-200'>
                   {menuItem.label}
                   <HiChevronDown
                     className='h-5 w-5 flex-none text-gray-700 dark:text-gray-300'

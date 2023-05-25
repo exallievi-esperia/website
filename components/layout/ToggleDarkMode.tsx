@@ -1,9 +1,9 @@
-import { ThemeContext } from "@/pages/_app"
-import React, { useContext, useEffect, useState } from "react"
+import { useTheme } from "next-themes"
+import React, { useEffect, useState } from "react"
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi2"
 
 const ToggleDarkMode: React.FC = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -13,7 +13,10 @@ const ToggleDarkMode: React.FC = () => {
   return (
     <>
       {mounted && (
-        <div className='md:ml-5 cursor-pointer' onClick={toggleTheme}>
+        <div
+          className='md:ml-5 cursor-pointer'
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        >
           {theme === "light" ? (
             <HiOutlineMoon className='w-6 h-6' />
           ) : (

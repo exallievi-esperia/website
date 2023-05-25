@@ -3,39 +3,14 @@ import type { AppProps } from "next/app"
 import Head from "next/head"
 import { Inter, Open_Sans } from "next/font/google"
 import { createContext, useEffect, useState } from "react"
+import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ["latin"] })
 const open_sans = Open_Sans({
   subsets: ["latin"],
 })
 
-const currentTheme =
-  typeof window === "undefined" ? "" : localStorage.getItem("theme")
-
-export const ThemeContext = createContext({
-  theme: currentTheme,
-  toggleTheme: () => {},
-})
-
 export default function App({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState(currentTheme || "light")
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light"
-    setTheme(newTheme)
-    localStorage.setItem("theme", newTheme)
-  }
-
-  useEffect(() => {
-    if (theme === "light") {
-      document.body.classList.remove("dark")
-      document.body.classList.add("light")
-    } else {
-      document.body.classList.remove("light")
-      document.body.classList.add("dark")
-    }
-  }, [theme])
-
   const schemaorg = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -92,9 +67,14 @@ export default function App({ Component, pageProps }: AppProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaorg) }}
         />
       </Head>
-      <ThemeContext.Provider value={{ theme: theme, toggleTheme: toggleTheme }}>
+      <ThemeProvider
+        attribute='class'
+        storageKey='theme'
+        enableSystem={false}
+        defaultTheme='light'
+      >
         <Component {...pageProps} />
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </div>
   )
 }
