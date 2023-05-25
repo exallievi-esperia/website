@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 interface ButtonProps {
   text: string
@@ -8,6 +9,7 @@ interface ButtonProps {
   style?: string
   padding?: string
   isBlank?: boolean
+  scroll?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,9 +20,10 @@ const Button: React.FC<ButtonProps> = ({
   style,
   padding = "px-12",
   isBlank = false,
+  scroll = true,
 }) => {
   return (
-    <a
+    <Link
       href={link}
       className={`inline-block ${
         uppercase ? "uppercase" : ""
@@ -31,9 +34,10 @@ const Button: React.FC<ButtonProps> = ({
       } transition focus:outline-none focus:ring focus:ring-[#a0c3d9] ${style}`}
       target={`${isBlank ? "_blank" : "_self"}`}
       rel='noopener noreferrer'
+      scroll={scroll}
     >
       {text}
-    </a>
+    </Link>
   )
 }
 

@@ -218,7 +218,7 @@ const Header: React.FC = () => {
           )}
         </Popover.Group>
 
-        <div className='flex gap-x-5'>
+        <div className='flex gap-x-5 lg:w-6'>
           {/* Dark mode */}
           <ToggleDarkMode />
 

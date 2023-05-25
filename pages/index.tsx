@@ -57,6 +57,7 @@ const HomePage = () => {
                   link={"#chi-siamo"}
                   style={"w-full sm:w-3/12"}
                   padding='px-1'
+                  scroll={false}
                 />
                 <Button
                   text={"Sezione soci"}
