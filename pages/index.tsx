@@ -47,7 +47,7 @@ const HomePage = () => {
                 Ex Allievi Esperia
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200'>
-                Associazione ex-Allievi dell’I.T.I.S. P. Paleocapa di Bergamo,
+                Associazione ex-allievi dell’I.T.I.S. P. Paleocapa di Bergamo,
                 fondata nel 1920, senza fini di lucro e parte integrante
                 dell’Istituto Paleocapa.
               </p>
