@@ -26,7 +26,8 @@ const SociPage = () => {
       <Heading
         title='Soci'
         description='Iscriviti o rinnova la tua quota'
-        backgroundImage='/img/eventi/centenario_28052022.jpg'
+        backgroundImage='/img/assemblea_annuale.jpeg'
+        position='object-[center_62%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

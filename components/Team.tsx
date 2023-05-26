@@ -16,15 +16,7 @@ interface TeamProps {
 
 const Team: React.FC<TeamProps> = ({ name, role, image, contacts }) => {
   return (
-    <div className='flex flex-col items-center gap-y-8 bg-gray-100 dark:bg-gray-800 py-12 rounded-lg w-11/12 m-auto'>
-      <Image
-        src={image}
-        alt='Direttivo'
-        width={200}
-        height={200}
-        className='rounded-full p-4 sm:p-0'
-      />
-
+    <div className='flex flex-col items-center gap-y-8 bg-gray-100 dark:bg-gray-800 py-12 rounded-md w-11/12 m-auto'>
       <div className='flex flex-col items-center text-center'>
         <h3 className='font-bold text-xl dark:text-white'>{name}</h3>
         <p className='text-gray-500 dark:text-gray-300'>{role}</p>

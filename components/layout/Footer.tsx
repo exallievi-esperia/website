@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
 
             <ul className='mt-8 flex justify-center gap-6 sm:justify-start md:gap-8'>
               <li>
-                <Link
+                <a
                   href='https://www.facebook.com/exallievi.esperia'
                   rel='noopener noreferrer'
                   target='_blank'
@@ -84,10 +84,10 @@ const Footer: React.FC = () => {
                 >
                   <span className='sr-only'>Facebook</span>
                   <MdFacebook className='w-8 h-8' />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href='https://instagram.com/exallievi.esperia'
                   rel='noreferrer'
                   target='_blank'
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
                 >
                   <span className='sr-only'>Instagram</span>
                   <IoLogoInstagram className='w-8 h-8' />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -151,25 +151,36 @@ const Footer: React.FC = () => {
               <nav aria-label='Footer Helpful Nav' className='mt-3 sm:mt-8'>
                 <ul className='space-y-4 text-sm'>
                   <li>
-                    <Link
+                    <a
                       className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
                       href='https://www.itispaleocapa.edu.it'
                       rel='noopener noreferrer'
                       target='_blank'
                     >
                       I.T.I.S. P. Paleocapa
-                    </Link>
+                    </a>
                   </li>
 
                   <li>
-                    <Link
+                    <a
                       className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-3005'
                       href='https://www.teamartist.com/ta_login/'
                       rel='noopener noreferrer'
                       target='_blank'
                     >
                       TeamArtist
-                    </Link>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
+                      href='https://github.com/exallievi-esperia'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Repository Github
+                    </a>
                   </li>
 
                   <li>
@@ -178,15 +189,6 @@ const Footer: React.FC = () => {
                       href='/privacy'
                     >
                       Privacy Policy
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
-                      href='/'
-                    >
-                      Cookie Policy
                     </Link>
                   </li>
                 </ul>
@@ -200,7 +202,7 @@ const Footer: React.FC = () => {
 
               <ul className='mt-3 sm:mt-8 space-y-4 text-sm'>
                 <li>
-                  <Link
+                  <a
                     className='flex items-center justify-center gap-1.5 sm:justify-start'
                     href='mailto:exallievi@itispaleocapa.it'
                   >
@@ -210,11 +212,11 @@ const Footer: React.FC = () => {
                       <span>exallievi@</span>
                       <span>itispaleocapa.it</span>
                     </span>
-                  </Link>
+                  </a>
                 </li>
 
                 <li>
-                  <Link
+                  <a
                     className='flex items-center justify-center gap-1.5 sm:justify-start'
                     href='tel:035319388'
                   >
@@ -223,11 +225,11 @@ const Footer: React.FC = () => {
                     <span className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'>
                       035 319388
                     </span>
-                  </Link>
+                  </a>
                 </li>
 
                 <li>
-                  <Link
+                  <a
                     href='https://goo.gl/maps/JjHGPvEaM1fiAFwk7'
                     rel='noopener noreferrer'
                     target='_blank'
@@ -238,7 +240,7 @@ const Footer: React.FC = () => {
                     <span className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'>
                       Via Mauro Gavazzeni, 29, 24125 Bergamo
                     </span>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

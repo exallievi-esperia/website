@@ -140,7 +140,8 @@ const EventiPage = () => {
         description={
           "Scopri tutti gli eventi a cui prende parte l'Associazione"
         }
-        backgroundImage='/img/DSCF9784.JPG'
+        backgroundImage='/img/IMG_4923.JPG'
+        position='object-[center_62%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

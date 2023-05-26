@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         h5,
         h6,
         span,
+        a,
         button {
           font-family: ${open_sans.style.fontFamily};
         }
@@ -66,6 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaorg) }}
         />
+        <meta name='robots' content='noindex' />
       </Head>
       <ThemeProvider
         attribute='class'
