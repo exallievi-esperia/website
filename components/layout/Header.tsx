@@ -248,7 +248,7 @@ const Header: React.FC = () => {
           <div className='flex items-center justify-between sm:justify-end'>
             <Link
               href='/'
-              className='-m-1.5 p-1.5 flex items-center sm:invisible'
+              className='-m-1.5 p-1.5 flex items-center sm:invisible focus:outline-none'
             >
               <Image
                 src='/logo.svg'

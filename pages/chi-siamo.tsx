@@ -4,12 +4,7 @@ import Image from "next/image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa"
+import { HiComputerDesktop } from "react-icons/hi2"
 import Team from "@/components/Team"
 import Heading from "@/components/Heading"
 import { MdEmail } from "react-icons/md"
@@ -31,6 +26,7 @@ const settings = {
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
+        dots: false,
       },
     },
   ],
@@ -102,7 +98,7 @@ const ChiSiamoPage = () => {
             alt='Chi siamo'
             width={1280}
             height={350}
-            className='mt-10 w-full h-56 sm:h-80 md:h-96 lg:h-[32rem] object-cover object-top'
+            className='mt-10 w-full h-56 sm:h-80 md:h-96 lg:h-[30rem] object-cover object-[center_7%]'
           />
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-0 mt-10 items-center'>
@@ -222,10 +218,9 @@ const ChiSiamoPage = () => {
               contacts={[
                 { icon: MdEmail, link: "mailto:hello@paolozanotti.dev" },
                 {
-                  icon: FaLinkedin,
-                  link: "https://it.linkedin.com/in/paolo-zanotti",
+                  icon: HiComputerDesktop,
+                  link: "https://paolozanotti.dev",
                 },
-                { icon: FaGithub, link: "https://github.com/zanottipaolo" },
               ]}
             />
 

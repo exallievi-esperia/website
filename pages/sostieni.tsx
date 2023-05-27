@@ -1,7 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Image from "next/image"
-import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"

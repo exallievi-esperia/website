@@ -175,11 +175,11 @@ const Footer: React.FC = () => {
                   <li>
                     <a
                       className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
-                      href='https://github.com/exallievi-esperia/website'
+                      href='https://github.com/exallievi-esperia'
                       rel='noopener noreferrer'
                       target='_blank'
                     >
-                      Repository Github
+                      Github
                     </a>
                   </li>
 
