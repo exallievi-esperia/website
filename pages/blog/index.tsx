@@ -16,7 +16,7 @@ const index = ({ allPostsData }: any) => {
       <Heading
         title={"Blog"}
         description={"Scopri le ultime novità dall'associazione!"}
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/assemblea_2012.jpg'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 mb-20'>

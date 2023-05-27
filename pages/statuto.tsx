@@ -14,7 +14,8 @@ const StatutoPage = () => {
       <Heading
         title={"Statuto"}
         description={"Consulta lo statuto dell'associazione Ex Allievi"}
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/esterno_2.jpg'
+        position='object-[center_70%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-14'>

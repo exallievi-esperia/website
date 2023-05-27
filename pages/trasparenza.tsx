@@ -116,7 +116,8 @@ const TrasparenzaPage = () => {
         description={
           "Consulta i contributi pubblici dell'associazione suddivisi per anno"
         }
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/esterno_2.jpg'
+        position='object-[center_70%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>

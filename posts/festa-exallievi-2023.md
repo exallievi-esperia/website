@@ -10,7 +10,7 @@ authors:
     },
   ]
 tag: ["eventi", "comunicazione"]
-image: "/img/eventi/centenario_28052022.jpg"
+image: "/img/museo_centenario.jpg"
 preview: "Il giorno 27 Maggio 2023 alle ore 09:00 si svolgerà presso la scuola la Festa annuale degli Ex Allievi, a cui sono invitati tutti i soci."
 ---
 

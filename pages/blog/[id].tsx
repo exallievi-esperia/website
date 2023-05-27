@@ -18,8 +18,8 @@ const Post = ({ postData }: any) => {
           <div className='w-full mx-auto mb-12 text-left md:w-3/4 lg:w-1/2'>
             <Image
               src={postData.image}
-              className='object-cover w-full h-64 bg-center rounded-lg'
-              alt='Kutty'
+              className='object-cover w-full h-64 bg-center rounded-md'
+              alt='Immagine articolo'
               width={300}
               height={300}
             />
