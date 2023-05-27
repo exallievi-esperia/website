@@ -161,10 +161,11 @@ const ChiSiamoPage = () => {
             Gli Ex Allievi oggi
           </h2>
           <Image
-            src='http://via.placeholder.com/1280x500'
-            alt='Gli Ex Allievi oggi '
+            src='/img/foto_tutti_oggi.jpg'
+            alt='Gli Ex Allievi oggi'
             width={1280}
-            height={500}
+            height={350}
+            className='w-full h-56 sm:h-80 md:h-96 lg:h-[32rem] object-cover'
           />
 
           <div className='bg-[#f25116] text-white mt-8 md:mt-16 font-semibold flex flex-col md:flex-row justify-around items-center text-2xl p-8 gap-y-20 shadow-lg rounded-md'>

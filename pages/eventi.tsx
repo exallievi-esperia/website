@@ -124,10 +124,23 @@ const eventiList = [
     href: "https://drive.google.com/drive/folders/1nsDvYxw_-9MJ7x_A7gyzwE9unULT8Gzy?usp=sharing",
     image: "/img/eventi/elettronica_23032023.jpg",
   },
+  {
+    id: 9,
+    name: "Festa Ex Allievi 2023",
+    description:
+      "Festa degli ex allievi del 2023, con la partecipazione di UniBg, Albini Group, Brembo e la prof.ssa Luzzana.",
+    date: {
+      day: 27,
+      month: "Maggio",
+      year: 2023,
+    },
+    href: "https://drive.google.com/drive/folders/19ZN4v3kJ1rugMfqs46-FFuEEMwZVSsc8?usp=sharing",
+    image: "/img/eventi/festa_museo_27052023.jpg",
+  },
 ]
 
 const EventiPage = () => {
-  const [currentItems, setCurrentItems] = useState(9)
+  const [currentItems, setCurrentItems] = useState(10)
 
   return (
     <Layout>

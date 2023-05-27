@@ -8,9 +8,10 @@ interface SectionImageProps {
   paragraph: string
   buttonText: string
   link: string
-  imgSrc: string
-  imgAlt: string
+  src: string
+  alt: string
   id?: string
+  isVideo?: boolean
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
@@ -19,9 +20,10 @@ const SectionImage: React.FC<SectionImageProps> = ({
   paragraph,
   buttonText,
   link,
-  imgSrc,
-  imgAlt,
+  src,
+  alt,
   id = title,
+  isVideo = false,
 }) => {
   return (
     <section id={id}>
@@ -42,13 +44,22 @@ const SectionImage: React.FC<SectionImageProps> = ({
               reversed ? "lg:order-first" : ""
             } h-64 overflow-hidden rounded sm:h-80 lg:h-full shadow-lg`}
           >
-            <Image
-              alt={imgAlt}
-              src={imgSrc}
-              className='h-full w-full object-cover'
-              width={506}
-              height={337}
-            />
+            {!isVideo && (
+              <Image
+                alt={alt}
+                src={src}
+                className='h-full w-full object-cover'
+                width={506}
+                height={337}
+              />
+            )}
+
+            {isVideo && (
+              <video controls className='h-full w-full object-cover'>
+                <source src='/video/bgtv2015.mp4' type='video/mp4' />
+                Il tuo browser non supporta il tag video.
+              </video>
+            )}
           </div>
         </div>
       </div>
