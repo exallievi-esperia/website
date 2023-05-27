@@ -112,8 +112,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/diploma_gigli.jpg'
                 thumbnail='/img/gallery/diploma_gigli.jpg'
-                width='1600'
-                height='1068'
                 alt='Diploma Gigli festa del centenario 2022'
               >
                 {({ ref, open }) => (
@@ -132,8 +130,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/festa_2008.jpeg'
                 thumbnail='/img/gallery/festa_2008.jpeg'
-                width='1600'
-                height='1068'
                 alt='Festa ex allievi del 2008 in Città Alta'
               >
                 {({ ref, open }) => (
@@ -152,8 +148,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/sala_centro.jpg'
                 thumbnail='/img/gallery/sala_centro.jpg'
-                width='1600'
-                height='1068'
                 alt='Festa ex allievi del 2011 al Centro congressi'
               >
                 {({ ref, open }) => (
@@ -203,8 +197,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/barcella.jpg'
                 thumbnail='/img/gallery/barcella.jpg'
-                width='1600'
-                height='1068'
                 alt='Festa degli ex allievi con la partecipazione di Barcella'
               >
                 {({ ref, open }) => (
@@ -223,8 +215,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/bombassei.jpg'
                 thumbnail='/img/gallery/bombassei.jpg'
-                width='1600'
-                height='1068'
                 alt='Festa degli ex allievi del 2010 con la partecipazione di Bombassei'
               >
                 {({ ref, open }) => (
@@ -255,8 +245,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/sala_immersiva2.jpg'
                 thumbnail='/img/gallery/sala_immersiva2.jpg'
-                width='1600'
-                height='1068'
                 alt='Sala immersiva alla festa del centenario 2022'
               >
                 {({ ref, open }) => (
@@ -275,8 +263,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/ingresso_museo.jpg'
                 thumbnail='/img/gallery/ingresso_museo.jpg'
-                width='1600'
-                height='1068'
                 alt='Foto ingresso Museo TIME'
               >
                 {({ ref, open }) => (
@@ -295,8 +281,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/elettronica.jpg'
                 thumbnail='/img/gallery/elettronica.jpg'
-                width='1600'
-                height='1068'
                 alt='Borse di studio Elettronica'
               >
                 {({ ref, open }) => (
@@ -315,8 +299,6 @@ const HomePage = () => {
               <Item
                 original='/img/gallery/valentina.jpg'
                 thumbnail='/img/gallery/valentina.jpg'
-                width='1600'
-                height='1068'
                 alt='Festa degli ex allievi del 2018 con Valentina Persico'
               >
                 {({ ref, open }) => (
