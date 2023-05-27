@@ -39,7 +39,8 @@ const ChiSiamoPage = () => {
       <Heading
         title='Chi siamo'
         description='Scopri la nostra Associazione'
-        backgroundImage='/img/eventi/centenario_28052022.jpg'
+        backgroundImage='/img/museo_centenario.jpg'
+        position='object-[center_62%]'
       />
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20 dark:bg-gray-600'>
         {/* La nostra storia */}
@@ -143,12 +144,15 @@ const ChiSiamoPage = () => {
               </audio>
             </div>
 
-            <Image
-              src='/img/Chi-Siamo2.jpg'
-              alt='Ex allievi medaglia centenario'
-              width={1200}
-              height={675}
-            />
+            <div>
+              <Image
+                src='/img/Chi-Siamo2.jpg'
+                alt='Ex allievi medaglia centenario'
+                width={1200}
+                height={675}
+              />
+              <p className='text-center'>Disegno medaglia centenario</p>
+            </div>
           </div>
         </div>
 

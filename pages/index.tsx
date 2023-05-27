@@ -80,7 +80,7 @@ const HomePage = () => {
           paragraph='L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo, fondata nel 1920, non ha fini di lucro ed è parte integrante dell’Istituto Paleocapa. Il suo scopo è quello di promuovere numerose iniziative a favore dell’Istituto, degli allievi e degli insegnanti. Le risorse necessarie allo svolgimento delle attività sono garantite dai Soci e da Aziende che condividono lo scopo dell’Associazione. '
           buttonText='SCOPRI DI PIÙ'
           link='/chi-siamo'
-          imgSrc='/img/eventi/elettronica_23032023.jpg'
+          imgSrc='/img/assemblea_2012.jpg'
           imgAlt='I soci'
           reversed
         />
@@ -110,71 +110,71 @@ const HomePage = () => {
           <Gallery withDownloadButton>
             <div className='mt-8 grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/diploma_gigli.jpg'
+                thumbnail='/img/gallery/diploma_gigli.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Diploma Gigli festa del centenario 2022'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer rounded-sm'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    className='cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/diploma_gigli.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Diploma Gigli festa del centenario 2022'
                   />
                 )}
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/festa_2008.jpeg'
+                thumbnail='/img/gallery/festa_2008.jpeg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Festa ex allievi del 2008 in Città Alta'
               >
                 {({ ref, open }) => (
                   <Image
                     className='cursor-pointer rounded-sm lg:row-span-2 h-full w-full object-cover'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    src='/img/gallery/festa_2008.jpeg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Festa ex allievi del 2008 in Città Alta'
                   />
                 )}
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/sala_centro.jpg'
+                thumbnail='/img/gallery/sala_centro.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Festa ex allievi del 2011 al Centro congressi'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer rounded-sm'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    className='cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/sala_centro.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Festa ex allievi del 2011 al Centro congressi'
                   />
                 )}
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/bosatelli.JPG'
+                thumbnail='/img/gallery/bosatelli.JPG'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Festa degli ex allievi con la partecipazione del cav. Bosatelli'
               >
                 {({ ref, open }) => (
                   <div
@@ -184,16 +184,16 @@ const HomePage = () => {
                   >
                     <Image
                       className='cursor-pointer rounded-sm lg:row-span-2 w-full h-full object-cover'
-                      src='/img/eventi/centenario_28052022.jpg'
+                      src='/img/gallery/bosatelli.JPG'
                       ref={ref as React.MutableRefObject<HTMLImageElement>}
                       onClick={open}
                       width='1600'
                       height='1600'
-                      alt='Photo of seashore by Folkert Gorter'
+                      alt='Festa degli ex allievi con la partecipazione del cav. Bosatelli'
                     />
                     <div className='hidden lg:flex absolute  items-center justify-center rounded-sm shadow w-full h-full inset-0 bg-white/90 cursor-pointer hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
                       <p className='text-center text-3xl md:text-2xl font-semibold'>
-                        +32 foto
+                        +4 foto
                       </p>
                     </div>
                   </div>
@@ -201,31 +201,31 @@ const HomePage = () => {
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/barcella.jpg'
+                thumbnail='/img/gallery/barcella.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Festa degli ex allievi con la partecipazione di Barcella'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='cursor-pointer rounded-sm'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    className='cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/barcella.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Festa degli ex allievi con la partecipazione di Barcella'
                   />
                 )}
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/bombassei.jpg'
+                thumbnail='/img/gallery/bombassei.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Festa degli ex allievi del 2010 con la partecipazione di Bombassei'
               >
                 {({ ref, open }) => (
                   <div
@@ -234,17 +234,17 @@ const HomePage = () => {
                     onClick={open}
                   >
                     <Image
-                      className='cursor-pointer rounded-sm'
-                      src='/img/eventi/centenario_28052022.jpg'
+                      className='cursor-pointer rounded-sm object-cover h-full'
+                      src='/img/gallery/bombassei.jpg'
                       ref={ref as React.MutableRefObject<HTMLImageElement>}
                       onClick={open}
                       width='1600'
                       height='1600'
-                      alt='Photo of seashore by Folkert Gorter'
+                      alt='Festa degli ex allievi del 2010 con la partecipazione di Bombassei'
                     />
                     <div className='lg:hidden absolute flex items-center justify-center rounded-sm shadow w-full h-full cursor-pointer inset-0 bg-white/90 hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
                       <p className='text-center text-3xl md:text-2xl font-semibold'>
-                        +32 foto
+                        +4 foto
                       </p>
                     </div>
                   </div>
@@ -253,41 +253,81 @@ const HomePage = () => {
 
               {/* hidden */}
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/sala_immersiva2.jpg'
+                thumbnail='/img/gallery/sala_immersiva2.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Sala immersiva alla festa del centenario 2022'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='hidden cursor-pointer rounded-sm'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    className='hidden cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/sala_immersiva2.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Sala immersiva alla festa del centenario 2022'
                   />
                 )}
               </Item>
 
               <Item
-                original='/img/eventi/centenario_28052022.jpg'
-                thumbnail='/img/eventi/centenario_28052022.jpg'
+                original='/img/gallery/ingresso_museo.jpg'
+                thumbnail='/img/gallery/ingresso_museo.jpg'
                 width='1600'
                 height='1068'
-                alt='Photo of seashore by Folkert Gorter'
+                alt='Foto ingresso Museo TIME'
               >
                 {({ ref, open }) => (
                   <Image
-                    className='hidden cursor-pointer rounded-sm'
-                    src='/img/eventi/centenario_28052022.jpg'
+                    className='hidden cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/ingresso_museo.jpg'
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
                     width='1600'
                     height='1600'
-                    alt='Photo of seashore by Folkert Gorter'
+                    alt='Foto ingresso Museo TIME'
+                  />
+                )}
+              </Item>
+
+              <Item
+                original='/img/gallery/elettronica.jpg'
+                thumbnail='/img/gallery/elettronica.jpg'
+                width='1600'
+                height='1068'
+                alt='Borse di studio Elettronica'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='hidden cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/elettronica.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1600'
+                    alt='Borse di studio Elettronica'
+                  />
+                )}
+              </Item>
+
+              <Item
+                original='/img/gallery/valentina.jpg'
+                thumbnail='/img/gallery/valentina.jpg'
+                width='1600'
+                height='1068'
+                alt='Festa degli ex allievi del 2018 con Valentina Persico'
+              >
+                {({ ref, open }) => (
+                  <Image
+                    className='hidden cursor-pointer rounded-sm object-cover h-full'
+                    src='/img/gallery/valentina.jpg'
+                    ref={ref as React.MutableRefObject<HTMLImageElement>}
+                    onClick={open}
+                    width='1600'
+                    height='1600'
+                    alt='Festa degli ex allievi del 2018 con Valentina Persico'
                   />
                 )}
               </Item>
