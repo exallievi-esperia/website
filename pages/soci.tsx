@@ -44,24 +44,24 @@ const SociPage = () => {
               queste semplici istruzioni:
             </p>
 
-            <ol className='leading-7 mb-8 dark:text-gray-200'>
+            <ol className='leading-7 mb-4 dark:text-gray-200'>
               <li>
                 <p>
-                  1. Premi sul pulsante “<strong>ISCRIVITI</strong>”
+                  1. Premi sul pulsante <strong>ISCRIVITI</strong>
                 </p>
               </li>
 
               <li>
                 <p>
                   2. Compila il modulo che apparirà ed invialo via email
-                  all’indirizzo “
+                  all’indirizzo
                   <a
                     href='mailto:exallievi@itispaleocapa.it'
-                    className='text-[#f25116] hover:text-[#bf3617] transition-colors duration-200'
+                    className='text-[#f25116] hover:text-[#bf3617] transition-colors duration-200 break-words'
                   >
+                    {" "}
                     exallievi@itispaleocapa.it
                   </a>
-                  ”
                 </p>
               </li>
 
@@ -73,30 +73,43 @@ const SociPage = () => {
               </li>
             </ol>
 
+            <p className='mb-8'>
+              Per i neo-diplomati la prima quota è{" "}
+              <span className='underline'>gratuita!</span>
+            </p>
+
             <Button
               text={"Iscriviti"}
               link={
                 "https://drive.google.com/file/d/1UR587Y8BqzLIfIin6qEL4ZDckypt5W60/view?usp=sharing"
               }
               isBlank
-              style='mt-auto w-full md:w-1/3 text-center self-center'
+              style='mt-auto w-full md:w-3/5 lg:w-1/3 text-center self-center'
+              padding='px-8'
               uppercase
             />
           </div>
 
           {/* Rinnova */}
-          <div className='w-full md:w-1/2 flex flex-col'>
+          <div className='w-full md:w-1/2 flex flex-col break-words'>
             <h2 className='font-bold text-3xl md:text-center dark:text-white'>
               Rinnova la quota
             </h2>
-            <p className='mt-5 leading-7 mb-8 dark:text-gray-200 break-words'>
+            <p className='mt-5 leading-7 mb-4 dark:text-gray-200'>
               Se sei già socio dell’Associazione e vuoi rinnovare la tua quota
-              annuale, pari a 30€, premi sul pulsante “<strong>RINNOVA</strong>”
-              per pagare con Carte di Credito/Debito o PayPal. <br />
+              annuale, pari a 30,00€, premi sul pulsante
+              <strong> RINNOVA</strong> per pagare con Carte di Credito/Debito o
+              PayPal. <br />
               Puoi anche fare un bonifico bancario a: <br />
-              IBAN IT12N0538711110000042430482 (BPER Banca) <br />
+              IBAN <strong>IT12N0538711110000042430482</strong> (BPER Banca)
+              <br />
               L’importo da versare è pari a €30,00 ma sei libero di donare
               quanto preferisci.
+            </p>
+            <p className='mb-8'>
+              L'anno sociale a cui fa riferimento la quota va dal 01/03
+              dell'anno corrente ({new Date().getFullYear()}) al 28/02 dell'anno
+              successivo ({new Date().getFullYear() + 1}).
             </p>
 
             <Button
@@ -105,7 +118,8 @@ const SociPage = () => {
                 "https://www.paypal.com/donate?hosted_button_id=23BL2KLNJ6MF8"
               }
               isBlank
-              style='mt-auto w-full md:w-1/3 text-center self-center'
+              style='mt-auto w-full md:w-3/5 lg:w-1/3 text-center self-center'
+              padding='px-8'
               uppercase
             />
           </div>
@@ -152,7 +166,7 @@ Grazie all’associazione mi è stato possibile realizzare ciò dandomi, inoltre
         </div>
 
         {/* Vantaggi */}
-        <div className='mt-28'>
+        <div className='mt-28 break-words'>
           <h2 className='font-bold text-3xl dark:text-white'>
             Quali vantaggi ottengo?
           </h2>

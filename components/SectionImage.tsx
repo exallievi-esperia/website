@@ -55,8 +55,12 @@ const SectionImage: React.FC<SectionImageProps> = ({
             )}
 
             {isVideo && (
-              <video controls={true} className='h-full w-full object-cover' playsInline>
-                <source src='/video/bgtv2015.mp4' type='video/mp4' />
+              <video
+                controls={true}
+                className='h-full w-full object-cover'
+                playsInline
+              >
+                <source src={src} type='video/mp4' />
                 Il tuo browser non supporta il tag video.
               </video>
             )}

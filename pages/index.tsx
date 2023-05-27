@@ -80,8 +80,8 @@ const HomePage = () => {
           paragraph='L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo, fondata nel 1920, non ha fini di lucro ed è parte integrante dell’Istituto Paleocapa. Il suo scopo è quello di promuovere numerose iniziative a favore dell’Istituto, degli allievi e degli insegnanti. Le risorse necessarie allo svolgimento delle attività sono garantite dai Soci e da Aziende che condividono lo scopo dell’Associazione. '
           buttonText='SCOPRI DI PIÙ'
           link='/chi-siamo'
-          src='/img/assemblea_2012.jpg'
-          alt='I soci'
+          src='/video/bgtv2015.mp4'
+          alt='Video BergamoTV festa ex allievi 2015'
           reversed
           isVideo
         />
@@ -99,7 +99,14 @@ const HomePage = () => {
         <Cta
           link='/soci'
           title='Soci Ex Allievi'
-          subTitle="Entrando a far parte dell'associazione avrai la possibilità di sostenere direttamente la scuola e di ampliare le tue conoscenze."
+          subTitle={
+            <>
+              Entrando a far parte dell'associazione avrai la possibilità di
+              sostenere direttamente la scuola e di ampliare le tue conoscenze.
+              Per i neo-diplomati la prima quota è{" "}
+              <span className='underline'>gratuita!</span>
+            </>
+          }
           buttonText='Diventa socio'
         />
 

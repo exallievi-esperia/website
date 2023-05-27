@@ -4,7 +4,7 @@ import Image from "next/image"
 interface HeadingProps {
   title?: string
   description?: string
-  backgroundImage?: string
+  backgroundImage: string
   children?: ReactNode
   isHome?: boolean
   position?: string
