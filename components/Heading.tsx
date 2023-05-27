@@ -13,7 +13,7 @@ interface HeadingProps {
 const Heading: React.FC<HeadingProps> = ({
   title = "",
   description = "",
-  backgroundImage = "http://via.placeholder.com/1280x500",
+  backgroundImage,
   children,
   isHome = false,
   position = "object-center",

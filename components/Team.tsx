@@ -10,11 +10,10 @@ interface Contact {
 interface TeamProps {
   name: string
   role: string
-  image: string
-  contacts: Contact[]
+  contacts?: Contact[]
 }
 
-const Team: React.FC<TeamProps> = ({ name, role, image, contacts }) => {
+const Team: React.FC<TeamProps> = ({ name, role, contacts }) => {
   return (
     <div className='flex flex-col items-center gap-y-8 bg-gray-100 dark:bg-gray-800 py-12 rounded-md w-11/12 m-auto'>
       <div className='flex flex-col items-center text-center'>
@@ -23,14 +22,20 @@ const Team: React.FC<TeamProps> = ({ name, role, image, contacts }) => {
       </div>
 
       <div className='flex gap-x-4'>
-        {contacts.map((contact, index) => (
-          <Link href={contact.link} key={index}>
-            <contact.icon
+        {contacts &&
+          contacts.map((contact, index) => (
+            <a
+              href={contact.link}
               key={index}
-              className='w-6 h-6 hover:text-[#f25116] dark:text-gray-200 dark:hover:text-[#f25116] transition-colors'
-            />
-          </Link>
-        ))}
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <contact.icon
+                key={index}
+                className='w-6 h-6 hover:text-[#f25116] dark:text-gray-200 dark:hover:text-[#f25116] transition-colors'
+              />
+            </a>
+          ))}
       </div>
     </div>
   )

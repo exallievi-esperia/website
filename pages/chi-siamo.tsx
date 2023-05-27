@@ -4,9 +4,15 @@ import Image from "next/image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa"
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa"
 import Team from "@/components/Team"
 import Heading from "@/components/Heading"
+import { MdEmail } from "react-icons/md"
 
 const settings = {
   dots: true,
@@ -187,106 +193,100 @@ const ChiSiamoPage = () => {
         {/* Direttivo */}
         <div className='mt-20'>
           <h2 className='font-bold text-3xl mb-5 dark:text-white'>
-            Scopri il direttivo 2020-2023
+            Scopri il direttivo 2023-2025
           </h2>
           <Slider {...settings}>
             <Team
               name='Alessandro Gigli'
               role='Presidente'
-              image='http://via.placeholder.com/200x200'
               contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
+                { icon: MdEmail, link: "mailto:alessandro.gigli@alpedone.net" },
               ]}
             />
 
             <Team
               name='Giancarlo Viti'
               role='Vice Presidente'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
+              contacts={[{ icon: MdEmail, link: "/" }]}
             />
 
             <Team
               name='Daniela Beccaluva'
-              role='Segretario e Tesoriere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
+              role='Segretaria e Tesoriera'
+              contacts={[{ icon: MdEmail, link: "/" }]}
             />
 
             <Team
-              name='Battista Azzola'
+              name='Paolo Zanotti'
               role='Consigliere'
-              image='http://via.placeholder.com/200x200'
               contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
-            />
-
-            <Team
-              name='Gianluca Vitali'
-              role='Consigliere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
-            />
-
-            <Team
-              name='Steven Poma'
-              role='Consigliere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
+                { icon: MdEmail, link: "mailto:hello@paolozanotti.dev" },
+                {
+                  icon: FaLinkedin,
+                  link: "https://it.linkedin.com/in/paolo-zanotti",
+                },
+                { icon: FaGithub, link: "https://github.com/zanottipaolo" },
               ]}
             />
 
             <Team
               name='Roberto Filippini Fantoni'
               role='Consigliere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
-            />
-
-            <Team
-              name='Alessandro Rocchi'
-              role='Consigliere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
+              contacts={[{ icon: MdEmail, link: "/" }]}
             />
 
             <Team
               name='Alfredo Longhi'
               role='Consigliere'
-              image='http://via.placeholder.com/200x200'
-              contacts={[
-                { icon: FaFacebookSquare, link: "/" },
-                { icon: FaLinkedin, link: "/" },
-                { icon: FaTwitterSquare, link: "/" },
-              ]}
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Marco Morè'
+              role='Consigliere'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Battista Azzola'
+              role='Consigliere'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Alessandro Rocchi'
+              role='Revisore dei conti'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Giampietro Guerinoni'
+              role='Revisore dei conti'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Steven Poma'
+              role='Revisore dei conti'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Romano Bonadei'
+              role='Probiviro'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Franco Ferrarti'
+              role='Probiviro'
+              contacts={[{ icon: MdEmail, link: "/" }]}
+            />
+
+            <Team
+              name='Mario Guizzetti'
+              role='Probiviro'
+              contacts={[{ icon: MdEmail, link: "/" }]}
             />
           </Slider>
         </div>

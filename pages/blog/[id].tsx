@@ -75,7 +75,7 @@ const Post = ({ postData }: any) => {
           </div>
 
           <div className='w-full mx-auto prose md:w-3/4 lg:w-1/2'>
-            <ReactMarkdown className='dark:text-gray-100 leading-8 flex flex-col items-center gap-10 sm:gap-0'>
+            <ReactMarkdown className='dark:text-gray-100 leading-8 flex flex-col items-left gap-10 sm:gap-0'>
               {postData.content}
             </ReactMarkdown>
           </div>
