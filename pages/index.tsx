@@ -4,63 +4,71 @@ import SectionImage from "@/components/SectionImage"
 import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Link from "next/link"
-import Image from "next/image"
 import Button from "@/components/Button"
-import Gallery from "react-photo-gallery"
+import PhotoAlbum from "react-photo-album"
+import { useState } from "react"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import NextJsImage from "@/components/NextJsImage"
 
 const HomePage = () => {
   const photos = [
     {
       src: "/img/gallery/diploma_gigli.jpg",
-      width: 4,
-      height: 3,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/festa_2008.jpeg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/sala_centro.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/bosatelli.JPG",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/barcella.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/bombassei.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/sala_immersiva2.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/ingresso_museo.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
+      blurDataURL: "/img/gallery/ingresso_museo.jpg",
     },
     {
       src: "/img/gallery/elettronica.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
     {
       src: "/img/gallery/valentina.jpg",
-      width: 1,
-      height: 1,
+      width: 1080,
+      height: 800,
     },
   ]
+
+  const [index, setIndex] = useState(-1)
 
   return (
     <Layout>
@@ -166,7 +174,23 @@ const HomePage = () => {
           <h2 className='text-3xl font-bold sm:text-4xl dark:text-white mb-4'>
             Galleria
           </h2>
-          <Gallery photos={photos} />
+
+          <PhotoAlbum
+            layout='columns'
+            photos={photos.slice(0, -2)}
+            onClick={({ index }) => setIndex(index)}
+            renderPhoto={NextJsImage}
+            defaultContainerWidth={1200}
+            sizes={{ size: "calc(100vw - 240px)" }}
+          />
+
+          <Lightbox
+            slides={photos}
+            open={index >= 0}
+            index={index}
+            close={() => setIndex(-1)}
+            plugins={[Fullscreen, Zoom]}
+          />
         </div>
 
         <Cta

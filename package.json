@@ -19,17 +19,16 @@
     "next": "13.2.4",
     "next-themes": "^0.2.1",
     "normalize.css": "^8.0.1",
-    "photoswipe": "^5.3.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-markdown": "^8.0.7",
-    "react-photo-gallery": "^8.0.0",
-    "react-photoswipe-gallery": "^2.2.7",
+    "react-photo-album": "^2.2.2",
     "react-slick": "^0.29.0",
     "sharp": "^0.32.1",
     "slick-carousel": "^1.8.1",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "yet-another-react-lightbox": "^3.10.0"
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.10",
