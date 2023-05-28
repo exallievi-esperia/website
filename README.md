@@ -1,3 +1,5 @@
+![Netlify Status](https://api.netlify.com/api/v1/badges/7aca3d3a-fdbd-452b-8b02-36a47a0efb0f/deploy-status)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
