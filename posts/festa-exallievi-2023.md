@@ -9,6 +9,4 @@ preview: "Il giorno 27 Maggio 2023 alle ore 09:00 si svolgerà presso la scuola 
 
 Il giorno **27 Maggio 2023** alle ore 09:00 si svolgerà presso la scuola la **Festa annuale degli Ex Allievi**, a cui sono invitati tutti i soci.
 
-(_In copertina una foto della festa del centenario dell'associazione_)
-
 ![Locandina festa Ex Allievi 27 Maggio 2023](/img/eventi/festa_27052023.jpg)

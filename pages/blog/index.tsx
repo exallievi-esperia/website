@@ -26,14 +26,6 @@ const index = ({ allPostsData }: any) => {
             key={post.id}
             className='flex flex-col md:flex-row gap-10 items-center justify-center mt-20 hover:-translate-y-3 transition-transform duration-300'
           >
-            <Image
-              src={post.image ?? "/"}
-              alt={`Article ${post.id}`}
-              width={256}
-              height={256}
-              className='object-cover object-left rounded-md shadow-md h-64 w-full md:w-64'
-            />
-
             {/* Info articolo */}
             <div className='dark:text-gray-100 md:max-w-3xl'>
               <div className='flex text-sm gap-8 flex-row items-center'>

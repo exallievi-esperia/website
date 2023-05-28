@@ -62,12 +62,11 @@ export default function App({ Component, pageProps }: AppProps) {
           content='Associazione ex-allievi dell’I.T.I.S. P. Paleocapa di Bergamo, fondata nel 1920, senza fini di lucro e parte integrante dell’Istituto Paleocapa.'
         />
         <meta property='og:type' content='website' />
-        <meta property='og:image' content='' />
+        <meta property='og:image' content='/img/logo_100.jpg' />
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaorg) }}
         />
-        <meta name='robots' content='noindex' />
       </Head>
       <ThemeProvider
         attribute='class'

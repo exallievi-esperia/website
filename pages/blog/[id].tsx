@@ -16,14 +16,6 @@ const Post = ({ postData }: any) => {
       <main className='mx-auto max-w-7xl px-6 pb-6 lg:px-8 mb-20'>
         <article className='px-4 py-24 mx-auto max-w-7xl' id='#'>
           <div className='w-full mx-auto mb-12 text-left md:w-3/4 lg:w-1/2'>
-            <Image
-              src={postData.image}
-              className='object-cover w-full h-64 bg-center rounded-md'
-              alt='Immagine articolo'
-              width={300}
-              height={300}
-            />
-
             <h1 className='mt-6 mb-3 text-3xl font-bold leading-tight text-gray-900 dark:text-gray-100 md:text-4xl'>
               {postData.title}
             </h1>
