@@ -5,11 +5,63 @@ import Layout from "@/components/layout/Layout"
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
-import "photoswipe/dist/photoswipe.css"
-import { Gallery, Item } from "react-photoswipe-gallery"
 import Button from "@/components/Button"
+import Gallery from "react-photo-gallery"
 
 const HomePage = () => {
+  const photos = [
+    {
+      src: "/img/gallery/diploma_gigli.jpg",
+      width: 4,
+      height: 3,
+    },
+    {
+      src: "/img/gallery/festa_2008.jpeg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/sala_centro.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/bosatelli.JPG",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/barcella.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/bombassei.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/sala_immersiva2.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/ingresso_museo.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/elettronica.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "/img/gallery/valentina.jpg",
+      width: 1,
+      height: 1,
+    },
+  ]
+
   return (
     <Layout>
       <Head>
@@ -111,218 +163,10 @@ const HomePage = () => {
         />
 
         <div className='mt-20'>
-          <h2 className='text-3xl font-bold sm:text-4xl dark:text-white'>
+          <h2 className='text-3xl font-bold sm:text-4xl dark:text-white mb-4'>
             Galleria
           </h2>
-
-          <Gallery withDownloadButton>
-            <div className='mt-8 grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
-              <Item
-                original='/img/gallery/diploma_gigli.jpg'
-                thumbnail='/img/gallery/diploma_gigli.jpg'
-                alt='Diploma Gigli festa del centenario 2022'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/diploma_gigli.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Diploma Gigli festa del centenario 2022'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/festa_2008.jpeg'
-                thumbnail='/img/gallery/festa_2008.jpeg'
-                alt='Festa ex allievi del 2008 in Città Alta'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='cursor-pointer rounded-sm lg:row-span-2 h-full w-full object-cover'
-                    src='/img/gallery/festa_2008.jpeg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Festa ex allievi del 2008 in Città Alta'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/sala_centro.jpg'
-                thumbnail='/img/gallery/sala_centro.jpg'
-                alt='Festa ex allievi del 2011 al Centro congressi'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/sala_centro.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Festa ex allievi del 2011 al Centro congressi'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/bosatelli.JPG'
-                thumbnail='/img/gallery/bosatelli.JPG'
-                width='1600'
-                height='1068'
-                alt='Festa degli ex allievi con la partecipazione del cav. Bosatelli'
-              >
-                {({ ref, open }) => (
-                  <div
-                    className='relative lg:row-span-2 w-full h-full object-cover'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                  >
-                    <Image
-                      className='cursor-pointer rounded-sm lg:row-span-2 w-full h-full object-cover'
-                      src='/img/gallery/bosatelli.JPG'
-                      ref={ref as React.MutableRefObject<HTMLImageElement>}
-                      onClick={open}
-                      width='1600'
-                      height='1600'
-                      alt='Festa degli ex allievi con la partecipazione del cav. Bosatelli'
-                    />
-                    <div className='hidden lg:flex absolute  items-center justify-center rounded-sm shadow w-full h-full inset-0 bg-white/90 cursor-pointer hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
-                      <p className='text-center text-3xl md:text-2xl font-semibold'>
-                        +4 foto
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/barcella.jpg'
-                thumbnail='/img/gallery/barcella.jpg'
-                alt='Festa degli ex allievi con la partecipazione di Barcella'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/barcella.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Festa degli ex allievi con la partecipazione di Barcella'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/bombassei.jpg'
-                thumbnail='/img/gallery/bombassei.jpg'
-                alt='Festa degli ex allievi del 2010 con la partecipazione di Bombassei'
-              >
-                {({ ref, open }) => (
-                  <div
-                    className='relative'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                  >
-                    <Image
-                      className='cursor-pointer rounded-sm object-cover h-full'
-                      src='/img/gallery/bombassei.jpg'
-                      ref={ref as React.MutableRefObject<HTMLImageElement>}
-                      onClick={open}
-                      width='1600'
-                      height='1600'
-                      alt='Festa degli ex allievi del 2010 con la partecipazione di Bombassei'
-                    />
-                    <div className='lg:hidden absolute flex items-center justify-center rounded-sm shadow w-full h-full cursor-pointer inset-0 bg-white/90 hover:bg-white/80 dark:bg-gray-900/[0.80] dark:hover:bg-gray-900/70 transition duration-300 dark:text-white'>
-                      <p className='text-center text-3xl md:text-2xl font-semibold'>
-                        +4 foto
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </Item>
-
-              {/* hidden */}
-              <Item
-                original='/img/gallery/sala_immersiva2.jpg'
-                thumbnail='/img/gallery/sala_immersiva2.jpg'
-                alt='Sala immersiva alla festa del centenario 2022'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='hidden cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/sala_immersiva2.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Sala immersiva alla festa del centenario 2022'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/ingresso_museo.jpg'
-                thumbnail='/img/gallery/ingresso_museo.jpg'
-                alt='Foto ingresso Museo TIME'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='hidden cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/ingresso_museo.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Foto ingresso Museo TIME'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/elettronica.jpg'
-                thumbnail='/img/gallery/elettronica.jpg'
-                alt='Borse di studio Elettronica'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='hidden cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/elettronica.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Borse di studio Elettronica'
-                  />
-                )}
-              </Item>
-
-              <Item
-                original='/img/gallery/valentina.jpg'
-                thumbnail='/img/gallery/valentina.jpg'
-                alt='Festa degli ex allievi del 2018 con Valentina Persico'
-              >
-                {({ ref, open }) => (
-                  <Image
-                    className='hidden cursor-pointer rounded-sm object-cover h-full'
-                    src='/img/gallery/valentina.jpg'
-                    ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    onClick={open}
-                    width='1600'
-                    height='1600'
-                    alt='Festa degli ex allievi del 2018 con Valentina Persico'
-                  />
-                )}
-              </Item>
-            </div>
-          </Gallery>
+          <Gallery photos={photos} />
         </div>
 
         <Cta
