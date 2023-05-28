@@ -19,52 +19,62 @@ const HomePage = () => {
       src: "/img/gallery/diploma_gigli.jpg",
       width: 1080,
       height: 800,
+      alt: "Festa centenario 2022",
     },
     {
       src: "/img/gallery/festa_2008.jpeg",
       width: 1080,
       height: 800,
+      alt: "Festa ex allievi del 2008 in Città Alta",
     },
     {
       src: "/img/gallery/sala_centro.jpg",
       width: 1080,
       height: 800,
+      alt: "Festa ex allievi al Centro Congressi",
     },
     {
       src: "/img/gallery/bosatelli.JPG",
       width: 1080,
       height: 800,
+      alt: "Festa ex allievi con la partecipazione del cav. Bosatelli",
     },
     {
       src: "/img/gallery/barcella.jpg",
       width: 1080,
       height: 800,
+      alt: "Festa ex allievi con la partecipazione di Barcella",
     },
     {
       src: "/img/gallery/bombassei.jpg",
       width: 1080,
       height: 800,
+      alt: "Festa ex allievi con la partecipazione dell'imprenditore Bombassei",
     },
     {
       src: "/img/gallery/sala_immersiva2.jpg",
       width: 1080,
       height: 800,
+      alt: "Sala immersiva",
     },
     {
       src: "/img/gallery/ingresso_museo.jpg",
       width: 1080,
       height: 800,
       blurDataURL: "/img/gallery/ingresso_museo.jpg",
+      alt: "Foto ingresso Museo TIME",
     },
     {
       src: "/img/gallery/elettronica.jpg",
       width: 1080,
       height: 800,
+      alt: "Consegna borse di studio area elettronica",
     },
     {
       src: "/img/gallery/valentina.jpg",
       width: 1080,
       height: 800,
+      alt: "Foto con Valentina Persico",
     },
   ]
 

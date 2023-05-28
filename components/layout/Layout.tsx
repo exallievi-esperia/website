@@ -14,7 +14,7 @@ const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
-const Layout: React.FC<LayoutProps> = ({ children}) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
@@ -23,6 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children}) => {
       <button
         className='fixed bottom-5 right-5 p-3 rounded-full bg-[#f25116] hover:bg-[#d53c04] z-10'
         onClick={scrollToTop}
+        aria-label='Pulsante torna su'
       >
         <IoMdArrowRoundUp className='w-6 h-6 text-gray-100' />
       </button>
