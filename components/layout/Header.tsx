@@ -94,6 +94,13 @@ const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   let prevPosY = 0
 
+  // while menu is open SCROLL-AUTO, to avoid bug auto scroll to top
+  useEffect(() => {
+    mobileMenuOpen
+      ? (document.documentElement.style.scrollBehavior = "auto")
+      : (document.documentElement.style.scrollBehavior = "smooth")
+  }, [mobileMenuOpen])
+
   useEffect(() => {
     prevPosY = window.scrollY
 
