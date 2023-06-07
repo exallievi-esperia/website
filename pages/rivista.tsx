@@ -45,7 +45,7 @@ const riviste = [
   {
     id: 5,
     year: 2011,
-    link: "",
+    link: "https://drive.google.com/file/d/1EnvfRwJp5PU0Ttyvofj3b72_1E_3w9WG/view?usp=sharing",
     imgAlt: "Anteprima rivista 2011",
     imgSrc: "/img/copertine/Copertina2011.jpg",
   },
