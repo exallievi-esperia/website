@@ -24,12 +24,10 @@ const Heading: React.FC<HeadingProps> = ({
         isHome ? "md:py-24" : "md:py-32"
       }`}
     >
-      <Image
+      <img
         src={backgroundImage}
         alt='Heading background image'
-        fill
-        priority
-        className={`object-cover ${position}`}
+        className={`object-cover ${position} heading-background`}
       />
 
       {/* Overlay */}
