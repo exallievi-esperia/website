@@ -28,9 +28,9 @@ const Heading: React.FC<HeadingProps> = ({
         src={backgroundImage}
         alt='Heading background image'
         className={`object-cover ${position} heading-background`}
-        width={1440}
-        height={352}
-        decoding='sync'
+        fetchpriority='high'
+        loading='eager'
+        decoding='async'
       />
 
       {/* Overlay */}
