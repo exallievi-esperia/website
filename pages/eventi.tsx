@@ -96,7 +96,7 @@ const eventiList = [
       year: 2022,
     },
     href: "https://drive.google.com/drive/folders/1bouFlkUcG8UuzcsLNVgi6ggWFsu81XWF?usp=sharing",
-    image: "/img/eventi/informatica_19112022.jpg",
+    image: "/img/eventi/informatica_19112022.jpeg",
   },
   {
     id: 7,

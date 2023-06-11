@@ -76,7 +76,7 @@ const SostieniPage = () => {
             </div>
 
             <Image
-              src='/img/5x1000.png'
+              src='/img/5x1000.jpg'
               alt='Immagine come donare il 5x1000'
               width={533}
               height={753}

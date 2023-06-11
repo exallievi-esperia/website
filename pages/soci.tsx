@@ -160,7 +160,7 @@ sopratutto nel settore informatico."
               label='Diplomato 2019/2020, socio dal 2022'
               description='Con l’apporto creativo che ho sempre dato all’istituto da studente, ho voluto proseguire questo sodalizio anche post diploma. 
 Grazie all’associazione mi è stato possibile realizzare ciò dandomi, inoltre, la possibilità di conoscere nuove realtà industriali presenti nel nostro territorio. '
-              image='/img/soci/mosca_marco.JPG'
+              image='/img/soci/mosca_marco.jpeg'
             />
           </Slider>
         </div>

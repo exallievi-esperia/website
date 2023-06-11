@@ -117,7 +117,7 @@ const riviste = [
     year: 2023,
     link: "https://drive.google.com/file/d/1RL2X4MQM5oLfo5tuJkW3tPuKspnSnQw-/view?usp=sharing",
     imgAlt: "Anteprima rivista 2023",
-    imgSrc: "/img/copertine/Copertina2023.jpg",
+    imgSrc: "/img/copertine/Copertina2023.jpeg",
   },
 ]
 
