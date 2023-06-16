@@ -13,7 +13,8 @@ const privacy = () => {
       <Heading
         title={"Privacy Policy"}
         description={"Consulta il documento di Privacy Policy del sito web"}
-        backgroundImage='/img/eventi/elettronica_23032023.jpg'
+        backgroundImage='/img/esterno_2.jpg'
+        position='object-[center_70%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
@@ -130,7 +131,7 @@ const privacy = () => {
             cessazione del rapporto, nei termini prescrizionali indicati
             nell’art. 2220 del Codice Civile.
           </p>
-          <ul className="list-disc space-y-5">
+          <ul className='list-disc space-y-5'>
             <p>Lei potrà, in qualsiasi momento, esercitare i diritti:</p>
             <li>
               <p>di accesso ai dati personali;</p>
