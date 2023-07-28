@@ -93,22 +93,17 @@ const HomePage = () => {
             <div className='mb-8 sm:flex sm:justify-center'>
               <div className='w-fit m-auto hover:-translate-y-1.5 hover:cursor-pointer rounded-full text-[#f25116] bg-[#f2511640] dark:bg-[#f2511640] px-3 py-1 text-base font-medium transition duration-300'>
                 <Link
-                  href='/blog/festa-exallievi-2023'
-                  className='min-[339px]:hidden'
+                  href='https://drive.google.com/drive/folders/19ZN4v3kJ1rugMfqs46-FFuEEMwZVSsc8?usp=sharing'
+                  rel='noopener noreferrer'
+                  target='_blank'
                 >
-                  Festa del 27/05
-                </Link>
-                <Link
-                  href='/blog/festa-exallievi-2023'
-                  className='max-[338px]:hidden min-[499px]:hidden'
-                >
-                  Festa del 27 Maggio 2023
-                </Link>
-                <Link
-                  href='/blog/festa-exallievi-2023'
-                  className='max-[500px]:hidden'
-                >
-                  Partecipa alla festa del 27 Maggio
+                  <div className='min-[339px]:hidden'>Festa del 27/05</div>
+                  <div className='max-[338px]:hidden min-[499px]:hidden'>
+                    Festa del 27 Maggio 2023
+                  </div>
+                  <div className='max-[500px]:hidden'>
+                    Recupera la festa del 27 Maggio 2023
+                  </div>
                 </Link>
               </div>
             </div>
