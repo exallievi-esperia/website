@@ -7,7 +7,7 @@ import {
   MdOutlinePhone,
   MdOutlineLocationOn,
 } from "react-icons/md"
-import { IoLogoInstagram } from "react-icons/io"
+import { IoLogoInstagram, IoLogoGithub } from "react-icons/io"
 
 const menuItems = [
   {
@@ -97,6 +97,17 @@ const Footer: React.FC = () => {
                   <IoLogoInstagram className='w-8 h-8' />
                 </a>
               </li>
+              <li>
+                <a
+                  href='https://github.com/exallievi-esperia'
+                  rel='noreferrer'
+                  target='_blank'
+                  className='text-[#f25116] transition hover:text-[#bf3617]'
+                >
+                  <span className='sr-only'>Github</span>
+                  <IoLogoGithub className='w-8 h-8' />
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -173,23 +184,23 @@ const Footer: React.FC = () => {
                   </li>
 
                   <li>
-                    <a
-                      className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
-                      href='https://github.com/exallievi-esperia'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                    >
-                      Github
-                    </a>
-                  </li>
-
-                  <li>
                     <Link
                       className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
                       href='/privacy'
                     >
                       Privacy Policy
                     </Link>
+                  </li>
+
+                  <li>
+                    <a
+                      className='text-gray-700 dark:text-gray-200 transition hover:text-gray-700/75 dark:hover:text-gray-300'
+                      href='https://it.linkedin.com/posts/paolo-zanotti_ex-allievi-esperia-activity-7072013795795030016-h3oR?trk=public_profile_share_view'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Credits
+                    </a>
                   </li>
                 </ul>
               </nav>
