@@ -174,22 +174,22 @@ Grazie all’associazione mi è stato possibile realizzare ciò dandomi, inoltre
           <div className='grid mx-auto mt-12 md:mt-16 max-w-2xl grid-cols-1 gap-y-10 gap-x-8 md:max-w-4xl md:grid-cols-2 md:gap-y-16'>
             <Feature
               title='Sostieni la scuola'
-              description='In quanto socio con la tua quota di iscrizione sosterrai economicamente la scuola'
+              description='Con la tua quota di iscrizione sosterrai economicamente la scuola'
             />
 
             <Feature
               title='Proponi nuove idee'
-              description='In quanto socio potrai partecipare attivamente alle riunioni di consiglio e proporre nuove idee per migliorare la scuola'
+              description='Potrai partecipare attivamente alle riunioni di consiglio e proporre nuove idee per migliorare la scuola'
             />
 
             <Feature
               title='Amplia le tue conoscenze'
-              description='In quanto socio potrai conoscere le realtà industriali del territorio bergamasco'
+              description='Potrai conoscere le realtà industriali del territorio bergamasco'
             />
 
             <Feature
               title='Rivista annuale Esperia'
-              description='In quanto socio riceverai a casa la rivista degli Ex Allievi'
+              description='Riceverai a casa la rivista degli Ex Allievi'
             />
           </div>
         </div>

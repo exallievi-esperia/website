@@ -38,20 +38,6 @@ const CosaFacciamoPage = () => {
               <Slider {...settings} className='self-center'>
                 <div>
                   <Image
-                    alt='Museo TIME prima'
-                    width={1000}
-                    height={1000}
-                    src='/img/progetti/Museo_Time_Prima.jpg'
-                    className='h-full w-full object-cover'
-                    priority
-                  />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Prima
-                  </p>
-                </div>
-
-                <div>
-                  <Image
                     alt='Museo TIME dopo'
                     width={1000}
                     height={1000}
@@ -60,7 +46,21 @@ const CosaFacciamoPage = () => {
                     priority
                   />
                   <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Dopo
+                    Come è ora
+                  </p>
+                </div>
+
+                <div>
+                  <Image
+                    alt='Museo TIME prima'
+                    width={1000}
+                    height={1000}
+                    src='/img/progetti/Museo_Time_Prima.jpg'
+                    className='h-full w-full object-cover'
+                    priority
+                  />
+                  <p className='text-center w-full mt-3 dark:text-gray-200'>
+                    Come era prima
                   </p>
                 </div>
               </Slider>
@@ -148,20 +148,6 @@ const CosaFacciamoPage = () => {
               <Slider {...settings} className='self-center'>
                 <div>
                   <Image
-                    alt='Sala immersiva prima'
-                    width={1000}
-                    height={1000}
-                    src='/img/progetti/Sala_Immersiva_Prima.jpg'
-                    className='h-full w-full object-cover'
-                    priority
-                  />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Prima
-                  </p>
-                </div>
-
-                <div>
-                  <Image
                     alt='Sala immersiva dopo'
                     width={1000}
                     height={1000}
@@ -170,7 +156,21 @@ const CosaFacciamoPage = () => {
                     priority
                   />
                   <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Dopo
+                    Come è ora
+                  </p>
+                </div>
+
+                <div>
+                  <Image
+                    alt='Sala immersiva prima'
+                    width={1000}
+                    height={1000}
+                    src='/img/progetti/Sala_Immersiva_Prima.jpg'
+                    className='h-full w-full object-cover'
+                    priority
+                  />
+                  <p className='text-center w-full mt-3 dark:text-gray-200'>
+                    Come era prima
                   </p>
                 </div>
               </Slider>
