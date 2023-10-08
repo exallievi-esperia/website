@@ -4,7 +4,22 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First install dependencies:
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+
+then create an `.env.local` file in `src` folder with maptiler apikey, like:
+
+```
+NEXT_PUBLIC_MAPTILER_APIKEY=abc
+```
+
+and then run the development server:
 
 ```bash
 npm run dev

@@ -4,7 +4,12 @@ import Head from "next/head"
 import Link from "next/link"
 import { MdMail, MdPhone, MdLocationPin } from "react-icons/md"
 import { Map, Marker, ZoomControl } from "pigeon-maps"
+import { maptiler } from "pigeon-maps/providers"
 
+const maptilerProvider = maptiler(
+  process.env.NEXT_PUBLIC_MAPTILER_APIKEY!,
+  "streets"
+)
 const ContattiPage = () => {
   return (
     <Layout>
@@ -26,9 +31,11 @@ const ContattiPage = () => {
           {/* Map */}
           <div className='w-full lg:w-3/5'>
             <Map
+              provider={maptilerProvider}
+              dprs={[1, 2]}
               height={450}
               defaultCenter={[45.68985, 9.68142]}
-              defaultZoom={16}
+              defaultZoom={15}
             >
               <ZoomControl />
               <Marker
