@@ -13,8 +13,11 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import NextJsImage from "@/components/NextJsImage"
 
+// Number of photos to hide in Gallery section
+const photosToHide: Number = 1
+
 const HomePage = () => {
-  const photos = [
+  let photos = [
     {
       src: "/img/gallery/diploma_gigli.jpg",
       width: 1080,
@@ -61,7 +64,6 @@ const HomePage = () => {
       src: "/img/gallery/ingresso_museo.jpg",
       width: 1080,
       height: 800,
-      blurDataURL: "/img/gallery/ingresso_museo.jpg",
       alt: "Foto ingresso Museo TIME",
     },
     {
@@ -77,6 +79,19 @@ const HomePage = () => {
       alt: "Foto con Valentina Persico",
     },
   ]
+
+  photos = photos.map((photo, index) => {
+    if (photos.length - index - 1 === photosToHide) {
+      return {
+        ...photo,
+        blurDataURL: photo.src,
+      }
+    } else {
+      return {
+        ...photo,
+      }
+    }
+  })
 
   const [index, setIndex] = useState(-1)
 
@@ -182,7 +197,12 @@ const HomePage = () => {
 
           <PhotoAlbum
             layout='columns'
-            photos={photos.slice(0, -2)}
+            columns={(containerWidth) => {
+              if (containerWidth < 400) return 2
+              if (containerWidth < 800) return 3
+              return 4
+            }}
+            photos={photos.slice(0, -photosToHide)}
             onClick={({ index }) => setIndex(index)}
             renderPhoto={NextJsImage}
             defaultContainerWidth={1200}

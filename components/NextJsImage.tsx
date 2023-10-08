@@ -13,13 +13,13 @@ export default function NextJsImage({
         src={photo}
         placeholder={"blurDataURL" in photo ? "blur" : undefined}
         {...{ alt, title, sizes, className, onClick }}
-        className="object-cover h-wull w-full"
+        className='object-cover h-full w-full'
       />
 
       {/* Overlay */}
       {"blurDataURL" in photo && (
         <div className='absolute w-full h-full inset-0 bg-white/[0.92] dark:bg-gray-900/[0.92] flex justify-center items-center font-semibold text-lg'>
-          +2 foto
+           altre foto
         </div>
       )}
     </div>
