@@ -2,7 +2,6 @@ import "@/styles/globals.css"
 import type { AppProps } from "next/app"
 import Head from "next/head"
 import { Inter, Open_Sans } from "next/font/google"
-import { createContext, useEffect, useState } from "react"
 import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ["latin"] })
