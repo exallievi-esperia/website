@@ -44,6 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <link rel='icon' href='/logo.svg' />
+        <link rel='icon' href='/logo.png' />
         <meta name='author' content='Ex Allievi Esperia' />
         <meta
           name='keywords'
