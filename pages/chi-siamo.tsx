@@ -203,13 +203,17 @@ const ChiSiamoPage = () => {
             <Team
               name='Giancarlo Viti'
               role='Vice Presidente'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Daniela Beccaluva'
               role='Segretaria e Tesoriera'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
@@ -227,61 +231,81 @@ const ChiSiamoPage = () => {
             <Team
               name='Roberto Filippini Fantoni'
               role='Consigliere'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Alfredo Longhi'
               role='Consigliere'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Marco Morè'
               role='Consigliere'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Battista Azzola'
               role='Consigliere'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Alessandro Rocchi'
               role='Revisore dei conti'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Giampietro Guerinoni'
               role='Revisore dei conti'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Steven Poma'
               role='Revisore dei conti'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Romano Bonadei'
               role='Probiviro'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Franco Ferrarti'
               role='Probiviro'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
 
             <Team
               name='Mario Guizzetti'
               role='Probiviro'
-              contacts={[{ icon: MdEmail, link: "/" }]}
+              contacts={[
+                { icon: MdEmail, link: "mailto:exallievi@itispaleocapa.it" },
+              ]}
             />
           </Slider>
         </div>
