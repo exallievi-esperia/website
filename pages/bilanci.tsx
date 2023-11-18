@@ -79,7 +79,7 @@ const list = [
     file: [
       {
         name: "Bilancio",
-        href: "https://drive.google.com/file/d/1pPxqKu4ml3NfKczj-xlu_BGtyxVnnKw-/view?usp=sharing",
+        href: "https://drive.google.com/file/d/1YvsxO9DhDsYgAeGnA1yWacz6aZUrNdj0/view?usp=sharing",
       },
     ],
     style: "",
@@ -90,7 +90,7 @@ const list = [
     file: [
       {
         name: "Bilancio",
-        href: "https://drive.google.com/file/d/1aXQ1hHz3YuMpliB0IM-0cZYSqcsk5q4_/view?usp=sharing",
+        href: "https://drive.google.com/file/d/12pDEipi2FQ6UO3ISoiD3e9l-Pee-VQOa/view?usp=sharing",
       },
     ],
     style: "bg-gray-100 dark:bg-gray-700",

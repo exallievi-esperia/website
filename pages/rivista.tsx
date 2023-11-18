@@ -153,6 +153,10 @@ const RivistaPage = () => {
             ))}
         </div>
 
+        <div style={{ marginTop: '50px', borderTop: '1px solid #ccc', paddingTop: '10px' }}>
+          <p>Le riviste degli anni 2020 e 2021 non sono state pubblicate a causa del COVID-19</p>
+        </div>
+
         {currentItems <= riviste[riviste.length - 1].id && (
           <Pagination>
             <NavButton onClick={() => setCurrentItems(currentItems + 12)} />
