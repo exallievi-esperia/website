@@ -90,6 +90,16 @@ const ChiSiamoPage = () => {
               presso la sede delle Scuole Industriali di Via Masone e poi presso
               l’Istituto Tecnico lndustriale di Stato di Via Mauro Gavazzeni a
               Bergamo.
+              <br />
+              <span className='text-[#f25116] hover:text-[#d53c04] transition-colors hover:cursor-pointer hover:underline'>
+                <a
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  href='https://drive.google.com/file/d/1X138HZbgn2xLOnhJEft3QumWyYHJb0tL/view?usp=sharing'
+                >
+                  » Leggi la storia completa dell'associazione
+                </a>
+              </span>
             </p>
           </div>
 
@@ -133,6 +143,7 @@ const ChiSiamoPage = () => {
                   </li>
                 </ul>
               </div>
+              {/*               
               <p className='font-bold leading-7 dark:text-gray-200 mt-4'>
                 Ascolta l'inno dell'Esperia:
               </p>
@@ -143,7 +154,7 @@ const ChiSiamoPage = () => {
               >
                 <source src='/audio/inno-esperia.mp3' type='audio/mpeg' />
                 Il tuo browser non supporta l'elemento audio.
-              </audio>
+              </audio> */}
             </div>
 
             <div>
