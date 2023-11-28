@@ -9,32 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.13",
-    "@types/node": "18.15.10",
-    "@types/react": "18.0.29",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
+    "@headlessui/react": "^1.7.17",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.39",
+    "@types/react-dom": "18.2.17",
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.3",
     "gray-matter": "^4.0.3",
-    "next": "13.2.4",
+    "next": "14.0.3",
     "next-themes": "^0.2.1",
     "normalize.css": "^8.0.1",
     "pigeon-maps": "^0.21.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "react-markdown": "^8.0.7",
-    "react-photo-album": "^2.2.2",
+    "react-icons": "^4.12.0",
+    "react-markdown": "^9.0.1",
+    "react-photo-album": "^2.3.0",
     "react-slick": "^0.29.0",
     "sharp": "^0.32.6",
     "slick-carousel": "^1.8.1",
-    "typescript": "5.0.2",
-    "yet-another-react-lightbox": "^3.10.0"
+    "typescript": "5.3.2",
+    "yet-another-react-lightbox": "^3.15.4"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.10",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "@types/react-slick": "^0.23.12",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
   }
 }
