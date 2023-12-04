@@ -45,6 +45,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <link rel='icon' href='/logo.svg' />
         <link rel='icon' href='/logo.png' />
+        <link rel='icon' href='/logo.ico' />
+        <link rel='apple-touch-icon' href='/logo.ico' />
         <meta name='author' content='Ex Allievi Esperia' />
         <meta
           name='keywords'
