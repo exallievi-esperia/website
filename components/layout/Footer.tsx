@@ -7,7 +7,7 @@ import {
   MdOutlinePhone,
   MdOutlineLocationOn,
 } from "react-icons/md"
-import { IoLogoInstagram, IoLogoGithub } from "react-icons/io"
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
 
 const menuItems = [
   {
@@ -74,18 +74,19 @@ const Footer: React.FC = () => {
               di cent'anni al fianco degli studenti.
             </p>
 
-            <ul className='mt-8 flex justify-center gap-6 sm:justify-start md:gap-8'>
+            <ul className='mt-8 flex flex-wrap justify-center gap-6 sm:justify-start md:gap-8'>
               <li>
                 <a
-                  href='https://www.facebook.com/exallievi.esperia'
-                  rel='noopener noreferrer'
+                  href='https://it.linkedin.com/company/exallievi-esperia'
+                  rel='noreferrer'
                   target='_blank'
                   className='text-[#f25116] transition hover:text-[#bf3617]'
                 >
-                  <span className='sr-only'>Facebook</span>
-                  <MdFacebook className='w-8 h-8' />
+                  <span className='sr-only'>LinkedIn</span>
+                  <IoLogoLinkedin className='w-8 h-8' />
                 </a>
               </li>
+
               <li>
                 <a
                   href='https://instagram.com/exallievi.esperia'
@@ -97,6 +98,19 @@ const Footer: React.FC = () => {
                   <IoLogoInstagram className='w-8 h-8' />
                 </a>
               </li>
+
+              <li>
+                <a
+                  href='https://www.facebook.com/exallievi.esperia'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  className='text-[#f25116] transition hover:text-[#bf3617]'
+                >
+                  <span className='sr-only'>Facebook</span>
+                  <MdFacebook className='w-8 h-8' />
+                </a>
+              </li>
+
               <li>
                 <a
                   href='https://github.com/exallievi-esperia'

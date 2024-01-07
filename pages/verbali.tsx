@@ -81,7 +81,11 @@ const list = [
       },
       {
         name: "28 Ottobre",
-        href: "https://drive.google.com/file/d/1bTrGYTfCJEuY6QGBWzbEVNepxtTgz_l9/view?usp=sharing",
+        href: "https://drive.google.com/file/d/1Lq6q1_5pdmjDQINXEyQDtS4pyF7IwTWu/view?usp=sharing",
+      },
+      {
+        name: "20 Dicembre",
+        href: "https://drive.google.com/file/d/1VYHMnTwfpcKf9g1MmqZhCRbn6KOyBKTZ/view?usp=sharing",
       },
     ],
     style: "bg-gray-100 dark:bg-gray-700",
