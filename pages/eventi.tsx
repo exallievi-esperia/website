@@ -137,6 +137,32 @@ const eventiList = [
     href: "https://drive.google.com/drive/folders/19ZN4v3kJ1rugMfqs46-FFuEEMwZVSsc8?usp=sharing",
     image: "/img/eventi/festa_museo_27052023.jpg",
   },
+  {
+    id: 10,
+    name: "Borse di studio: Area Informatica",
+    description:
+      "Prospettiva sull’Intelligenza Artificiale: Consegna delle borse di studio agli studenti ed interventi delle aziende.",
+    date: {
+      day: 28,
+      month: "Novembre",
+      year: 2023,
+    },
+    href: "https://drive.google.com/drive/folders/1P7UoMSG3b_sqvCl3RL4i8O0Cbp-bZiv6?usp=sharing",
+    image: "/img/eventi/informatica_28112023.jpeg",
+  },
+  {
+    id: 11,
+    name: "Borse di studio: Area Meccanica",
+    description:
+      "Consegna delle borse di studio agli studenti meritevoli dell'area Meccanica.",
+    date: {
+      day: 20,
+      month: "Febbraio",
+      year: 2024,
+    },
+    href: "https://drive.google.com/drive/folders/1Ly1x-Qs_LHQPrykxLA48A_Q7_HHh1xLF?usp=sharing",
+    image: "/img/eventi/meccanica_20022024.jpeg",
+  },
 ]
 
 const EventiPage = () => {
