@@ -163,6 +163,19 @@ const eventiList = [
     href: "https://drive.google.com/drive/folders/1Ly1x-Qs_LHQPrykxLA48A_Q7_HHh1xLF?usp=sharing",
     image: "/img/eventi/meccanica_20022024.jpeg",
   },
+  {
+    id: 12,
+    name: "Borse di studio: Area Elettronica",
+    description:
+      "Consegna delle borse di studio agli studenti dell'area Elettronica. Intervengono Aesys, Lovato e FAE.",
+    date: {
+      day: 2,
+      month: "Marzo",
+      year: 2024,
+    },
+    href: "https://drive.google.com/drive/folders/1gBhm9Mx8qUChQU7vjox0nPspqmGMpeUt?usp=sharing",
+    image: "/img/eventi/elettronica_02032024.jpg",
+  },
 ]
 
 const EventiPage = () => {
