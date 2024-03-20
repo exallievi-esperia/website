@@ -95,6 +95,17 @@ const list = [
     ],
     style: "bg-gray-100 dark:bg-gray-700",
   },
+  {
+    id: 8,
+    year: 2023,
+    file: [
+      {
+        name: "Bilancio",
+        href: "https://drive.google.com/file/d/1CoMkCxaYkj-okZH5k1H8vqxiHy40ZUOQ/view?usp=sharing",
+      },
+    ],
+    style: "",
+  },
 ]
 
 const BilanciPage = () => {

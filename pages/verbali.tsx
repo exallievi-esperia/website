@@ -90,6 +90,17 @@ const list = [
     ],
     style: "bg-gray-100 dark:bg-gray-700",
   },
+  {
+    id: 5,
+    year: 2024,
+    file: [
+      {
+        name: "9 Marzo",
+        href: "https://drive.google.com/file/d/1ue8-Q30A9DJI_uGLBFMIggFNw15PM2F9/view?usp=sharing",
+      },
+    ],
+    style: "",
+  },
 ]
 
 const VerbaliPage = () => {
