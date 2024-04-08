@@ -101,7 +101,7 @@ const SociPage = () => {
               <strong> RINNOVA</strong> per pagare con Carte di Credito/Debito o
               PayPal. <br />
               Puoi anche fare un bonifico bancario a: <br />
-              IBAN <strong>IT12N0538711110000042430482</strong> (BPER Banca)
+              IBAN <strong>IT84T0538711116000042430482</strong> (BPER Banca)
               <br />
               L’importo da versare è pari a €30,00 ma sei libero di donare
               quanto preferisci.
