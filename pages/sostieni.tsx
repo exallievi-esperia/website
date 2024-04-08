@@ -98,7 +98,7 @@ const SostieniPage = () => {
                 Per effettuare una erogazione libera puoi utilizzare Paypal,
                 clicca sul pulsante accanto. <br />
                 In alternativa puoi anche fare un bonifico bancario a IBAN
-                IT12N0538711110000042430482 (BPER Banca).
+                IT84T0538711116000042430482 (BPER Banca).
               </p>
             </div>
 
