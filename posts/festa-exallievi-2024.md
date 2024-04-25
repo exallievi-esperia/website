@@ -13,5 +13,8 @@ Per questo interrogarsi, cercare di comprendere le trasformazioni in corso, in p
 L'incontro infatti è stato organizzato con interventi di esperti di settore e presentazioni di progetti di studenti dell'indirizzo informatico che, con i docenti, hanno approfondito le potenzialità dell'A.I.\
 Realtà industriale e mondo della scuola, uno scambio continuo che da sempre contraddistingue l'ITIS P. Paleocapa e il suo territorio che, grazie all'associazione Ex Allievi, mantiene vivo il legame per affrontare le sfide del futuro.
 \
+Gradita conferma al seguente indirizzo mail: [_segreteriadirigenza@itispaleocapa.it_](mailto:segreteriadirigenza@itispaleocapa.it)
+
+\
 \
 ![Locandina festa Ex Allievi 25 Maggio 2024](/img/eventi/locandina_festa_25052024.jpg)
