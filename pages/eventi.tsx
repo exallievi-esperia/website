@@ -179,7 +179,7 @@ const eventiList = [
 ]
 
 const EventiPage = () => {
-  const [currentItems, setCurrentItems] = useState(10)
+  const [currentItems, setCurrentItems] = useState(12)
 
   return (
     <Layout>

@@ -37,3 +37,15 @@
   bottom: 0;
   color: transparent;
 }
+
+.markdown > ul{
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 16px 0 16px 0;
+}
+
+.markdown > p > a{
+  text-decoration: underline;
+  color: #080871;
+  word-wrap: break-word;
+}
