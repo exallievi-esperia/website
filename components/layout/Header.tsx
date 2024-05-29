@@ -251,7 +251,7 @@ const Header: React.FC = () => {
         onClose={setMobileMenuOpen}
       >
         <div className='fixed inset-0 z-10' />
-        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-gray-600 px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10'>
+        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#badaef] dark:bg-gray-700 px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between sm:justify-end'>
             <Link
               href='/'
@@ -290,7 +290,7 @@ const Header: React.FC = () => {
                     <Link
                       href={menuItem.href}
                       key={menuItem.label}
-                      className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-700'
+                      className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-[#a8cfe9] dark:text-gray-100 dark:hover:bg-gray-800'
                     >
                       {menuItem.label}
                     </Link>
@@ -298,7 +298,7 @@ const Header: React.FC = () => {
                     <Disclosure as='div' className='-mx-3' key={menuItem.label}>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className='flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-700'>
+                          <Disclosure.Button className='flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-[#a8cfe9] dark:text-gray-100 dark:hover:bg-gray-800'>
                             {menuItem.label}
                             <HiChevronDown
                               className={classNames(

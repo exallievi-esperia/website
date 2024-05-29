@@ -14,8 +14,8 @@ const Post = ({ postData }: any) => {
       </Head>
 
       <main className="mx-auto max-w-7xl px-6 pb-6 lg:px-8 mb-20">
-        <article className="px-4 py-24 mx-auto max-w-7xl" id="#">
-          <div className="w-full mx-auto mb-12 text-left md:w-3/4 lg:w-1/2">
+        <article className="px-4 py-24 mx-auto max-w-7xl">
+          <div className="w-full mx-auto mb-12 text-left md:w-2/3">
             <h1 className="mt-6 mb-3 text-3xl font-bold leading-tight text-gray-900 dark:text-gray-100 md:text-4xl">
               {postData.title}
             </h1>
@@ -29,7 +29,7 @@ const Post = ({ postData }: any) => {
                 </p>
               ))}
             </div>
-            <div className="flex flex-col sm:flex-row items-center text-gray-700 dark:text-gray-200">
+            <div className="flex flex-col sm:flex-row sm:items-center text-gray-700 dark:text-gray-200">
               <div className="flex">
                 {postData.authors.map(
                   (
@@ -60,13 +60,13 @@ const Post = ({ postData }: any) => {
                     .join(', ')}`}
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-300">
-                  {postData.date.split('-').reverse().join(' ')}
+                  {postData.date.split('-').reverse().join('/')}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="w-full mx-auto prose md:w-3/4 lg:w-1/2">
+          <div className="w-full mx-auto prose md:w-2/3">
             <ReactMarkdown className="dark:text-gray-100 leading-8 flex flex-col items-left gap-10 sm:gap-0 markdown">
               {postData.content}
             </ReactMarkdown>
