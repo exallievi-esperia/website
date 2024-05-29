@@ -2,7 +2,7 @@
 title: "Assemblea ordinaria dell'11 Maggio 2024"
 date: '2024-04-05'
 authors: [{ name: 'Ex Allievi', role: 'admin', image: '/logo.svg' }]
-tag: ['eventi', 'comunicazione', 'assemblea']
+tag: ['eventi', 'assemblea']
 image: ''
 preview: "L'assemblea 2024 dell'associazione si terrà sabato 11 maggio alle ore 9.30 presso la scuola. È aperta a tutti ma avranno diritto di voto solo i soci in regola con la quota associativa."
 ---

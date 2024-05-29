@@ -219,7 +219,7 @@ const EventiPage = () => {
       <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         <label
           htmlFor="filterEventi"
-          className="block font-medium text-gray-900"
+          className="block font-medium text-gray-900 dark:text-gray-100"
         >
           Filtra per eventi
         </label>

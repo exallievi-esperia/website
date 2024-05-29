@@ -98,13 +98,17 @@ const list = [
         name: "9 Marzo",
         href: "https://drive.google.com/file/d/1ue8-Q30A9DJI_uGLBFMIggFNw15PM2F9/view?usp=sharing",
       },
+      {
+        name: "11 Maggio",
+        href: "https://drive.google.com/file/d/17Tq_34hVnox87Xw3sZEO40-xUbONhd8d/view?usp=sharing",
+      },
     ],
     style: "",
   },
 ]
 
 const VerbaliPage = () => {
-  const [currentItems, setCurrentItems] = useState(5)
+  const [currentItems, setCurrentItems] = useState(6)
 
   return (
     <Layout>

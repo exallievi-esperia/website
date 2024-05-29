@@ -27,9 +27,9 @@ const index = ({ allPostsData }: any) => {
             className='flex flex-col md:flex-row gap-10 items-center justify-center mt-20 hover:-translate-y-3 transition-transform duration-300'
           >
             {/* Info articolo */}
-            <div className='dark:text-gray-100 md:max-w-3xl'>
-              <div className='flex text-sm gap-8 flex-row items-center'>
-                <p>{post.date.split("-").reverse().join(" ")}</p>
+            <div className='dark:text-gray-100 md:max-w-3xl bg-[#f0f8ff] dark:bg-gray-900/20 p-6 rounded-md'>
+              <div className='flex text-sm gap-4 sm:gap-8 flex-col sm:flex-row items-left sm:items-center'>
+                <p>{post.date.split("-").reverse().join("/")}</p>
                 <div className='flex gap-5 flex-wrap'>
                   {post.tag.map((tag: string, index: number) => (
                     <div

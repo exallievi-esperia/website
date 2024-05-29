@@ -2,7 +2,7 @@
 title: 'Festa degli Ex Allievi del 25 Maggio 2024'
 date: '2024-04-25'
 authors: [{ name: 'Ex Allievi', role: 'admin', image: '/logo.svg' }]
-tag: ['eventi', 'comunicazione', 'festa']
+tag: ['eventi', 'festa']
 image: '/img/museo_centenario.jpg'
 preview: "Il giorno 25 Maggio 2024 alle ore 09:00 si svolgerà presso la scuola la Festa annuale degli Ex Allievi, a cui sono invitati tutti i soci. Il tema dell'incontro sarà l'Intelligenza Artificiale."
 ---
