@@ -6,7 +6,11 @@ import Pagination from "@/components/Pagination"
 import NavButton from "@/components/NavButton"
 import { useState } from "react"
 
-export type EventType = "borsa-di-studio" | "festa-exallievi" | "tutti"
+export type EventType =
+  | "borsa-di-studio"
+  | "festa-exallievi"
+  | "makers-faire"
+  | "tutti"
 
 const eventiList: EventiCardProps[] = [
   {
@@ -206,6 +210,20 @@ const eventiList: EventiCardProps[] = [
     type: "festa-exallievi",
     className: "object-[50%_24%]",
   },
+  {
+    id: 14,
+    name: "Makers Faire 2024",
+    description:
+      "Esposizione e premiazione dei progetti realizzati dagli studenti del nostro istituto.",
+    date: {
+      day: 8,
+      month: "Giugno",
+      year: 2024,
+    },
+    href: "https://drive.google.com/drive/folders/1CkY_OHhRO0Y4io28JfDHrROLEUfPSJ14?usp=sharing",
+    image: "/img/eventi/makersfaire_08062024.jpeg",
+    type: "makers-faire",
+  },
 ]
 
 const EventiPage = () => {
@@ -248,6 +266,7 @@ const EventiPage = () => {
           <option value='tutti'>Tutti</option>
           <option value='festa-exallievi'>Festa Ex Allievi</option>
           <option value='borsa-di-studio'>Borse di studio</option>
+          <option value='makers-faire'>Makers Faire</option>
         </select>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {filteredEvent

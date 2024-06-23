@@ -164,7 +164,17 @@ const ChiSiamoPage = () => {
                 width={1200}
                 height={675}
               />
-              <p className='text-center'>Disegno medaglia centenario</p>
+              <p className='text-center'>
+                Bozzetto per medaglia centenario realizzato dall’artista{" "}
+                <a
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  href='https://instagram.com/persico_valentina'
+                  className='text-[#f25116] hover:text-[#d53c04] transition-colors hover:cursor-pointer hover:underline'
+                >
+                  Valentina Persico
+                </a>
+              </p>
             </div>
           </div>
         </div>
