@@ -16,7 +16,6 @@ const list = [
         href: "https://drive.google.com/file/d/1BPjn0D97he0TSn7LmfRo-pqN59CJYAWv/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 1,
@@ -27,7 +26,6 @@ const list = [
         href: "https://drive.google.com/file/d/1PpSc7mk80tbO7-DtmWd-s2u3cNeQw9Hu/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 2,
@@ -38,7 +36,6 @@ const list = [
         href: "https://drive.google.com/file/d/1PpSc7mk80tbO7-DtmWd-s2u3cNeQw9Hu/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 3,
@@ -49,7 +46,6 @@ const list = [
         href: "https://drive.google.com/file/d/1SdUnvlQN112V2OGkIiQXdsGz01925siZ/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 4,
@@ -60,7 +56,6 @@ const list = [
         href: "https://drive.google.com/file/d/1J4NKYVQLN0LOqhtCLUH6ztMLhYezhN56/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 5,
@@ -71,7 +66,6 @@ const list = [
         href: "https://drive.google.com/file/d/12PM7JeOW3yvcvwzKgmmxOybeH77fdUSb/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 6,
@@ -82,7 +76,6 @@ const list = [
         href: "https://drive.google.com/file/d/1YvsxO9DhDsYgAeGnA1yWacz6aZUrNdj0/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 7,
@@ -93,7 +86,6 @@ const list = [
         href: "https://drive.google.com/file/d/12pDEipi2FQ6UO3ISoiD3e9l-Pee-VQOa/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 8,
@@ -104,7 +96,6 @@ const list = [
         href: "https://drive.google.com/file/d/1CoMkCxaYkj-okZH5k1H8vqxiHy40ZUOQ/view?usp=sharing",
       },
     ],
-    style: "",
   },
 ]
 
@@ -130,13 +121,13 @@ const BilanciPage = () => {
           {list
             .filter((item) => list.length - item.id <= currentItems)
             .reverse()
-            .map((file) => (
+            .map((file, index) => (
               <Fragment key={file.id}>
                 {file.id === list.length - 1 ? <></> : <hr />}
                 <FileList
                   year={file.year}
                   files={file.file}
-                  style={file.style}
+                  isEven={index % 2 === 0}
                 />
               </Fragment>
             ))}

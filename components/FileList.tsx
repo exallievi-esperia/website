@@ -10,14 +10,16 @@ interface File {
 interface FileListProps {
   year: number
   files: File[]
-  style?: string
+  isEven: boolean
 }
 
-const FileList: React.FC<FileListProps> = ({ year, files, style }) => {
+const FileList: React.FC<FileListProps> = ({ year, files, isEven }) => {
   return (
     <div
       id={year.toString()}
-      className={`flex flex-col sm:flex-row gap-5 sm:gap-20 items-center w-full py-8 justify-center sm:justify-start px-5 sm:px-32 md:px-60 lg:px-72 xl:px-96 scroll-mt-16 md:scroll-mt-24 ${style}`}
+      className={`flex flex-col sm:flex-row gap-5 sm:gap-20 items-center w-full py-8 justify-center sm:justify-start px-5 sm:px-32 md:px-60 lg:px-72 xl:px-96 scroll-mt-16 md:scroll-mt-24 ${
+        isEven ? "bg-gray-100 dark:bg-gray-700" : ""
+      }`}
     >
       <h3 className='text-4xl font-bold dark:text-white'>{year}</h3>
       <ul className='flex flex-col gap-5'>

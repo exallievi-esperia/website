@@ -20,7 +20,6 @@ const list = [
         href: "https://drive.google.com/file/d/1NNd6I4WLqEs3Q3Pg_GaCFNPuKQf4a1Bw/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 1,
@@ -35,7 +34,6 @@ const list = [
         href: "https://drive.google.com/file/d/1P5KLjYvDyG38IkbI5Hg_OdSPQ0PITmJC/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 2,
@@ -46,7 +44,6 @@ const list = [
         href: "https://drive.google.com/file/d/1kaeXAQ_8q-JbITubSgVUiz00ZLKaC3WP/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 3,
@@ -61,7 +58,6 @@ const list = [
         href: "https://drive.google.com/file/d/1TK1zTKQNlKs02EHJEEYH-gf0pm1RF_uw/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 4,
@@ -88,7 +84,6 @@ const list = [
         href: "https://drive.google.com/file/d/1VYHMnTwfpcKf9g1MmqZhCRbn6KOyBKTZ/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 5,
@@ -103,7 +98,6 @@ const list = [
         href: "https://drive.google.com/file/d/17Tq_34hVnox87Xw3sZEO40-xUbONhd8d/view?usp=sharing",
       },
     ],
-    style: "",
   },
 ]
 
@@ -131,13 +125,13 @@ const VerbaliPage = () => {
           {list
             .filter((item) => list.length - item.id <= currentItems)
             .reverse()
-            .map((file) => (
+            .map((file, index) => (
               <Fragment key={file.id}>
                 {file.id === list.length - 1 ? <></> : <hr />}
                 <FileList
                   year={file.year}
                   files={file.file}
-                  style={file.style}
+                  isEven={index % 2 === 0}
                 />
               </Fragment>
             ))}

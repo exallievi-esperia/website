@@ -20,7 +20,6 @@ const list = [
         href: "https://drive.google.com/file/d/1lqWFLXZnv37jDjiQPgqQeJMRkzhiq7gK/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 1,
@@ -31,7 +30,6 @@ const list = [
         href: "https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 2,
@@ -42,7 +40,6 @@ const list = [
         href: "https://drive.google.com/file/d/1QCFexIWpevX_JYdpRZDvjk4OvYaVyNeB/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 3,
@@ -53,7 +50,6 @@ const list = [
         href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 4,
@@ -64,7 +60,6 @@ const list = [
         href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
   {
     id: 5,
@@ -79,7 +74,6 @@ const list = [
         href: "https://drive.google.com/file/d/13U6FPrRxmDZxQkjgJcs1Vq1sQyR88WTa/view?usp=sharing",
       },
     ],
-    style: "",
   },
   {
     id: 6,
@@ -98,7 +92,6 @@ const list = [
         href: "https://drive.google.com/file/d/1crfSOlqMsRxsBqmDfUkrkR7UvlByWEaL/view?usp=sharing",
       },
     ],
-    style: "bg-gray-100 dark:bg-gray-700",
   },
 ]
 
@@ -126,13 +119,13 @@ const TrasparenzaPage = () => {
           {list
             .filter((item) => list.length - item.id <= currentItems)
             .reverse()
-            .map((file) => (
+            .map((file, index) => (
               <Fragment key={file.id}>
                 {file.id === list.length - 1 ? <></> : <hr />}
                 <FileList
                   year={file.year}
                   files={file.file}
-                  style={file.style}
+                  isEven={index % 2 === 0}
                 />
               </Fragment>
             ))}
