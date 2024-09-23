@@ -97,6 +97,10 @@ const list = [
         name: "11 Maggio",
         href: "https://drive.google.com/file/d/17Tq_34hVnox87Xw3sZEO40-xUbONhd8d/view?usp=sharing",
       },
+      {
+        name: "31 Agosto",
+        href: "https://drive.google.com/file/d/1_9o_9eIG5_1-UimH0YLBMFe3RqKK5wGg/view?usp=sharing",
+      },
     ],
   },
 ]
