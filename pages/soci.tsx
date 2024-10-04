@@ -68,7 +68,7 @@ const SociPage = () => {
               <li>
                 <p>
                   3. Attendi la conferma (ti arriverà via email nel giro di
-                  qualche giorno)
+                  qualche giorno) e versa la quota annuale
                 </p>
               </li>
             </ol>
