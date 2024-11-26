@@ -32,6 +32,7 @@ const HomeBlog = ({ allPostsData }: any) => {
         <select
           name='filterPost'
           id='filterPost'
+          style={{ WebkitAppearance: "none" }}
           className='mt-1.5 mb-8 px-2 py-2 w-auto sm:w-1/4 rounded-lg outline outline-1 outline-[#f25116] text-gray-700 dark:text-gray-300 dark:bg-slate-800 border-r-[16px] border-r-transparent'
           onChange={(e) => setFilterSearch(e.target.value)}
         >
