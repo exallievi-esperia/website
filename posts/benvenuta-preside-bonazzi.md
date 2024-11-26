@@ -18,7 +18,7 @@ Ci accorgiamo che i tempi sono cambiati … e di molto!\
 I più anziani del Consiglio Direttivo dell’Associazione ex-Allievi ricordano che tra la fine
 degli anni ’50 e l’inizio dei ’60 l’Esperia era una delle poche Scuole Tecniche della
 Lombardia e tra queste era una delle più ricercate. Gli studenti venivano da ogni dove:
-_Brescia, Sondrio, Varese, Milano_, ecc. A quel tempo gli studenti della Scuola non erano molto lontani dal numero attuale. Ciò che però è cambiato (o meglio sta iniziando a cambiare) è la **sproporzione tra generi**: se 60 anni fa una sola studentessa percorreva i corridoi della nostra scuola, oggi ce ne sono circa 110.
+_Brescia, Sondrio, Varese, Milano_, ecc. A quel tempo gli studenti della Scuola non erano molto lontani dal numero attuale. Ciò che però è cambiato (o meglio sta iniziando a cambiare) è la **quantità di ragazze che sceglie l'istituto**: se 60 anni fa una sola studentessa percorreva i corridoi della nostra scuola, oggi ce ne sono circa 110.
 Un incipit questo per poter mostrare chiaramente che i tempi sono ben altri perché
 per la prima volta al vertice della piramide dirigenziale troviamo una donna!\
 Sostituire degnamente il vulcanico Imerio sembrerebbe un’impresa assai ardua e noi del
