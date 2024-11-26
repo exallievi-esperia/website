@@ -11,7 +11,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@types/node": "20.10.0",
-    "@types/react": "18.0.29",
     "@types/react-dom": "18.2.17",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3",
@@ -32,6 +31,7 @@
     "yet-another-react-lightbox": "^3.15.4"
   },
   "devDependencies": {
+    "@types/react": "^18.3.12",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",

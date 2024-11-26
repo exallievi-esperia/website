@@ -224,6 +224,20 @@ const eventiList: EventiCardProps[] = [
     image: "/img/eventi/makersfaire_08062024.jpeg",
     type: "makers-faire",
   },
+  {
+    id: 15,
+    name: "Borse di studio: Area Informatica",
+    description:
+      "Le professioni più richieste nell'informatica oggi: Consegna delle borse di studio agli studenti ed interventi delle aziende.",
+    date: {
+      day: 21,
+      month: "Novembre",
+      year: 2024,
+    },
+    href: "https://drive.google.com/drive/folders/1bfOmh8tvva8kLHnKycfghBevAJAEOEDD?usp=sharing",
+    image: "/img/eventi/informatica_21112024.jpeg",
+    type: "borsa-di-studio",
+  },
 ]
 
 const EventiPage = () => {
@@ -249,7 +263,7 @@ const EventiPage = () => {
         position='object-[center_60%]'
       />
 
-      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
+      <main className='mx-auto max-w-7xl p-6 lg:px-8 mt-5 mb-20'>
         <label
           htmlFor='filterEventi'
           className='block font-medium text-gray-900 dark:text-gray-100'

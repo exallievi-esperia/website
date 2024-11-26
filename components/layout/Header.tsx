@@ -83,7 +83,6 @@ const menuItems = [
   { label: "Eventi", href: "/eventi" },
   { label: "Rivista", href: "/rivista" },
   { label: "Blog", href: "/blog" },
-  { label: "Contatti", href: "/contatti" },
 ]
 
 const classNames = (...classes: string[]) => {

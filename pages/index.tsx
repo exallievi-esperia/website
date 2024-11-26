@@ -108,16 +108,18 @@ const HomePage = () => {
             <div className='mb-8 sm:flex sm:justify-center'>
               <div className='w-fit m-auto hover:-translate-y-1.5 hover:cursor-pointer rounded-full text-[#f25116] bg-[#f2511640] dark:bg-[#f2511640] px-3 py-1 text-base font-medium transition duration-300'>
                 <Link
-                  href='https://drive.google.com/drive/folders/1TuItR3fYekZ2iaZC4-t9B4Sa7nB4H9Pu?usp=sharing'
+                  href='/blog/benvenuta-preside-bonazzi'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
-                  <div className='min-[339px]:hidden'>Festa del 25/05</div>
+                  <div className='min-[339px]:hidden'>
+                    Benvenuta Preside Bonazzi! 🎉
+                  </div>
                   <div className='max-[338px]:hidden min-[499px]:hidden'>
-                    Festa del 25 Maggio 2024
+                    Benvenuta Preside Bonazzi! 🎉
                   </div>
                   <div className='max-[500px]:hidden'>
-                    Rivivi la festa del 25 Maggio 2024
+                    Benvenuta Preside Bonazzi! 🎉
                   </div>
                 </Link>
               </div>

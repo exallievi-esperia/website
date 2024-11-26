@@ -8,13 +8,6 @@ First install dependencies:
 ```bash
 yarn
 ```
-
-then create an `.env.local` file in `src` folder with your maptiler apikey (used for the map in contact page), like:
-
-```
-NEXT_PUBLIC_MAPTILER_APIKEY=abc
-```
-
 and then run the development server:
 
 ```bash
