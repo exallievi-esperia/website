@@ -238,6 +238,32 @@ const eventiList: EventiCardProps[] = [
     image: "/img/eventi/informatica_21112024.jpeg",
     type: "borsa-di-studio",
   },
+  {
+    id: 16,
+    name: "Borse di studio: Area Elettronica",
+    description: "Esperienze di apprendimento per diventare protagonisti dell'innovazione tecnologica: Consegna delle borse di studio agli studenti.",
+    date: {
+      day: 1,
+      month: "Marzo",
+      year: 2025,
+    },
+    href: "https://drive.google.com/drive/folders/1JWsLiQ3EWyNjEtpXQyFgEynKyqdZ-qT8?usp=sharing",
+    image: "/img/eventi/elettronica_01032025.jpeg",
+    type: "borsa-di-studio",
+  },
+  {
+    id: 17,
+    name: "Borse di studio: Area Meccanica",
+    description: "Un ponte di successi: Consegna delle borse di studio dell'area meccanica agli studenti.",
+    date: {
+      day: 11,
+      month: "Marzo",
+      year: 2025,
+    },
+    href: "https://drive.google.com/drive/folders/1yvaomNv4UqOP-NETfR0K3bkz4I5FlwpP?usp=sharing",
+    image: "/img/eventi/meccanica_11032025.jpeg",
+    type: "borsa-di-studio",
+  }
 ]
 
 const EventiPage = () => {
