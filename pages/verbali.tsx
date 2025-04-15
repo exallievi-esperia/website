@@ -1,10 +1,10 @@
-import Layout from "@/components/layout/Layout"
-import Head from "next/head"
-import FileList from "@/components/FileList"
-import Heading from "@/components/Heading"
-import { Fragment, useState } from "react"
-import Pagination from "@/components/Pagination"
-import NavButton from "@/components/NavButton"
+import Layout from "@/components/layout/Layout";
+import Head from "next/head";
+import FileList from "@/components/FileList";
+import Heading from "@/components/Heading";
+import { Fragment, useState } from "react";
+import Pagination from "@/components/Pagination";
+import NavButton from "@/components/NavButton";
 
 const list = [
   {
@@ -101,12 +101,17 @@ const list = [
         name: "31 Agosto",
         href: "https://drive.google.com/file/d/1_9o_9eIG5_1-UimH0YLBMFe3RqKK5wGg/view?usp=sharing",
       },
+      {
+        name: "11 Dicembre",
+        href: "https://drive.google.com/file/d/1caLcsxaz5xkhrJCRXU_pdNsK9FxpGbnq/view?usp=sharing",
+        desc: "Riconoscimento personalità giuridica",
+      },
     ],
   },
-]
+];
 
 const VerbaliPage = () => {
-  const [currentItems, setCurrentItems] = useState(6)
+  const [currentItems, setCurrentItems] = useState(6);
 
   return (
     <Layout>
@@ -116,9 +121,7 @@ const VerbaliPage = () => {
 
       <Heading
         title={"Verbali"}
-        description={
-          "Consulta i verbali delle assemblee ordinarie suddivisi per anno"
-        }
+        description={"Consulta i verbali delle assemblee suddivisi per anno"}
         backgroundImage='/img/esterno_2.jpg'
         position='object-[center_70%]'
       />
@@ -148,7 +151,7 @@ const VerbaliPage = () => {
         )}
       </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default VerbaliPage
+export default VerbaliPage;

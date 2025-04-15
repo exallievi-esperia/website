@@ -108,18 +108,18 @@ const HomePage = () => {
             <div className='mb-8 sm:flex sm:justify-center'>
               <div className='w-fit m-auto hover:-translate-y-1.5 hover:cursor-pointer rounded-full text-[#f25116] bg-[#f2511640] dark:bg-[#f2511640] px-3 py-1 text-base font-medium transition duration-300'>
                 <Link
-                  href='/blog/borse-studio-makers-faire'
+                  href='https://www.linkedin.com/events/festaassociazione2025-lavoroint7317825534372077569/'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
                   <div className='min-[339px]:hidden'>
-                    Premiazione Makers Faire 🤖
+                    Festa ExAllievi 2025 🎉
                   </div>
                   <div className='max-[338px]:hidden min-[499px]:hidden'>
-                    Premiazione Makers Faire 🤖
+                    Festa ExAllievi 2025 🎉
                   </div>
                   <div className='max-[500px]:hidden'>
-                    Consegna premi Esperia Makers Faire 🤖
+                    Festa ExAllievi 2025 🎉
                   </div>
                 </Link>
               </div>

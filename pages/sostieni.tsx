@@ -1,23 +1,23 @@
-import Layout from "@/components/layout/Layout"
-import Head from "next/head"
-import Image from "next/image"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import Slider from "react-slick"
-import Link from "next/link"
-import Heading from "@/components/Heading"
-import Step from "@/components/Step"
+import Layout from "@/components/layout/Layout";
+import Head from "next/head";
+import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Link from "next/link";
+import Heading from "@/components/Heading";
+import Step from "@/components/Step";
 
 const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  speed: 10000,
+  speed: 5000,
   autoplaySpeed: 0,
   cssEase: "linear",
   arrows: false,
-}
+};
 
 const SostieniPage = () => {
   return (
@@ -30,7 +30,7 @@ const SostieniPage = () => {
         title='Sostieni'
         description="Scopri come sostenere economicamente l'Associazione"
         backgroundImage='/img/stretta_di_mano.jpg'
-        position="object-[center_80%]"
+        position='object-[center_80%]'
       />
 
       <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
@@ -188,6 +188,46 @@ const SostieniPage = () => {
 
             <div className='h-28 mx-4 relative'>
               <Image
+                src='/img/loghi-aziende/ime.png'
+                alt='Logo azienda IME Group'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/mair.jpg'
+                alt='Logo azienda Mair'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/habilita.svg'
+                alt='Logo azienda Habilita'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
+                src='/img/loghi-aziende/aprolis.svg'
+                alt='Logo azienda Aprolis'
+                width={100}
+                height={100}
+                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
+              />
+            </div>
+
+            <div className='h-28 mx-4 relative'>
+              <Image
                 src='/img/loghi-aziende/alba_elettr.svg'
                 alt='Logo azienda Alba Elettronic'
                 width={100}
@@ -268,16 +308,6 @@ const SostieniPage = () => {
 
             <div className='h-28 mx-4 relative'>
               <Image
-                src='/img/loghi-aziende/ddx.svg'
-                alt='Logo azienda DDX'
-                width={100}
-                height={100}
-                className='object-contain h-14 w-full absolute top-0 bottom-0 right-0 left-0 m-auto'
-              />
-            </div>
-
-            <div className='h-28 mx-4 relative'>
-              <Image
                 src='/img/loghi-aziende/plastik.svg'
                 alt='Logo azienda Plastik'
                 width={100}
@@ -339,7 +369,7 @@ const SostieniPage = () => {
         </div>
       </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default SostieniPage
+export default SostieniPage;
