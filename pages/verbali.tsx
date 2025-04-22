@@ -108,6 +108,16 @@ const list = [
       },
     ],
   },
+  {
+    id: 6,
+    year: 2025,
+    file: [
+      {
+        name: "8 Marzo",
+        href: "https://drive.google.com/file/d/1fJOuLgunMQqCHUUfnyO5ZIlQW2w9NYtT/view?usp=sharing",
+      },
+    ],
+  },
 ];
 
 const VerbaliPage = () => {

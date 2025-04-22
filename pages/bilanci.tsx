@@ -97,7 +97,17 @@ const list = [
       },
     ],
   },
-]
+  {
+    id: 9,
+    year: 2024,
+    file: [
+      {
+        name: "Bilancio",
+        href: "https://drive.google.com/file/d/1vrS523TYSzioM04d1gblpfBwTIER94fB/view?usp=sharing",
+      },
+    ],
+  },
+];
 
 const BilanciPage = () => {
   const [currentItems, setCurrentItems] = useState(8)
