@@ -1,7 +1,6 @@
 import Heading from '@/components/Heading'
 import Layout from '@/components/layout/Layout'
 import Head from 'next/head'
-import Link from 'next/link'
 import { VscFilePdf } from 'react-icons/vsc'
 
 const StatutoPage = () => {

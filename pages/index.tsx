@@ -14,7 +14,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom'
 import NextJsImage from '@/components/NextJsImage'
 
 // Number of photos to hide in Gallery section
-const photosToHide: Number = 1
+const photosToHide: number = 1
 
 const HomePage = () => {
   let photos = [

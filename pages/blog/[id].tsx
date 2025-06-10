@@ -1,4 +1,3 @@
-import Heading from '@/components/Heading'
 import Layout from '@/components/layout/Layout'
 import { getAllPostIds, getPostData } from '@/utils/posts'
 import Head from 'next/head'

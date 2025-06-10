@@ -85,9 +85,7 @@ const Header: React.FC = () => {
 
   // while menu is open SCROLL-AUTO, to avoid bug auto scroll to top
   useEffect(() => {
-    mobileMenuOpen
-      ? (document.documentElement.style.scrollBehavior = 'auto')
-      : (document.documentElement.style.scrollBehavior = 'smooth')
+    document.documentElement.style.scrollBehavior = mobileMenuOpen ? 'auto' : 'smooth'
   }, [mobileMenuOpen])
 
   useEffect(() => {
@@ -102,7 +100,7 @@ const Header: React.FC = () => {
   }, [])
 
   const onScroll = () => {
-    let currentPosY = window.scrollY
+    const currentPosY = window.scrollY
 
     // Scroll down
     if (currentPosY < prevPosY) document.getElementById('header')!.style.top = '0'
