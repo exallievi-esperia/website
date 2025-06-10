@@ -1,17 +1,17 @@
 ---
 title: "Un saluto all'uscente preside Chiappa"
-date: "2024-11-25"
+date: '2024-11-25'
 authors:
   [
     {
-      name: "Roberto Filippini Fantoni",
-      role: "Socio e consigliere",
-      image: "/img/soci/filippini.png",
+      name: 'Roberto Filippini Fantoni',
+      role: 'Socio e consigliere',
+      image: '/img/soci/filippini.png',
     },
   ]
-tag: ["novità", "scuola"]
-image: ""
-preview: "Dopo dieci anni di dedizione ed impegno nella nostra scuola, il preside Imerio Chiappa è stato chiamato a ricoprire un incarico di maggiore responsabilità a Cremona."
+tag: ['novità', 'scuola']
+image: ''
+preview: 'Dopo dieci anni di dedizione ed impegno nella nostra scuola, il preside Imerio Chiappa è stato chiamato a ricoprire un incarico di maggiore responsabilità a Cremona.'
 ---
 
 Quando il preside precedente – Michele Nicastri – lasciò l’incarico per la

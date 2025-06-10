@@ -1,17 +1,17 @@
 ---
-title: "Benvenuta preside Bonazzi!"
-date: "2024-11-26"
+title: 'Benvenuta preside Bonazzi!'
+date: '2024-11-26'
 authors:
   [
     {
-      name: "Roberto Filippini Fantoni",
-      role: "Socio e consigliere",
-      image: "/img/soci/filippini.png",
+      name: 'Roberto Filippini Fantoni',
+      role: 'Socio e consigliere',
+      image: '/img/soci/filippini.png',
     },
   ]
-tag: ["novità", "scuola"]
-image: ""
-preview: "È con grande piacere che accogliamo la prof.ssa Annalisa Bonazzi come nostra nuova preside. Siamo fiduciosi che il suo entusiasmo ci condurrà verso nuovi e importanti traguardi."
+tag: ['novità', 'scuola']
+image: ''
+preview: 'È con grande piacere che accogliamo la prof.ssa Annalisa Bonazzi come nostra nuova preside. Siamo fiduciosi che il suo entusiasmo ci condurrà verso nuovi e importanti traguardi.'
 ---
 
 Ci accorgiamo che i tempi sono cambiati … e di molto!\

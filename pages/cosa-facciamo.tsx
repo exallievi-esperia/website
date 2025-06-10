@@ -1,10 +1,10 @@
-import Layout from "@/components/layout/Layout"
-import Head from "next/head"
-import Image from "next/image"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import Slider from "react-slick"
-import Heading from "@/components/Heading"
+import Layout from '@/components/layout/Layout'
+import Head from 'next/head'
+import Image from 'next/image'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
+import Heading from '@/components/Heading'
 
 const settings = {
   dots: true,
@@ -23,79 +23,70 @@ const CosaFacciamoPage = () => {
       </Head>
 
       <Heading
-        title={"Cosa facciamo"}
+        title={'Cosa facciamo'}
         description={"Scopri i progetti dell'Associazione"}
-        backgroundImage='/img/sala_immersiva.jpg'
+        backgroundImage="/img/sala_immersiva.jpg"
       />
 
-      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
+      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         {/* Progetti realizzati */}
-        <section className='flex flex-col gap-12 lg:gap-20'>
+        <section className="flex flex-col gap-12 lg:gap-20">
           {/* Museo TIME */}
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Img */}
-            <div className='w-full mt-8 order-last lg:order-none'>
-              <Slider {...settings} className='self-center'>
+            <div className="w-full mt-8 order-last lg:order-none">
+              <Slider {...settings} className="self-center">
                 <div>
                   <Image
-                    alt='Museo TIME dopo'
+                    alt="Museo TIME dopo"
                     width={1000}
                     height={1000}
-                    src='/img/progetti/Museo_Time_Dopo.jpg'
-                    className='h-full w-full object-cover'
+                    src="/img/progetti/Museo_Time_Dopo.jpg"
+                    className="h-full w-full object-cover"
                     priority
                   />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Come è ora
-                  </p>
+                  <p className="text-center w-full mt-3 dark:text-gray-200">Come è ora</p>
                 </div>
 
                 <div>
                   <Image
-                    alt='Museo TIME prima'
+                    alt="Museo TIME prima"
                     width={1000}
                     height={1000}
-                    src='/img/progetti/Museo_Time_Prima.jpg'
-                    className='h-full w-full object-cover'
+                    src="/img/progetti/Museo_Time_Prima.jpg"
+                    className="h-full w-full object-cover"
                     priority
                   />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Come era prima
-                  </p>
+                  <p className="text-center w-full mt-3 dark:text-gray-200">Come era prima</p>
                 </div>
               </Slider>
             </div>
 
             {/* Text */}
-            <div className='self-center'>
-              <div className='max-w-3xl mb-8'>
-                <h2 className='text-2xl font-bold sm:text-2xl dark:text-white'>
-                  Museo TIME
-                </h2>
-                <span className='flex items-center text-gray-500 dark:text-gray-300 text-base mt-2'>
-                  <span className='block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full'></span>
+            <div className="self-center">
+              <div className="max-w-3xl mb-8">
+                <h2 className="text-2xl font-bold sm:text-2xl dark:text-white">Museo TIME</h2>
+                <span className="flex items-center text-gray-500 dark:text-gray-300 text-base mt-2">
+                  <span className="block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full"></span>
                   Gennaio 2016
                 </span>
               </div>
 
-              <div className='space-y-4 text-gray-600 dark:text-gray-200'>
+              <div className="space-y-4 text-gray-600 dark:text-gray-200">
                 <p>
-                  Uno spazio dedicato all’industria bergamasca in un luogo
-                  simbolo per generazioni di studenti. Una scuola che ha formato
-                  migliaia di professionisti dell’industria: quale posto
-                  migliore per il museo dell’industria bergamasca che l’istituto
-                  'Pietro Paleocapa' di Bergamo. Per tutti l’Esperia.
+                  Uno spazio dedicato all’industria bergamasca in un luogo simbolo per generazioni
+                  di studenti. Una scuola che ha formato migliaia di professionisti dell’industria:
+                  quale posto migliore per il museo dell’industria bergamasca che l’istituto 'Pietro
+                  Paleocapa' di Bergamo. Per tutti l’Esperia.
                 </p>
 
                 <p>
-                  Il museo TIME è uno spazio polivalente in cui si possano
-                  contemporaneamente vedere reperti di macchine che hanno fatto
-                  la storia dell’industria bergamasca, tenere conferenze,
-                  riunioni e incontri a tema, uno spazio a disposizione delle
-                  imprese bergamasche e per ultimo, ma forse l’aspetto più
-                  importante, permettere agli studenti di sperimentare, di
-                  capire, di esplorare e progettare le macchine del futuro
-                  partendo da ciò che è stato ed è.
+                  Il museo TIME è uno spazio polivalente in cui si possano contemporaneamente vedere
+                  reperti di macchine che hanno fatto la storia dell’industria bergamasca, tenere
+                  conferenze, riunioni e incontri a tema, uno spazio a disposizione delle imprese
+                  bergamasche e per ultimo, ma forse l’aspetto più importante, permettere agli
+                  studenti di sperimentare, di capire, di esplorare e progettare le macchine del
+                  futuro partendo da ciò che è stato ed è.
                 </p>
               </div>
             </div>
@@ -104,74 +95,64 @@ const CosaFacciamoPage = () => {
           <hr />
 
           {/* Lab */}
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Text */}
-            <div className='self-center'>
-              <div className='max-w-3xl mb-8'>
-                <h2 className='text-2xl font-bold sm:text-2xl dark:text-white'>
-                  Sala Immersiva
-                </h2>
-                <span className='flex items-center text-gray-500 dark:text-gray-300 text-base mt-2'>
-                  <span className='block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full'></span>
+            <div className="self-center">
+              <div className="max-w-3xl mb-8">
+                <h2 className="text-2xl font-bold sm:text-2xl dark:text-white">Sala Immersiva</h2>
+                <span className="flex items-center text-gray-500 dark:text-gray-300 text-base mt-2">
+                  <span className="block h-0.5 w-4 bg-[#f25116] mr-2 rounded-full"></span>
                   Novembre 2021
                 </span>
               </div>
 
-              <div className='space-y-4 text-gray-600 dark:text-gray-200'>
+              <div className="space-y-4 text-gray-600 dark:text-gray-200">
                 <p>
-                  La sala immersiva è una stanza in cui è possibile riprodurre
-                  spazi tridimensionali ed interagire con essi. Sarà possibile
-                  rivivere un momento di storia, immergendosi in un campo di
-                  battaglia, piuttosto che camminare in un ambiente aperto. Ma
-                  soprattutto, per ciò che interessa l’indirizzo tecnico,
-                  frequentare laboratori di tipo virtuale in cui anche
-                  macchinari non disponibili o apparecchiature potenzialmente
-                  complesse, saranno a disposizione degli studenti, che potranno
+                  La sala immersiva è una stanza in cui è possibile riprodurre spazi tridimensionali
+                  ed interagire con essi. Sarà possibile rivivere un momento di storia, immergendosi
+                  in un campo di battaglia, piuttosto che camminare in un ambiente aperto. Ma
+                  soprattutto, per ciò che interessa l’indirizzo tecnico, frequentare laboratori di
+                  tipo virtuale in cui anche macchinari non disponibili o apparecchiature
+                  potenzialmente complesse, saranno a disposizione degli studenti, che potranno
                   interagire con esse.
                 </p>
 
                 <p>
-                  Si tratta di uno spazio di riqualificazione degli sheed in
-                  prossimità del Museo Time, è una superficie di circa 100 mq,
-                  una stanza completamente isolata dall’ambiente esterno. La
-                  sala immersiva è un ambiente in cui un video viene proiettato
-                  su più pareti e, nei casi più evoluti, anche sul pavimento ed
-                  il soffitto, integrato da un sistema di diffusione audio,
-                  generando una sensazione di coinvolgimento completo nello
-                  spettatore, che si trova “immerso” nel progetto.
+                  Si tratta di uno spazio di riqualificazione degli sheed in prossimità del Museo
+                  Time, è una superficie di circa 100 mq, una stanza completamente isolata
+                  dall’ambiente esterno. La sala immersiva è un ambiente in cui un video viene
+                  proiettato su più pareti e, nei casi più evoluti, anche sul pavimento ed il
+                  soffitto, integrato da un sistema di diffusione audio, generando una sensazione di
+                  coinvolgimento completo nello spettatore, che si trova “immerso” nel progetto.
                 </p>
               </div>
             </div>
 
             {/* Img */}
-            <div className='w-full mt-8'>
-              <Slider {...settings} className='self-center'>
+            <div className="w-full mt-8">
+              <Slider {...settings} className="self-center">
                 <div>
                   <Image
-                    alt='Sala immersiva dopo'
+                    alt="Sala immersiva dopo"
                     width={1000}
                     height={1000}
-                    src='/img/progetti/Sala_Immersiva_Dopo.jpg'
-                    className='h-full w-full object-cover'
+                    src="/img/progetti/Sala_Immersiva_Dopo.jpg"
+                    className="h-full w-full object-cover"
                     priority
                   />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Come è ora
-                  </p>
+                  <p className="text-center w-full mt-3 dark:text-gray-200">Come è ora</p>
                 </div>
 
                 <div>
                   <Image
-                    alt='Sala immersiva prima'
+                    alt="Sala immersiva prima"
                     width={1000}
                     height={1000}
-                    src='/img/progetti/Sala_Immersiva_Prima.jpg'
-                    className='h-full w-full object-cover'
+                    src="/img/progetti/Sala_Immersiva_Prima.jpg"
+                    className="h-full w-full object-cover"
                     priority
                   />
-                  <p className='text-center w-full mt-3 dark:text-gray-200'>
-                    Come era prima
-                  </p>
+                  <p className="text-center w-full mt-3 dark:text-gray-200">Come era prima</p>
                 </div>
               </Slider>
             </div>

@@ -1,10 +1,10 @@
-import Layout from '@/components/layout/Layout';
-import Head from 'next/head';
-import FileList from '@/components/FileList';
-import Heading from '@/components/Heading';
-import { Fragment, useState } from 'react';
-import Pagination from '@/components/Pagination';
-import NavButton from '@/components/NavButton';
+import Layout from '@/components/layout/Layout'
+import Head from 'next/head'
+import FileList from '@/components/FileList'
+import Heading from '@/components/Heading'
+import { Fragment, useState } from 'react'
+import Pagination from '@/components/Pagination'
+import NavButton from '@/components/NavButton'
 
 const list = [
   {
@@ -122,10 +122,10 @@ const list = [
       },
     ],
   },
-];
+]
 
 const VerbaliPage = () => {
-  const [currentItems, setCurrentItems] = useState(6);
+  const [currentItems, setCurrentItems] = useState(6)
 
   return (
     <Layout>
@@ -161,7 +161,7 @@ const VerbaliPage = () => {
         )}
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default VerbaliPage;
+export default VerbaliPage

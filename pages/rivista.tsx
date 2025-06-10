@@ -155,15 +155,10 @@ const RivistaPage = () => {
         {/* Bookshelf */}
         <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4">
           {riviste
-            .filter((item) => riviste.length - item.id <= currentItems)
+            .filter(item => riviste.length - item.id <= currentItems)
             .reverse()
             .map((rivista, index) => (
-              <Bookshelf
-                rivista={rivista}
-                index={index}
-                totalItems={riviste.length}
-                key={index}
-              />
+              <Bookshelf rivista={rivista} index={index} totalItems={riviste.length} key={index} />
             ))}
         </div>
 
@@ -174,10 +169,7 @@ const RivistaPage = () => {
         )}
 
         <div className="mt-12 pt-2 border-t border-solid border-[#ccc]">
-          <p>
-            * Le riviste degli anni 2020 e 2021 non sono state pubblicate a
-            causa del COVID-19
-          </p>
+          <p>* Le riviste degli anni 2020 e 2021 non sono state pubblicate a causa del COVID-19</p>
         </div>
       </main>
     </Layout>

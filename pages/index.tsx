@@ -1,20 +1,20 @@
-import Cta from '@/components/Cta';
-import Heading from '@/components/Heading';
-import SectionImage from '@/components/SectionImage';
-import Layout from '@/components/layout/Layout';
-import Head from 'next/head';
-import Link from 'next/link';
-import Button from '@/components/Button';
-import PhotoAlbum from 'react-photo-album';
-import { useState } from 'react';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
-import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
-import Zoom from 'yet-another-react-lightbox/plugins/zoom';
-import NextJsImage from '@/components/NextJsImage';
+import Cta from '@/components/Cta'
+import Heading from '@/components/Heading'
+import SectionImage from '@/components/SectionImage'
+import Layout from '@/components/layout/Layout'
+import Head from 'next/head'
+import Link from 'next/link'
+import Button from '@/components/Button'
+import PhotoAlbum from 'react-photo-album'
+import { useState } from 'react'
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
+import Zoom from 'yet-another-react-lightbox/plugins/zoom'
+import NextJsImage from '@/components/NextJsImage'
 
 // Number of photos to hide in Gallery section
-const photosToHide: Number = 1;
+const photosToHide: Number = 1
 
 const HomePage = () => {
   let photos = [
@@ -78,22 +78,22 @@ const HomePage = () => {
       height: 800,
       alt: 'Foto con Valentina Persico',
     },
-  ];
+  ]
 
   photos = photos.map((photo, index) => {
     if (photos.length - index - 1 === photosToHide) {
       return {
         ...photo,
         blurDataURL: photo.src,
-      };
+      }
     } else {
       return {
         ...photo,
-      };
+      }
     }
-  });
+  })
 
-  const [index, setIndex] = useState(-1);
+  const [index, setIndex] = useState(-1)
 
   return (
     <Layout>
@@ -192,9 +192,9 @@ const HomePage = () => {
           <PhotoAlbum
             layout="columns"
             columns={containerWidth => {
-              if (containerWidth < 400) return 2;
-              if (containerWidth < 800) return 3;
-              return 4;
+              if (containerWidth < 400) return 2
+              if (containerWidth < 800) return 3
+              return 4
             }}
             photos={photos.slice(0, -photosToHide)}
             onClick={({ index }) => setIndex(index)}
@@ -220,7 +220,7 @@ const HomePage = () => {
         />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

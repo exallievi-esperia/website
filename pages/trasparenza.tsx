@@ -1,10 +1,10 @@
-import Layout from "@/components/layout/Layout"
-import Head from "next/head"
-import FileList from "@/components/FileList"
-import Heading from "@/components/Heading"
-import { Fragment, useState } from "react"
-import Pagination from "@/components/Pagination"
-import NavButton from "@/components/NavButton"
+import Layout from '@/components/layout/Layout'
+import Head from 'next/head'
+import FileList from '@/components/FileList'
+import Heading from '@/components/Heading'
+import { Fragment, useState } from 'react'
+import Pagination from '@/components/Pagination'
+import NavButton from '@/components/NavButton'
 
 const list = [
   {
@@ -12,12 +12,12 @@ const list = [
     year: 2015,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1bLTJ0eyYBPb9koJwvQzW7gPl2ppLw7nm/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/1bLTJ0eyYBPb9koJwvQzW7gPl2ppLw7nm/view?usp=sharing',
       },
       {
-        name: "Dichiarazione 5x1000",
-        href: "https://drive.google.com/file/d/1lqWFLXZnv37jDjiQPgqQeJMRkzhiq7gK/view?usp=sharing",
+        name: 'Dichiarazione 5x1000',
+        href: 'https://drive.google.com/file/d/1lqWFLXZnv37jDjiQPgqQeJMRkzhiq7gK/view?usp=sharing',
       },
     ],
   },
@@ -26,8 +26,8 @@ const list = [
     year: 2016,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/12yb1HZb9PBZ-atiDG4cs-leIx5TnUyph/view?usp=sharing',
       },
     ],
   },
@@ -36,8 +36,8 @@ const list = [
     year: 2017,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1QCFexIWpevX_JYdpRZDvjk4OvYaVyNeB/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/1QCFexIWpevX_JYdpRZDvjk4OvYaVyNeB/view?usp=sharing',
       },
     ],
   },
@@ -46,8 +46,8 @@ const list = [
     year: 2018,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing',
       },
     ],
   },
@@ -56,8 +56,8 @@ const list = [
     year: 2019,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/1XzOAq5m73CATPVYxR3vkEexUo6DCdHJy/view?usp=sharing',
       },
     ],
   },
@@ -66,12 +66,12 @@ const list = [
     year: 2020,
     file: [
       {
-        name: "Contributo 5x1000",
-        href: "https://drive.google.com/file/d/1-8zh41IjWHOi576P6xRGvPEno3pEJw4T/view?usp=sharing",
+        name: 'Contributo 5x1000',
+        href: 'https://drive.google.com/file/d/1-8zh41IjWHOi576P6xRGvPEno3pEJw4T/view?usp=sharing',
       },
       {
-        name: "Dettaglio operazioni 5x1000",
-        href: "https://drive.google.com/file/d/13U6FPrRxmDZxQkjgJcs1Vq1sQyR88WTa/view?usp=sharing",
+        name: 'Dettaglio operazioni 5x1000',
+        href: 'https://drive.google.com/file/d/13U6FPrRxmDZxQkjgJcs1Vq1sQyR88WTa/view?usp=sharing',
       },
     ],
   },
@@ -80,16 +80,16 @@ const list = [
     year: 2021,
     file: [
       {
-        name: "Dichiarazione scuola 5x1000",
-        href: "https://drive.google.com/file/d/1UWDG3RpNgs6vJi4uh3tiDGwyvuP7PrHf/view?usp=sharing",
+        name: 'Dichiarazione scuola 5x1000',
+        href: 'https://drive.google.com/file/d/1UWDG3RpNgs6vJi4uh3tiDGwyvuP7PrHf/view?usp=sharing',
       },
       {
-        name: "Dichiarazione 5x1000",
-        href: "https://drive.google.com/file/d/1IMvdhhzZHHHRWY1ANwR0LWj1Rqe7QFU9/view?usp=sharing",
+        name: 'Dichiarazione 5x1000',
+        href: 'https://drive.google.com/file/d/1IMvdhhzZHHHRWY1ANwR0LWj1Rqe7QFU9/view?usp=sharing',
       },
       {
-        name: "Rendiconto 5x1000",
-        href: "https://drive.google.com/file/d/1crfSOlqMsRxsBqmDfUkrkR7UvlByWEaL/view?usp=sharing",
+        name: 'Rendiconto 5x1000',
+        href: 'https://drive.google.com/file/d/1crfSOlqMsRxsBqmDfUkrkR7UvlByWEaL/view?usp=sharing',
       },
     ],
   },
@@ -105,28 +105,22 @@ const TrasparenzaPage = () => {
       </Head>
 
       <Heading
-        title={"Trasparenza"}
-        description={
-          "Consulta i contributi pubblici dell'associazione suddivisi per anno"
-        }
-        backgroundImage='/img/esterno_2.jpg'
-        position='object-[center_70%]'
+        title={'Trasparenza'}
+        description={"Consulta i contributi pubblici dell'associazione suddivisi per anno"}
+        backgroundImage="/img/esterno_2.jpg"
+        position="object-[center_70%]"
       />
 
-      <main className='mx-auto max-w-7xl p-6 lg:px-8 my-20'>
+      <main className="mx-auto max-w-7xl p-6 lg:px-8 my-20">
         {/* Elenco file */}
-        <div className='flex flex-col gap-x-10'>
+        <div className="flex flex-col gap-x-10">
           {list
-            .filter((item) => list.length - item.id <= currentItems)
+            .filter(item => list.length - item.id <= currentItems)
             .reverse()
             .map((file, index) => (
               <Fragment key={file.id}>
                 {file.id === list.length - 1 ? <></> : <hr />}
-                <FileList
-                  year={file.year}
-                  files={file.file}
-                  isEven={index % 2 === 0}
-                />
+                <FileList year={file.year} files={file.file} isEven={index % 2 === 0} />
               </Fragment>
             ))}
         </div>

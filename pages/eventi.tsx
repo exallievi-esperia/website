@@ -1,12 +1,12 @@
-import Layout from '@/components/layout/Layout';
-import EventiCard, { EventiCardProps } from '@/components/EventiCard';
-import Head from 'next/head';
-import Heading from '@/components/Heading';
-import Pagination from '@/components/Pagination';
-import NavButton from '@/components/NavButton';
-import { useState } from 'react';
+import Layout from '@/components/layout/Layout'
+import EventiCard, { EventiCardProps } from '@/components/EventiCard'
+import Head from 'next/head'
+import Heading from '@/components/Heading'
+import Pagination from '@/components/Pagination'
+import NavButton from '@/components/NavButton'
+import { useState } from 'react'
 
-export type EventType = 'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'tutti';
+export type EventType = 'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'tutti'
 
 const eventiList: EventiCardProps[] = [
   {
@@ -279,15 +279,15 @@ const eventiList: EventiCardProps[] = [
     image: '/img/eventi/makersfaire_2025.webp',
     type: 'makers-faire',
   },
-];
+]
 
 const EventiPage = () => {
-  const [currentItems, setCurrentItems] = useState(12);
-  const [filterSearch, setFilterSearch] = useState('tutti');
+  const [currentItems, setCurrentItems] = useState(12)
+  const [filterSearch, setFilterSearch] = useState('tutti')
 
   const filteredEvent = eventiList.filter(
     item => item.type === filterSearch || filterSearch === 'tutti'
-  );
+  )
 
   return (
     <Layout>
@@ -347,7 +347,7 @@ const EventiPage = () => {
         )}
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default EventiPage;
+export default EventiPage
