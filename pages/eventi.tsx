@@ -265,6 +265,20 @@ const eventiList: EventiCardProps[] = [
     image: '/img/eventi/festa_24052025.webp',
     type: 'festa-exallievi',
   },
+  {
+    id: 19,
+    name: 'Makers Faire 2025',
+    description:
+      'Esposizione e premiazione dei progetti realizzati dagli studenti del nostro istituto.',
+    date: {
+      day: 7,
+      month: 'Giugno',
+      year: 2025,
+    },
+    href: 'https://drive.google.com/drive/folders/1iyudkBBpKnbzLqdUITLHos7fc4v1vAGe?usp=sharing',
+    image: '/img/eventi/makersfaire_2025.webp',
+    type: 'makers-faire',
+  },
 ];
 
 const EventiPage = () => {
