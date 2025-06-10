@@ -1,18 +1,18 @@
-import React from 'react';
-import Image from 'next/image';
-import Button from './Button';
+import React from 'react'
+import Image from 'next/image'
+import Button from './Button'
 
 interface SectionImageProps {
-  reversed?: boolean;
-  title: string;
-  paragraph: string;
-  buttonText: string;
-  link: string;
-  src: string;
-  alt: string;
-  id?: string;
-  isVideo?: boolean;
-  className?: string;
+  reversed?: boolean
+  title: string
+  paragraph: string
+  buttonText: string
+  link: string
+  src: string
+  alt: string
+  id?: string
+  isVideo?: boolean
+  className?: string
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
@@ -68,7 +68,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SectionImage;
+export default SectionImage
