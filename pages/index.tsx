@@ -160,7 +160,7 @@ const HomePage = () => {
           src="/img/foto_tutti_oggi.jpg"
           alt="Video BergamoTV festa ex allievi 2015"
           reversed
-          className="scale-125"
+          assetsClassName="scale-125"
         />
 
         {/* Cosa facciamo */}
@@ -184,6 +184,19 @@ const HomePage = () => {
             </>
           }
           buttonText="Diventa socio"
+        />
+
+        {/* La scuola ospita */}
+        <SectionImage
+          title="La scuola ospita..."
+          paragraph="Enigma, a cura di Color Coloris con il contributo degli ExAllievi."
+          link="https://drive.google.com/drive/folders/19sbc4p3mfBUbpZ2lg32NVyGjlwzXzQKL?usp=sharing"
+          src="/img/eventi/mostra_enigma.webp"
+          alt="La scuola ospita"
+          buttonText="Guarda le foto"
+          reversed
+          isBlank
+          containerClassName='mt-10'
         />
 
         <div className="mt-20">

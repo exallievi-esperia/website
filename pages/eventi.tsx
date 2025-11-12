@@ -285,11 +285,11 @@ const eventiList: EventiCardProps[] = [
     description:
       'La nostra scuola ha ospitato la mostra Enigma, a cura di Color Coloris con il contributo di noi ExAllievi.',
     date: {
-      day: 8,
-      month: 'Novembre',
-      year: 2025,
+      day: 24,
+      month: 'Gennaio',
+      year: 2026,
     },
-    href: '',
+    href: 'https://drive.google.com/drive/folders/19sbc4p3mfBUbpZ2lg32NVyGjlwzXzQKL?usp=sharing',
     image: '/img/eventi/mostra_enigma.webp',
     type: 'mostre',
   },
