@@ -5,7 +5,7 @@ import Button from './Button'
 interface SectionImageProps {
   reversed?: boolean
   title: string
-  paragraph: string
+  // paragraph: string
   buttonText?: string
   link: string
   src: string
@@ -15,12 +15,13 @@ interface SectionImageProps {
   isBlank?: boolean
   assetsClassName?: string
   containerClassName?: string
+  children?: React.ReactNode
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
   reversed,
   title,
-  paragraph,
+  children,
   buttonText,
   link,
   src,
@@ -40,7 +41,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
           <div className="lg:py-12">
             <h2 className="text-3xl font-bold sm:text-4xl dark:text-white">{title}</h2>
 
-            <p className="mt-4 text-gray-600 dark:text-gray-200">{paragraph}</p>
+            <div className="mt-4 text-gray-600 dark:text-gray-200">{children}</div>
 
             {buttonText && (
               <Button text={buttonText} link={link} isBlank={isBlank} uppercase style="mt-8" />
