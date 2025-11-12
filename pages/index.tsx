@@ -189,7 +189,7 @@ const HomePage = () => {
         {/* La scuola ospita */}
         <SectionImage
           title="La scuola ospita..."
-          paragraph="Enigma, a cura di Color Coloris con il contributo degli ExAllievi."
+          paragraph="Enigma, mostra a cura di Color Coloris con il contributo degli ExAllievi. Il percorso espositivo mette al centro le emozioni come motore creativo: dal cuore e dall’intestino, simboli di una sensibilità profonda e istintiva, emergono visioni che si traducono in contrasti di luce e ombra, evocando una dimensione intima e mutevole."
           link="https://drive.google.com/drive/folders/19sbc4p3mfBUbpZ2lg32NVyGjlwzXzQKL?usp=sharing"
           src="/img/eventi/mostra_enigma.webp"
           alt="La scuola ospita"
