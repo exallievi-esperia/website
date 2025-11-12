@@ -6,7 +6,7 @@ import Pagination from '@/components/Pagination'
 import NavButton from '@/components/NavButton'
 import { useState } from 'react'
 
-export type EventType = 'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'tutti'
+export type EventType = 'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'mostre' | 'tutti'
 
 const eventiList: EventiCardProps[] = [
   {
@@ -279,6 +279,20 @@ const eventiList: EventiCardProps[] = [
     image: '/img/eventi/makersfaire_2025.webp',
     type: 'makers-faire',
   },
+  {
+    id: 20,
+    name: 'Mostra Enigma',
+    description:
+      'La nostra scuola ha ospitato la mostra Enigma, a cura di Color Coloris con il contributo di noi ExAllievi.',
+    date: {
+      day: 8,
+      month: 'Novembre',
+      year: 2025,
+    },
+    href: '',
+    image: '/img/eventi/mostra_enigma.webp',
+    type: 'mostre',
+  },
 ]
 
 const EventiPage = () => {
@@ -321,6 +335,7 @@ const EventiPage = () => {
           <option value="festa-exallievi">Festa Ex Allievi</option>
           <option value="borsa-di-studio">Borse di studio</option>
           <option value="makers-faire">Makers Faire</option>
+          <option value="mostre">Mostre</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {filteredEvent
