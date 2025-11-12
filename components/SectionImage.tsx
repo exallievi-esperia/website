@@ -33,7 +33,9 @@ const SectionImage: React.FC<SectionImageProps> = ({
 }) => {
   return (
     <section id={id}>
-      <div className={`mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ${containerClassName}`}>
+      <div
+        className={`mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ${containerClassName}`}
+      >
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16`}>
           <div className="lg:py-12">
             <h2 className="text-3xl font-bold sm:text-4xl dark:text-white">{title}</h2>

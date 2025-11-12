@@ -196,7 +196,7 @@ const HomePage = () => {
           buttonText="Guarda le foto"
           reversed
           isBlank
-          containerClassName='mt-10'
+          containerClassName="mt-10"
         />
 
         <div className="mt-20">
