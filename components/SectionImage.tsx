@@ -5,38 +5,47 @@ import Button from './Button'
 interface SectionImageProps {
   reversed?: boolean
   title: string
-  paragraph: string
-  buttonText: string
+  // paragraph: string
+  buttonText?: string
   link: string
   src: string
   alt: string
   id?: string
   isVideo?: boolean
-  className?: string
+  isBlank?: boolean
+  assetsClassName?: string
+  containerClassName?: string
+  children?: React.ReactNode
 }
 
 const SectionImage: React.FC<SectionImageProps> = ({
   reversed,
   title,
-  paragraph,
+  children,
   buttonText,
   link,
   src,
   alt,
-  className,
+  assetsClassName,
   id = title,
   isVideo = false,
+  isBlank = false,
+  containerClassName,
 }) => {
   return (
     <section id={id}>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div
+        className={`mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 ${containerClassName}`}
+      >
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16`}>
           <div className="lg:py-12">
             <h2 className="text-3xl font-bold sm:text-4xl dark:text-white">{title}</h2>
 
-            <p className="mt-4 text-gray-600 dark:text-gray-200">{paragraph}</p>
+            <div className="mt-4 text-gray-600 dark:text-gray-200">{children}</div>
 
-            <Button text={buttonText} link={link} uppercase style="mt-8" />
+            {buttonText && (
+              <Button text={buttonText} link={link} isBlank={isBlank} uppercase style="mt-8" />
+            )}
           </div>
 
           <div
@@ -48,7 +57,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
               <Image
                 alt={alt}
                 src={src}
-                className={`h-full w-full object-cover ${className}`}
+                className={`h-full w-full object-cover ${assetsClassName}`}
                 width={506}
                 height={337}
               />
@@ -57,7 +66,7 @@ const SectionImage: React.FC<SectionImageProps> = ({
             {isVideo && (
               <video
                 controls={true}
-                className={`h-full w-full object-cover ${className}`}
+                className={`h-full w-full object-cover ${assetsClassName}`}
                 playsInline
               >
                 <source src={src} type="video/mp4" />
