@@ -198,7 +198,7 @@ const HomePage = () => {
             }}
             photos={photos.slice(0, -photosToHide)}
             onClick={({ index }) => setIndex(index)}
-            renderPhoto={NextJsImage}
+            renderPhoto={(props: any) => <NextJsImage {...props} />}
             defaultContainerWidth={1200}
             sizes={{ size: 'calc(100vw - 240px)' }}
           />
