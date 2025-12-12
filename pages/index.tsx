@@ -154,24 +154,36 @@ const HomePage = () => {
         <SectionImage
           title="Chi siamo"
           id="chi-siamo"
-          paragraph="L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo, fondata nel 1920, non ha fini di lucro ed è parte integrante dell’Istituto Paleocapa. Il suo scopo è quello di promuovere numerose iniziative a favore dell’Istituto, degli allievi e degli insegnanti. Le risorse necessarie allo svolgimento delle attività sono garantite dai Soci e da Aziende che condividono lo scopo dell’Associazione. "
           buttonText="SCOPRI DI PIÙ"
           link="/chi-siamo"
           src="/img/foto_tutti_oggi.jpg"
           alt="Video BergamoTV festa ex allievi 2015"
           reversed
-          className="scale-125"
-        />
+          assetsClassName="scale-125"
+        >
+          <p>
+            L’Associazione Ex Allievi dell’ITIS P. Paleocapa di Bergamo, fondata nel 1920, non ha
+            fini di lucro ed è parte integrante dell’Istituto Paleocapa. Il suo scopo è quello di
+            promuovere numerose iniziative a favore dell’Istituto, degli allievi e degli insegnanti.
+            Le risorse necessarie allo svolgimento delle attività sono garantite dai Soci e da
+            Aziende che condividono lo scopo dell’Associazione.
+          </p>
+        </SectionImage>
 
         {/* Cosa facciamo */}
         <SectionImage
           title="Cosa facciamo"
-          paragraph="Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo trovare il Museo TIME e la più recente sala immersiva. Inoltre vengono regolarmente emesse delle borse di studio a sostegno degli studenti."
           buttonText="SCOPRI DI PIÙ"
           link="/cosa-facciamo"
           src="/img/progetti/Museo_Time_Dopo.jpg"
           alt="Museo TIME"
-        />
+        >
+          <p>
+            Tra le opere più importanti realizzate dall'associazione a favore della scuola possiamo
+            trovare il Museo TIME e la più recente sala immersiva. Inoltre vengono regolarmente
+            emesse delle borse di studio a sostegno degli studenti.
+          </p>
+        </SectionImage>
 
         <Cta
           link="/soci"
@@ -185,6 +197,28 @@ const HomePage = () => {
           }
           buttonText="Diventa socio"
         />
+
+        {/* La scuola ospita */}
+        <SectionImage
+          title="La scuola ospita..."
+          link="https://drive.google.com/drive/folders/19sbc4p3mfBUbpZ2lg32NVyGjlwzXzQKL?usp=sharing"
+          src="/img/eventi/mostra_enigma.webp"
+          alt="La scuola ospita"
+          buttonText="Guarda le foto"
+          reversed
+          isBlank
+          containerClassName="mt-10"
+        >
+          <p>
+            <span className="font-bold">Enigma</span>, mostra a cura di Color Coloris con il
+            contributo degli ExAllievi, autunno-inverno 25/26.
+          </p>
+          <p className="mt-3">
+            Il percorso espositivo mette al centro le emozioni come motore creativo: dal cuore e
+            dall’intestino, simboli di una sensibilità profonda e istintiva, emergono visioni che si
+            traducono in contrasti di luce e ombra, evocando una dimensione intima e mutevole.
+          </p>
+        </SectionImage>
 
         <div className="mt-20">
           <h2 className="text-3xl font-bold sm:text-4xl dark:text-white mb-4">Galleria</h2>
