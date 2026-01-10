@@ -5,13 +5,14 @@ import Layout from '@/components/layout/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import Button from '@/components/Button'
-import PhotoAlbum from 'react-photo-album'
+import { ColumnsPhotoAlbum } from 'react-photo-album'
+import 'react-photo-album/columns.css'
 import { useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
 import Zoom from 'yet-another-react-lightbox/plugins/zoom'
-import NextJsImage from '@/components/NextJsImage'
+import renderNextImage from '@/components/NextJsImage'
 
 // Number of photos to hide in Gallery section
 const photosToHide: number = 1
@@ -223,16 +224,15 @@ const HomePage = () => {
         <div className="mt-20">
           <h2 className="text-3xl font-bold sm:text-4xl dark:text-white mb-4">Galleria</h2>
 
-          <PhotoAlbum
-            layout="columns"
+          <ColumnsPhotoAlbum
+            photos={photos.slice(0, -photosToHide)}
             columns={containerWidth => {
               if (containerWidth < 400) return 2
               if (containerWidth < 800) return 3
               return 4
             }}
-            photos={photos.slice(0, -photosToHide)}
             onClick={({ index }) => setIndex(index)}
-            renderPhoto={(props: any) => <NextJsImage {...props} />}
+            render={{ image: renderNextImage }}
             defaultContainerWidth={1200}
             sizes={{ size: 'calc(100vw - 240px)' }}
           />

@@ -1,18 +1,19 @@
 import Image from 'next/image'
-import type { RenderPhotoProps } from 'react-photo-album'
+import { RenderImageContext, RenderImageProps } from 'react-photo-album'
 
-export default function NextJsImage({
-  photo,
-  imageProps: { alt, title, sizes, className, onClick },
-  wrapperStyle,
-}: RenderPhotoProps) {
+export default function renderNextImage(
+  { alt = '', title, sizes }: RenderImageProps,
+  { photo, width, height }: RenderImageContext
+) {
   return (
-    <div style={{ ...wrapperStyle, position: 'relative' }}>
+    <div style={{ position: 'relative', width: '100%', aspectRatio: `${width} / ${height}` }}>
       <Image
         fill
         src={photo}
+        alt={alt}
+        title={title}
+        sizes={sizes}
         placeholder={'blurDataURL' in photo ? 'blur' : undefined}
-        {...{ alt, title, sizes, className, onClick }}
         className="object-cover h-full w-full"
       />
 
