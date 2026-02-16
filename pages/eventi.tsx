@@ -293,6 +293,20 @@ const eventiList: EventiCardProps[] = [
     image: '/img/eventi/mostra_enigma.webp',
     type: 'mostre',
   },
+  {
+    id: 21,
+    name: 'Borse di studio: Area Meccanica',
+    description:
+      "Get Ready With Me: Consegna delle borse di studio dell'area meccanica agli studenti.",
+    date: {
+      day: 10,
+      month: 'Febbraio',
+      year: 2026,
+    },
+    href: 'https://drive.google.com/drive/folders/14lILIhJLOBT9Jaek7wgZcYEQFKus_o74?usp=drive_link',
+    image: '/img/eventi/meccanica_10022026.webp',
+    type: 'borsa-di-studio',
+  },
 ]
 
 const EventiPage = () => {
