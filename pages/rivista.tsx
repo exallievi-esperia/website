@@ -133,6 +133,13 @@ const riviste = [
     imgAlt: 'Anteprima rivista 2025',
     imgSrc: '/img/copertine/Copertina2025.jpg',
   },
+  {
+    id: 18,
+    year: 2026,
+    link: 'https://drive.google.com/file/d/1RM-DYdU0urK2r_QdQuepp7vleWw3p6MC/view?usp=drive_link',
+    imgAlt: 'Anteprima rivista 2026',
+    imgSrc: '/img/copertine/Copertina2026.jpg',
+  },
 ]
 
 const RivistaPage = () => {
