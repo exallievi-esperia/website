@@ -109,15 +109,15 @@ const HomePage = () => {
             <div className="mb-8 sm:flex sm:justify-center">
               <div className="w-fit m-auto hover:-translate-y-1.5 hover:cursor-pointer rounded-full text-[#f25116] bg-[#f2511640] dark:bg-[#f2511640] px-3 py-1 text-base font-medium transition duration-300">
                 <Link
-                  href="https://drive.google.com/drive/folders/1mVj7hp6fLD3_I28pN93HBAvjhgYtZRFH?usp=sharing/"
+                  href="https://drive.google.com/drive/folders/12GzPpgPLe3KLe_uhZMbL0lOodWoBbL9Z?usp=drive_link"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <div className="min-[339px]:hidden">Festa ExAllievi 2025 🎉</div>
+                  <div className="min-[339px]:hidden">Festa ExAllievi 2026 🎉</div>
                   <div className="max-[338px]:hidden min-[499px]:hidden">
-                    Festa ExAllievi 2025 🎉
+                    Festa ExAllievi 2026 🎉
                   </div>
-                  <div className="max-[500px]:hidden">Festa ExAllievi 2025 🎉</div>
+                  <div className="max-[500px]:hidden">Festa ExAllievi 2026 🎉</div>
                 </Link>
               </div>
             </div>

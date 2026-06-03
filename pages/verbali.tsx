@@ -130,6 +130,16 @@ const list = [
       },
     ],
   },
+  {
+    id: 7,
+    year: 2026,
+    file: [
+      {
+        name: '9 Maggio',
+        href: 'https://drive.google.com/file/d/1UsQUblu0or0a3bKMcTzlINCkTE98Xv7U/view?usp=sharing',
+      },
+    ],
+  },
 ]
 
 const VerbaliPage = () => {

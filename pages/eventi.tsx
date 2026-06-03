@@ -130,7 +130,7 @@ const eventiList: EventiCardProps[] = [
     id: 9,
     name: 'Festa Ex Allievi 2023',
     description:
-      'Festa degli ex allievi del 2023, con la partecipazione di UniBg, Albini Group, Brembo e la prof.ssa Luzzana.',
+      'Festa degli Ex Allievi del 2023, con la partecipazione di UniBg, Albini Group, Brembo e la prof.ssa Luzzana.',
     date: {
       day: 27,
       month: 'Maggio',
@@ -255,7 +255,7 @@ const eventiList: EventiCardProps[] = [
   {
     id: 18,
     name: 'Festa Ex Allievi 2025',
-    description: 'Prima festa degli ExAllievi con la preside Bonazzi!',
+    description: 'Prima festa degli Ex Allievi con la preside Bonazzi!',
     date: {
       day: 24,
       month: 'Maggio',
@@ -306,6 +306,20 @@ const eventiList: EventiCardProps[] = [
     href: 'https://drive.google.com/drive/folders/14lILIhJLOBT9Jaek7wgZcYEQFKus_o74?usp=drive_link',
     image: '/img/eventi/meccanica_10022026.webp',
     type: 'borsa-di-studio',
+  },
+   {
+    id: 22,
+    name: 'Festa Ex Allievi 2026',
+    description:
+      "Festa degli Ex Allievi: dieci anni del Museo TIME, tra ricordi e futuro.",
+    date: {
+      day: 23,
+      month: 'Maggio',
+      year: 2026,
+    },
+    href: 'https://drive.google.com/drive/folders/12GzPpgPLe3KLe_uhZMbL0lOodWoBbL9Z?usp=drive_link',
+    image: '/img/eventi/festa_23052026.webp',
+    type: 'festa-exallievi',
   },
 ]
 
