@@ -138,6 +138,10 @@ const list = [
         name: '9 Maggio',
         href: 'https://drive.google.com/file/d/1UsQUblu0or0a3bKMcTzlINCkTE98Xv7U/view?usp=sharing',
       },
+      {
+        name: '10 Ottobre',
+        href: 'https://drive.google.com/file/d/1ycgy3BbD66Jl2Iy9UwsbLYykJYkA3sJs/view?usp=sharing',
+      },
     ],
   },
 ]
