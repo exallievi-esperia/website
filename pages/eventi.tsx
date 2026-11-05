@@ -6,7 +6,8 @@ import Pagination from '@/components/Pagination'
 import NavButton from '@/components/NavButton'
 import { useState } from 'react'
 
-export type EventType = 'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'mostre' | 'tutti'
+export type EventType =
+  'borsa-di-studio' | 'festa-exallievi' | 'makers-faire' | 'mostre' | 'laboratori' | 'tutti'
 
 const eventiList: EventiCardProps[] = [
   {
@@ -307,11 +308,10 @@ const eventiList: EventiCardProps[] = [
     image: '/img/eventi/meccanica_10022026.webp',
     type: 'borsa-di-studio',
   },
-   {
+  {
     id: 22,
     name: 'Festa Ex Allievi 2026',
-    description:
-      "Festa degli Ex Allievi: dieci anni del Museo TIME, tra ricordi e futuro.",
+    description: 'Festa degli Ex Allievi: dieci anni del Museo TIME, tra ricordi e futuro.',
     date: {
       day: 23,
       month: 'Maggio',
@@ -320,6 +320,19 @@ const eventiList: EventiCardProps[] = [
     href: 'https://drive.google.com/drive/folders/12GzPpgPLe3KLe_uhZMbL0lOodWoBbL9Z?usp=drive_link',
     image: '/img/eventi/festa_23052026.webp',
     type: 'festa-exallievi',
+  },
+  {
+    id: 23,
+    name: 'Laboratorio Gewiss',
+    description: 'Inaugurazione del laboratorio di domotica Gewiss',
+    date: {
+      day: 24,
+      month: 'Ottobre',
+      year: 2026,
+    },
+    href: 'https://drive.google.com/drive/folders/1-WFcuEixFlx403g2jyEkVNEV0QvtR9Tt?usp=sharing',
+    image: '/img/eventi/laboratorio_gewiss_24102026.webp',
+    type: 'laboratori',
   },
 ]
 
@@ -364,6 +377,7 @@ const EventiPage = () => {
           <option value="borsa-di-studio">Borse di studio</option>
           <option value="makers-faire">Makers Faire</option>
           <option value="mostre">Mostre</option>
+          <option value="laboratori">Laboratori</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {filteredEvent
