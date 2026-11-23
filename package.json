@@ -28,7 +28,7 @@
     "react-markdown": "^10.1.0",
     "react-photo-album": "^3.4.0",
     "react-slick": "^0.31.0",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.5",
     "slick-carousel": "^1.8.1",
     "typescript": "5.9.3",
     "yet-another-react-lightbox": "^3.28.0"
@@ -46,7 +46,7 @@
     "tailwindcss": "^3.3.5"
   },
   "resolutions": {
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.5",
     "@types/react": "^18.3.31",
     "postcss": "^8.5.26"
   }
